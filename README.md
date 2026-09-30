@@ -2,6 +2,10 @@
 
 Topluluk için ürettiğim içerikler ve araçlar. Her içerik kendi klasöründe, açıklamasıyla birlikte duruyor.
 
+**Canlı sayfa:** [Yapay Zekâ Orkestrası](https://claude.ai/artifact/2aUHSAwuRb5pNgoTopiv4Q)
+
+**Takip et:** [Telegram duyuru kanalı](https://t.me/RuesAnnouncement) · [Telegram](https://t.me/ruesandora) · [X @Ruesandora0](https://x.com/Ruesandora0)
+
 ## İçerikler
 
 | # | İçerik | Konu |

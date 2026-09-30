@@ -4,7 +4,7 @@
 
 ![Sayfa önizlemesi](gorseller/onizleme-masaustu.jpg)
 
-**Sayfayı aç:** [`index.html`](index.html) — tek dosya, tarayıcıda doğrudan açılır. Açık ve koyu temayı destekler, telefonda da okunur.
+**Canlı sayfa:** https://claude.ai/artifact/2aUHSAwuRb5pNgoTopiv4Q · **Dosya:** [`index.html`](index.html) — tek dosya, tarayıcıda doğrudan açılır. Açık ve koyu temayı destekler, telefonda da okunur.
 
 ## İçinde neler var
 
@@ -38,4 +38,6 @@
 Şefin kuralı için [`CLAUDE-orkestra-kurali.md`](ajanlar/CLAUDE-orkestra-kurali.md) içeriğini projendeki `CLAUDE.md` dosyasına ekle.
 
 ---
+[Telegram duyuru](https://t.me/RuesAnnouncement) · [Telegram](https://t.me/ruesandora) · [X @Ruesandora0](https://x.com/Ruesandora0)
+
 Rues Community · Eylül 2026 · Gerçek bir projede her gün kullanılan düzenden derlendi.
