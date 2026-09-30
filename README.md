@@ -1,4 +1,22 @@
-# RC. · Gümüş & Altın RSI Uyumsuzluk
+# Rues Community
+
+Topluluk için ürettiğim içerikler ve araçlar. Her içerik kendi klasöründe, açıklamasıyla birlikte duruyor.
+
+## İçerikler
+
+| # | İçerik | Konu |
+|---|---|---|
+| 01 | [Yapay Zekâ Orkestrası](icerikler/01-yapay-zeka-orkestrasi) | Yapay zekâ ajanlarıyla şef, uzman ajanlar ve bağımsız denetçiden oluşan bir ekip kurmak ([sayfa](icerikler/01-yapay-zeka-orkestrasi/index.html)) |
+
+## Araçlar
+
+| Araç | Konu |
+|---|---|
+| [RC · Gümüş & Altın RSI Uyumsuzluk](#rc--gümüş--altın-rsi-uyumsuzluk) | RSI uyumsuzluk tarayıcısı ve Telegram/e-posta bildirim botu (aşağıda) |
+
+---
+
+## RC · Gümüş & Altın RSI Uyumsuzluk
 
 **Rues Community (RC)** gümüş ve altın yatırımcıları için RSI uyumsuzluk (divergence) tarayıcısı ve bildirim botu. Sağ üstten metal seçilir (`#altin` ile doğrudan altın açılır).
 
