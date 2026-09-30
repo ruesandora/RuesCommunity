@@ -1,4 +1,4 @@
-# Yapay Zekâ Orkestrası · Rues Community Yapay Zekâ Notları #1
+# Yapay Zekâ Orkestrası · RC AI Notları #1
 
 [Telegram duyuru](https://t.me/RuesAnnouncement) · [Telegram](https://t.me/ruesandora) · [X @Ruesandora0](https://x.com/Ruesandora0)
 
