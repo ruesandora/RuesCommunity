@@ -1,5 +1,11 @@
 # Yapay Zekâ Orkestrası · Rues Community Yapay Zekâ Notları #1
 
+[Telegram duyuru](https://t.me/RuesAnnouncement) · [Telegram](https://t.me/ruesandora) · [X @Ruesandora0](https://x.com/Ruesandora0)
+
+Rues Community · Eylül 2026 · Gerçek bir projede her gün kullanılan düzenden derlendi.
+
+---
+
 > **Şef çalmaz, yönetir.** Büyük bir işi tek bir yapay zekâ sohbetine yıkmak yerine bir orkestra kur: ana oturum şef olur, işi uzman ajanlara böler, bağımsız bir denetçi kontrol eder, şef birleştirir.
 
 ![Sayfa önizlemesi](gorseller/onizleme-masaustu.jpg)
@@ -38,6 +44,4 @@
 Şefin kuralı için [`CLAUDE-orkestra-kurali.md`](ajanlar/CLAUDE-orkestra-kurali.md) içeriğini projendeki `CLAUDE.md` dosyasına ekle.
 
 ---
-[Telegram duyuru](https://t.me/RuesAnnouncement) · [Telegram](https://t.me/ruesandora) · [X @Ruesandora0](https://x.com/Ruesandora0)
 
-Rues Community · Eylül 2026 · Gerçek bir projede her gün kullanılan düzenden derlendi.
