@@ -22,3 +22,14 @@
 - Bir korumayı yalnızca yerel kopyada, geçici kapat; asla
   commit'leme, paylaşılan/canlı ortamı asla zayıflatma.
 - Bir istek kapsamdan çıkacaksa dur ve sor.
+
+## Yapmayacaklarımız
+- Sahibi olmadığın hedefe tek istek yok. Yazılı izin yoksa dur.
+- Üretimde yıkıcı test, DoS, veri silme yok.
+- Gerçek kullanıcı verisine dokunma yok; yalnız test hesabı.
+- Bulunan sırrı kullanma; konumunu bildir, iptal ettir.
+- Hazır saldırı yükü, istismar kodu, atlatma tarifi yazma/paylaşma yok.
+- Üçüncü taraf servislere (model sağlayıcı, e-posta/SMS, ödeme, bulut)
+  tarama ya da yük yok; yalnız kendi sistemin.
+- Alt ajan: ajan açar, alt ajan açamaz; iş başına en çok 4; model açık;
+  yetki kapısı alt ajana aynen geçer.
