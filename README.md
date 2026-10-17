@@ -10,7 +10,7 @@ Topluluk için ürettiğim içerikler ve araçlar. Her içerik kendi klasöründ
 
 | # | İçerik | Konu |
 |---|---|---|
-| 01 | [Yapay Zekâ Orkestrası](icerikler/01-yapay-zeka-orkestrasi) | Yapay zekâ ajanlarıyla şef, uzman ajanlar ve bağımsız denetçiden oluşan bir ekip kurmak ([sayfa](icerikler/01-yapay-zeka-orkestrasi/index.html)) |
+| 01 | [Yapay Zekâ Orkestrası](icerikler/01-yapay-zeka-orkestrasi) | Yapay zekâ ajanlarıyla şef, uzman ajanlar ve bağımsız denetçiden oluşan bir ekip kurmak; model görev tablosu, ajanın alt ajanı ve başka araçta (Codex vb.) kullanım ([sayfa](icerikler/01-yapay-zeka-orkestrasi/index.html)) |
 
 ## Araçlar
 
