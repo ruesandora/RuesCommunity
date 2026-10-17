@@ -27,7 +27,7 @@
 
 ![Hat](gorseller/flow.svg)
 
-![İlk 9 grup, 38 sınıf (Grup 10 sayfada metinle anlatılır)](gorseller/groups.svg)
+![10 grup, 45 sınıf](gorseller/groups.svg)
 
 ## Hazır ajan dosyaları
 
