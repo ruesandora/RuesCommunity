@@ -41,7 +41,7 @@ Rues Community · Ekim 2026 · Gerçek bir projede her gün kullanılan düzende
 | [`arastirmaci.md`](ajanlar/arastirmaci.md) | Sonnet 5.5 | Kaynaklı araştırma; kod yazmaz; alt ajan açabilir |
 | [`yukleyici.md`](ajanlar/yukleyici.md) | Haiku 5.5 | Mekanik toplu iş, basit okuma, özet, sınıflama, format |
 | [`tasarimci.md`](ajanlar/tasarimci.md) | Opus 5.5 | Görsel tasarım yönü; alt ajan açabilir |
-| [`video-ureticisi.md`](ajanlar/video-ureticisi.md) | Opus 5.5 | Video ve ses; ölçerek doğrular; alt ajan açabilir |
+| [`video-ureticisi.md`](ajanlar/video-ureticisi.md) | Sonnet 5.5 | Video ve ses; ölçerek doğrular; alt ajan açabilir |
 | [`derin-akil.md`](ajanlar/derin-akil.md) | Fable 5.1 (pahalı, nadir) | Çok adımlı belirsiz karar, çelişkili bulguların sentezi, zor hata ayıklama |
 
 **Model görev tablosu:** Haiku 5.5 (en ucuz): mekanik iş + basit okuma, özet, sınıflama, format. Sonnet 5.5 (orta, varsayılan): kod, araştırma, normal denetim, metin. Opus 5.5 (yetenekli): görsel tasarım yönü, güvenlik/para/veri kaybı riski olan denetim. Fable 5.1 (premium, nadir): `derin-akil.md`; ölçüt: iş 2 DÜZELT turunda çözülmedi, çok adımlı ve belirsiz, çelişkili bulgular ya da zor hata, yanlış kararın bedeli yüksek. Bir işe ucuz modelin yetip yetmediğini kendi işinde ölçerek gör.

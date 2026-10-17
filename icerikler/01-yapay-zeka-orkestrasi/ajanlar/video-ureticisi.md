@@ -2,7 +2,7 @@
 name: video-ureticisi
 description: Video ve ses - storyboard, sahne, render, müzik
   ve efekt, seslendirme yerleşimi. Uzun, çok adımlı işler.
-model: opus
+model: sonnet
 tools: Read, Write, Edit, Glob, Bash, Agent
 # effort: medium   # isteğe bağlı: low | medium | high | xhigh | max
 ---
