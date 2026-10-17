@@ -182,7 +182,7 @@ main{min-width:0}
 .rol-rozet{display:flex;align-items:center;gap:10px 16px;flex-wrap:wrap}
 .model{display:inline-block;font:700 14px/1 var(--f-mono);letter-spacing:.12em;text-transform:uppercase;padding:8px 11px;border:2px solid var(--murekkep);color:var(--murekkep);white-space:nowrap}
 .model.opus{background:var(--murekkep);color:var(--panel)}
-.model.haiku{border-style:dashed}
+.model.haiku{border-style:dashed}.model.fable{background:var(--murekkep);color:var(--panel);outline:2px solid var(--murekkep);outline-offset:3px}
 .maliyet{display:inline-flex;align-items:center;gap:8px;font:600 13px/1 var(--f-mono);letter-spacing:.08em;text-transform:uppercase;color:var(--metin-2);white-space:nowrap}
 .metre{display:inline-flex;gap:3px}
 .metre i{display:block;width:12px;height:12px;border:2px solid var(--murekkep)}
@@ -239,7 +239,7 @@ main{min-width:0}
   .yon.asagi{flex-direction:row;justify-content:flex-start;border:0;padding:12px 22px}
   .yon.asagi::after{content:none}
 }
-.workflow-not{margin-top:20px;display:grid;gap:8px;border:2px dashed var(--murekkep);padding:18px 22px}
+.workflow-not{margin-top:20px;display:grid;gap:8px;border:2px dashed var(--murekkep);padding:18px 22px}.prem-not{margin-top:20px;border:2px solid var(--murekkep);background:var(--panel)}.prem-not .cikti{border:0}
 .workflow-not p{font-size:17.5px;line-height:1.6}
 .ornek-isler{list-style:none;display:grid;border-top:2px solid var(--murekkep)}
 .ornek-isler li{display:grid;grid-template-columns:minmax(0,auto) minmax(20px,1fr) auto;align-items:center;gap:6px 14px;padding:14px 2px;border-bottom:1px solid var(--cizgi)}
@@ -587,13 +587,13 @@ footer{border-top:2px solid var(--murekkep);padding-block:28px 60px;display:grid
     <h2 id="kadro-b">Kim ne çalıyor?</h2>
     <div class="bb-giris notlu">
       <div>
-        <p>Orkestrada yedi rol var: bir şef, beş çalan ve bir kulak. Her ajan bir <a class="terim" href="#t-model">modelle</a> çalışır. Claude'da Haiku en hızlı ve en ucuzu, Sonnet orta yollu, Opus en yeteneklisi ve en pahalısıdır.</p>
+        <p>Orkestrada yedi rol var: bir şef, beş çalan ve bir kulak. Her ajan bir <a class="terim" href="#t-model">modelle</a> çalışır. Claude'da Haiku 5.5 en hızlı ve en ucuzu, Sonnet 5.5 orta yollu, Opus 5.5 günlük kadronun en yeteneklisidir. En zor işler için bir üst basamak daha var: Fable 5.1, en güçlü ve en pahalı seçenek.</p>
         <p>Kural basit: ucuz iş pahalı modele verilmez; yargı, zevk ya da risk içeren iş ucuz modele verilmez. Aşağıda her rolün kartı var: hangi model, neden o model, hangi işler, hangi işler asla.</p>
       </div>
       <aside class="kenar" aria-label="Sözlük notu">
         <span class="etiket">Sözlük</span>
         <dl>
-          <div><dt>Model</dt><dd>Ajanın çalıştığı yapay zekâ; Claude'da en ucuzdan en pahalıya Haiku, Sonnet ve Opus.</dd></div>
+          <div><dt>Model</dt><dd>Ajanın çalıştığı yapay zekâ; Claude'da en ucuzdan en pahalıya Haiku 5.5, Sonnet 5.5, Opus 5.5 ve isteğe bağlı en pahalı seçenek Fable 5.1.</dd></div>
           <div><dt>Alt ajan</dt><dd>Şefin bir iş için başlattığı, işi bitince raporunu verip kapanan ajan.</dd></div>
         </dl>
       </aside>
@@ -633,7 +633,7 @@ footer{border-top:2px solid var(--murekkep);padding-block:28px 60px;display:grid
     <article class="rol ters" id="rol-sef" aria-labelledby="r-sef">
       <header class="rol-bas">
         <div class="rol-ad"><span class="etiket">Yöneten · baton</span><h3 id="r-sef">Şef</h3></div>
-        <div class="rol-rozet"><span class="model opus">Opus</span><span class="maliyet"><span class="metre" aria-hidden="true"><i class="d"></i><i class="d"></i><i class="d"></i></span>pahalı</span></div>
+        <div class="rol-rozet"><span class="model opus">Opus 5.5</span><span class="maliyet"><span class="metre" aria-hidden="true"><i class="d"></i><i class="d"></i><i class="d"></i></span>pahalı</span></div>
       </header>
       <div class="rol-neden"><span class="etiket">Neden Opus?</span><p>İşi doğru bölmek, doğru ajanı seçmek ve parçaları birleştirmek her adımda yargı ister. Son analiz ve sana rapor bu yüzden her zaman Opus'ta.</p></div>
       <div class="rol-govde">
@@ -657,7 +657,7 @@ footer{border-top:2px solid var(--murekkep);padding-block:28px 60px;display:grid
     <article class="rol" id="rol-yukleyici" aria-labelledby="r-yuk">
       <header class="rol-bas">
         <div class="rol-ad"><span class="etiket">Çalan · ritim</span><h3 id="r-yuk">Yükleyici</h3></div>
-        <div class="rol-rozet"><span class="model haiku">HAIKU</span><span class="maliyet"><span class="metre" aria-hidden="true"><i class="d"></i><i></i><i></i></span>ucuz</span></div>
+        <div class="rol-rozet"><span class="model haiku">HAIKU 5.5</span><span class="maliyet"><span class="metre" aria-hidden="true"><i class="d"></i><i></i><i></i></span>ucuz</span></div>
       </header>
       <div class="rol-neden"><span class="etiket">NEDEN HAIKU?</span><p>Mekanik, düşünme gerektirmeyen toplu işler için en ucuz ajan. Adımlar belli olduğu için pahalı modele gerek yok.</p></div>
       <div class="rol-govde">
@@ -681,7 +681,7 @@ footer{border-top:2px solid var(--murekkep);padding-block:28px 60px;display:grid
     <article class="rol" id="rol-arastirmaci" aria-labelledby="r-ara">
       <header class="rol-bas">
         <div class="rol-ad"><span class="etiket">Çalan · nefesliler</span><h3 id="r-ara">Araştırmacı</h3></div>
-        <div class="rol-rozet"><span class="model">Sonnet</span><span class="maliyet"><span class="metre" aria-hidden="true"><i class="d"></i><i class="d"></i><i></i></span>orta</span></div>
+        <div class="rol-rozet"><span class="model">Sonnet 5.5</span><span class="maliyet"><span class="metre" aria-hidden="true"><i class="d"></i><i class="d"></i><i></i></span>orta</span></div>
       </header>
       <div class="rol-neden"><span class="etiket">Neden Sonnet?</span><p>Okumak, karşılaştırmak ve özetlemek orta seviyede akıl ister; en pahalı modele gerek yoktur.</p></div>
       <div class="rol-govde">
@@ -705,7 +705,7 @@ footer{border-top:2px solid var(--murekkep);padding-block:28px 60px;display:grid
     <article class="rol" id="rol-gelistirici" aria-labelledby="r-gel">
       <header class="rol-bas">
         <div class="rol-ad"><span class="etiket">Çalan · yaylılar</span><h3 id="r-gel">Geliştirici</h3></div>
-        <div class="rol-rozet"><span class="model">Sonnet</span><span class="maliyet"><span class="metre" aria-hidden="true"><i class="d"></i><i class="d"></i><i></i></span>orta</span></div>
+        <div class="rol-rozet"><span class="model">Sonnet 5.5</span><span class="maliyet"><span class="metre" aria-hidden="true"><i class="d"></i><i class="d"></i><i></i></span>orta</span></div>
       </header>
       <div class="rol-neden"><span class="etiket">Neden Sonnet?</span><p>İş önceden tarif edildiği için hızlı ve güvenilir kod yazan orta model yeter.</p></div>
       <div class="rol-govde">
@@ -729,7 +729,7 @@ footer{border-top:2px solid var(--murekkep);padding-block:28px 60px;display:grid
     <article class="rol" id="rol-tasarimci" aria-labelledby="r-tas">
       <header class="rol-bas">
         <div class="rol-ad"><span class="etiket">Çalan · solist</span><h3 id="r-tas">Tasarımcı</h3></div>
-        <div class="rol-rozet"><span class="model opus">Opus</span><span class="maliyet"><span class="metre" aria-hidden="true"><i class="d"></i><i class="d"></i><i class="d"></i></span>pahalı</span></div>
+        <div class="rol-rozet"><span class="model opus">Opus 5.5</span><span class="maliyet"><span class="metre" aria-hidden="true"><i class="d"></i><i class="d"></i><i class="d"></i></span>pahalı</span></div>
       </header>
       <div class="rol-neden"><span class="etiket">Neden Opus?</span><p>Görsel yargı ve zevk ister. Gerçek düzende sahibin kararı açık: tasarım Sonnet'e verilmez.</p></div>
       <div class="rol-govde">
@@ -753,7 +753,7 @@ footer{border-top:2px solid var(--murekkep);padding-block:28px 60px;display:grid
     <article class="rol" id="rol-video" aria-labelledby="r-vid">
       <header class="rol-bas">
         <div class="rol-ad"><span class="etiket">Çalan · perküsyon</span><h3 id="r-vid">Video üreticisi</h3></div>
-        <div class="rol-rozet"><span class="model opus">Opus</span><span class="maliyet"><span class="metre" aria-hidden="true"><i class="d"></i><i class="d"></i><i class="d"></i></span>pahalı</span></div>
+        <div class="rol-rozet"><span class="model opus">Opus 5.5</span><span class="maliyet"><span class="metre" aria-hidden="true"><i class="d"></i><i class="d"></i><i class="d"></i></span>pahalı</span></div>
       </header>
       <div class="rol-neden"><span class="etiket">Neden Opus?</span><p>Uzun, çok adımlı ve zevk isteyen bir iş: görüntü, müzik ve ses birlikte düşünülmeli.</p></div>
       <div class="rol-govde">
@@ -778,9 +778,9 @@ footer{border-top:2px solid var(--murekkep);padding-block:28px 60px;display:grid
     <article class="rol" id="rol-denetci" aria-labelledby="r-den">
       <header class="rol-bas">
         <div class="rol-ad"><span class="etiket">Kontrol eden · kulak</span><h3 id="r-den">Denetçi</h3></div>
-        <div class="rol-rozet"><span class="model">Sonnet</span><span class="model opus">Riskte Opus</span><span class="maliyet"><span class="metre" aria-hidden="true"><i class="d"></i><i class="d"></i><i></i></span>orta / pahalı</span></div>
+        <div class="rol-rozet"><span class="model">Sonnet 5.5</span><span class="model opus">Riskte Opus 5.5</span><span class="maliyet"><span class="metre" aria-hidden="true"><i class="d"></i><i class="d"></i><i></i></span>orta / pahalı</span></div>
       </header>
-      <div class="rol-neden"><span class="etiket">Neden Sonnet, ne zaman Opus?</span><p>Kontrol için varsayılan Sonnet yeter. Güvenlik, para ya da veri kaybı riski olan işte kaçan hata pahalıya patlar; orada denetçi Opus'la çalışır.</p></div>
+      <div class="rol-neden"><span class="etiket">Neden Sonnet, ne zaman Opus?</span><p>Hafif kontrol turları artık Haiku 5.5'e verilebilir. Varsayılan denetim Sonnet 5.5'te. Güvenlik, para ya da veri kaybı riski olan işte kaçan hata pahalıya patlar; orada denetçi Opus 5.5'le çalışır.</p></div>
       <div class="rol-govde">
         <div class="rol-sol">
           <div><span class="etiket">Ne yapar</span><p>Başka bir ajanın işini bağımsız kontrol eder ve iki karardan birini verir: <span class="damga onay">ONAY</span> ya da <span class="damga duzelt">DÜZELT</span></p></div>
@@ -834,36 +834,38 @@ footer{border-top:2px solid var(--murekkep);padding-block:28px 60px;display:grid
   <header class="bb">
     <p class="bb-no"><span class="no">03</span><span class="etiket">Model seçimi</span></p>
     <h2 id="model-b">Hangi işe hangi model?</h2>
-    <div class="bb-giris"><p>Model seçimi şefin işi ve iki soruyla verilir. Her iş, gerektirdiği en ucuz modelde yapılır; sonuç yetmezse bir üst modele çıkılır. Son analiz ve onay her zaman Opus'ta kalır.</p></div>
+    <div class="bb-giris"><p>Model seçimi şefin işi ve iki soruyla verilir. Her iş, gerektirdiği en ucuz modelde yapılır; sonuç yetmezse bir üst modele çıkılır. Son analiz ve onay her zaman Opus 5.5'te kalır. En zor işlerde bir üst basamak var: Fable 5.1, isteğe bağlı ve en pahalı seçenek.</p></div>
   </header>
 
   <div class="akis" role="group" aria-label="Model seçimi karar akışı">
     <div class="akis-satir">
       <div class="soru"><span class="etiket">Soru 1</span><h3>Adımlar belli mi, iş mekanik mi?</h3><p>Taşıma, adlandırma, format dönüştürme, listeleme, sayma.</p></div>
       <p class="yon">EVET</p>
-      <div class="cikti"><div class="cikti-ust"><b>Haiku</b><span class="maliyet"><span class="metre" aria-hidden="true"><i class="d"></i><i></i><i></i></span>ucuz</span></div><p class="kim">Kadroda: Yükleyici</p><p>En hızlı ve en ucuz. Yorum katmadan adımları uygular.</p></div>
+      <div class="cikti"><div class="cikti-ust"><b>Haiku 5.5</b><span class="maliyet"><span class="metre" aria-hidden="true"><i class="d"></i><i></i><i></i></span>ucuz</span></div><p class="kim">Kadroda: Yükleyici, hafif denetim turu</p><p>En hızlı ve en ucuz. Mekanik işleri ve artık hafif denetim/kontrol turlarını da yapar; yorum katmadan uygular.</p></div>
     </div>
     <p class="yon asagi">HAYIR ↓</p>
     <div class="akis-satir">
       <div class="soru"><span class="etiket">Soru 2</span><h3>Yargı, zevk ya da risk var mı?</h3><p>Tasarım, video, işi bölüp birleştirmek; güvenlik, para ya da veri kaybı ihtimali.</p></div>
       <p class="yon">EVET</p>
-      <div class="cikti ters"><div class="cikti-ust"><b>Opus</b><span class="maliyet"><span class="metre" aria-hidden="true"><i class="d"></i><i class="d"></i><i class="d"></i></span>pahalı</span></div><p class="kim">Kadroda: Şef, Tasarımcı, Video üreticisi, riskli işte Denetçi</p><p>En yetenekli ve en pahalı. Yanlış kararın bedeli yüksekse buraya.</p></div>
+      <div class="cikti ters"><div class="cikti-ust"><b>Opus 5.5</b><span class="maliyet"><span class="metre" aria-hidden="true"><i class="d"></i><i class="d"></i><i class="d"></i></span>pahalı</span></div><p class="kim">Kadroda: Şef, Tasarımcı, Video üreticisi, riskli işte Denetçi</p><p>Günlük kadronun en yeteneklisi; eski Opus'tan daha ucuz. Yanlış kararın bedeli yüksekse buraya, en zoru Fable'a kalır.</p></div>
     </div>
     <p class="yon asagi">HAYIR ↓</p>
     <div class="akis-satir" style="border-bottom:0">
-      <div class="cikti"><div class="cikti-ust"><b>Sonnet</b><span class="maliyet"><span class="metre" aria-hidden="true"><i class="d"></i><i class="d"></i><i></i></span>orta</span></div><p class="kim">Kadroda: Araştırmacı, Geliştirici, Denetçi, Genel amaçlı ajan</p><p>Orta yollu. Araştırma, tarif edilmiş kod, varsayılan denetim, belge yazımı.</p></div>
+      <div class="cikti"><div class="cikti-ust"><b>Sonnet 5.5</b><span class="maliyet"><span class="metre" aria-hidden="true"><i class="d"></i><i class="d"></i><i></i></span>orta</span></div><p class="kim">Kadroda: Araştırmacı, Geliştirici, Denetçi, Genel amaçlı ajan</p><p>Hızlı ve yetenekli orta model. Araştırma, tarif edilmiş kod, varsayılan denetim, belge yazımı.</p></div>
     </div>
   </div>
+  <div class="prem-not"><div class="cikti"><div class="cikti-ust"><b>Fable 5.1</b><span class="model fable">Premium</span><span class="maliyet"><span class="metre" aria-hidden="true"><i class="d"></i><i class="d"></i><i class="d"></i><i class="d"></i></span>en pahalı</span></div><p class="kim">İsteğe bağlı üst basamak</p><p>En güçlü ve en pahalı model. En zor, uzun soluklu akıl yürütme için çağrılır. Bütçe elverince orkestranın tamamını ya da yalnızca en zorlu rollerini (şef, riskli denetim, tasarım) Fable 5.1'e çıkarabilirsin. Zorunlu değildir; varsayılan kadro Opus 5.5'te kalır.</p></div></div>
   <div class="workflow-not"><span class="etiket">Ayrı bir yol</span><p>İş çok alanda paralel ve çok adımlıysa (ör. altı alanda aynı anda denetim) model değil düzen değişir: <b>workflow</b>. Yalnızca sen "workflow kullan" dersen açılır; onlarca ajan çalıştırabildiği için maliyeti yüksektir.</p></div>
 
-  <div class="alt-bas"><h3>Yedi örnek iş</h3><span class="etiket">İş → model · kim çalar</span></div>
+  <div class="alt-bas"><h3>Sekiz örnek iş</h3><span class="etiket">İş → model · kim çalar</span></div>
   <ol class="ornek-isler">
-    <li><span class="is">200 dosyayı yeniden adlandır</span><span class="lider" aria-hidden="true"></span><span class="hangi"><span class="model haiku">HAIKU</span><span>yükleyici</span></span></li>
-    <li><span class="is">Rakiplerin fiyat politikasını araştır</span><span class="lider" aria-hidden="true"></span><span class="hangi"><span class="model">Sonnet</span><span>araştırmacı</span></span></li>
-    <li><span class="is">Bir form hatasını düzelt ve test yaz</span><span class="lider" aria-hidden="true"></span><span class="hangi"><span class="model">Sonnet</span><span>geliştirici</span></span></li>
-    <li><span class="is">Logo ya da arayüz tasarla</span><span class="lider" aria-hidden="true"></span><span class="hangi"><span class="model opus">Opus</span><span>tasarımcı</span></span></li>
-    <li><span class="is">Ödeme, güvenlik ya da veri silme içeren değişikliği denetle</span><span class="lider" aria-hidden="true"></span><span class="hangi"><span class="model opus">Opus</span><span>denetçi</span></span></li>
-    <li><span class="is">Dağınık bir büyük işi parçalara böl</span><span class="lider" aria-hidden="true"></span><span class="hangi"><span class="model opus">Opus</span><span>şef</span></span></li>
+    <li><span class="is">200 dosyayı yeniden adlandır</span><span class="lider" aria-hidden="true"></span><span class="hangi"><span class="model haiku">HAIKU 5.5</span><span>yükleyici</span></span></li>
+    <li><span class="is">Rakiplerin fiyat politikasını araştır</span><span class="lider" aria-hidden="true"></span><span class="hangi"><span class="model">Sonnet 5.5</span><span>araştırmacı</span></span></li>
+    <li><span class="is">Bir form hatasını düzelt ve test yaz</span><span class="lider" aria-hidden="true"></span><span class="hangi"><span class="model">Sonnet 5.5</span><span>geliştirici</span></span></li>
+    <li><span class="is">Logo ya da arayüz tasarla</span><span class="lider" aria-hidden="true"></span><span class="hangi"><span class="model opus">Opus 5.5</span><span>tasarımcı</span></span></li>
+    <li><span class="is">Ödeme, güvenlik ya da veri silme içeren değişikliği denetle</span><span class="lider" aria-hidden="true"></span><span class="hangi"><span class="model opus">Opus 5.5</span><span>denetçi</span></span></li>
+    <li><span class="is">Dağınık bir büyük işi parçalara böl</span><span class="lider" aria-hidden="true"></span><span class="hangi"><span class="model opus">Opus 5.5</span><span>şef</span></span></li>
+    <li><span class="is">En zor, uzun soluklu akıl yürütme</span><span class="lider" aria-hidden="true"></span><span class="hangi"><span class="model fable">Fable 5.1</span><span>isteğe bağlı · en pahalı</span></span></li>
     <li><span class="is">Altı alanda paralel denetim yap</span><span class="lider" aria-hidden="true"></span><span class="hangi"><span class="model haiku">Workflow</span><span>yalnızca sen istersen</span></span></li>
   </ol>
 
@@ -1144,7 +1146,7 @@ RAPOR: {"dosyalar": [], "ozet": "", "testler": "",
       </div>
 
       <div class="sekme-panel" role="tabpanel" id="sp-den" aria-labelledby="st-den" tabindex="0">
-        <p class="sekme-ozet"><span class="model">Sonnet</span>Dosya yazmaz. Güvenlik, para ya da veri kaybı riski olan işte şef onu Opus ile çağırır.</p>
+        <p class="sekme-ozet"><span class="model">Sonnet 5.5</span>Dosya yazmaz. Güvenlik, para ya da veri kaybı riski olan işte şef onu Opus ile çağırır.</p>
         <div class="kod"><div class="kod-bas"><span>.claude/agents/denetci.md</span><button type="button" class="kopya" data-kopya="k-den-md">Kopyala</button></div>
 <pre id="k-den-md">---
 name: denetci
@@ -1171,7 +1173,7 @@ Yalnızca şu JSON ile bitir:
       </div>
 
       <div class="sekme-panel" role="tabpanel" id="sp-gel" aria-labelledby="st-gel" tabindex="0" hidden>
-        <p class="sekme-ozet"><span class="model">Sonnet</span>Dosya yazar, yalnızca kendi dalında. Tasarım kararı ya da belirsiz mimari iş verilmez.</p>
+        <p class="sekme-ozet"><span class="model">Sonnet 5.5</span>Dosya yazar, yalnızca kendi dalında. Tasarım kararı ya da belirsiz mimari iş verilmez.</p>
         <div class="kod"><div class="kod-bas"><span>.claude/agents/gelistirici.md</span><button type="button" class="kopya" data-kopya="k-gel-md">Kopyala</button></div>
 <pre id="k-gel-md">---
 name: gelistirici
@@ -1198,7 +1200,7 @@ sorunları kısa bir raporla bildirirsin.</pre></div>
       </div>
 
       <div class="sekme-panel" role="tabpanel" id="sp-ara" aria-labelledby="st-ara" tabindex="0" hidden>
-        <p class="sekme-ozet"><span class="model">Sonnet</span>Dosya yazmaz. Her iddiaya kaynak, doğrulanamayana "doğrulanamadı".</p>
+        <p class="sekme-ozet"><span class="model">Sonnet 5.5</span>Dosya yazmaz. Her iddiaya kaynak, doğrulanamayana "doğrulanamadı".</p>
         <div class="kod"><div class="kod-bas"><span>.claude/agents/arastirmaci.md</span><button type="button" class="kopya" data-kopya="k-ara-md">Kopyala</button></div>
 <pre id="k-ara-md">---
 name: arastirmaci
@@ -1222,7 +1224,7 @@ Her iddianın yanına kaynak URL'sini yazarsın.
       </div>
 
       <div class="sekme-panel" role="tabpanel" id="sp-yuk" aria-labelledby="st-yuk" tabindex="0" hidden>
-        <p class="sekme-ozet"><span class="model haiku">HAIKU</span>En ucuz ajan. Karar, tasarım ya da kod gerektiren işe verilmez.</p>
+        <p class="sekme-ozet"><span class="model haiku">HAIKU 5.5</span>En ucuz ajan. Karar, tasarım ya da kod gerektiren işe verilmez.</p>
         <div class="kod"><div class="kod-bas"><span>.claude/agents/yukleyici.md</span><button type="button" class="kopya" data-kopya="k-yuk-md">Kopyala</button></div>
 <pre id="k-yuk-md">---
 name: yukleyici
@@ -1245,7 +1247,7 @@ adım eklemez, adım atlamazsın.
       </div>
 
       <div class="sekme-panel" role="tabpanel" id="sp-tas" aria-labelledby="st-tas" tabindex="0" hidden>
-        <p class="sekme-ozet"><span class="model opus">Opus</span>Görsel yargı ister; tasarım Sonnet'e verilmez. Araç satırı yok: tüm araçları kullanır.</p>
+        <p class="sekme-ozet"><span class="model opus">Opus 5.5</span>Görsel yargı ister; tasarım Sonnet'e verilmez. Araç satırı yok: tüm araçları kullanır.</p>
         <div class="kod"><div class="kod-bas"><span>.claude/agents/tasarimci.md</span><button type="button" class="kopya" data-kopya="k-tas-md">Kopyala</button></div>
 <pre id="k-tas-md">---
 name: tasarimci
@@ -1266,7 +1268,7 @@ model: opus
       </div>
 
       <div class="sekme-panel" role="tabpanel" id="sp-vid" aria-labelledby="st-vid" tabindex="0" hidden>
-        <p class="sekme-ozet"><span class="model opus">Opus</span>Sesi dinleyemez; ölçerek doğrular. Uzun, çok adımlı işler.</p>
+        <p class="sekme-ozet"><span class="model opus">Opus 5.5</span>Sesi dinleyemez; ölçerek doğrular. Uzun, çok adımlı işler.</p>
         <div class="kod"><div class="kod-bas"><span>.claude/agents/video-ureticisi.md</span><button type="button" class="kopya" data-kopya="k-vid-md">Kopyala</button></div>
 <pre id="k-vid-md">---
 name: video-ureticisi
@@ -1387,7 +1389,7 @@ Sesi dinleyemezsin; bu yüzden her şeyi ölçerek doğrularsın.
     <div id="t-dal"><dt><b>Dal</b><span>branch</span></dt><dd>Projenin, yayındaki hâli bozmadan üzerinde çalışılan ayrı bir kolu.</dd></div>
     <div id="t-denetci"><dt><b>Denetçi</b><span>reviewer</span></dt><dd>Başka bir ajanın işini bağımsız kontrol eden, dosya değiştirmeyen ve yalnızca ONAY ya da DÜZELT diyen ajan.</dd></div>
     <div id="t-merge"><dt><b>Merge</b><span>birleştirme</span></dt><dd>Bir dalın değişikliklerini başka bir dala, çoğunlukla ana dala katmak; iki dal aynı satırı değiştirdiyse çakışma çıkar.</dd></div>
-    <div id="t-model"><dt><b>Model</b><span>Haiku · Sonnet · Opus</span></dt><dd>Ajanın çalıştığı yapay zekâ; Claude'da en ucuzdan en pahalıya Haiku, Sonnet ve Opus.</dd></div>
+    <div id="t-model"><dt><b>Model</b><span>Haiku 5.5 · Sonnet 5.5 · Opus 5.5 · Fable 5.1</span></dt><dd>Ajanın çalıştığı yapay zekâ; Claude'da en ucuzdan en pahalıya Haiku 5.5, Sonnet 5.5, Opus 5.5 ve isteğe bağlı en pahalı seçenek Fable 5.1.</dd></div>
     <div id="t-mutasyon"><dt><b>Mutasyon kontrolü</b><span>mutation check</span></dt><dd>Düzeltmeyi geri alıp testin kırmızıya dönüp dönmediğine bakmak; dönmüyorsa test hiçbir şey ölçmüyordur.</dd></div>
     <div id="t-workflow"><dt><b>Workflow</b><span>iş planı</span></dt><dd>Onlarca ajanı sırayla ya da paralel çalıştırabilen, çok adımlı ve önceden yazılmış otomatik iş planı; yalnızca sen istersen kullanılır.</dd></div>
     <div id="t-worktree"><dt><b>Worktree</b><span>çalışma kopyası</span></dt><dd>Aynı projenin ayrı bir klasörde açılmış kopyası; paralel ajanlar birbirinin dosyalarını ezmesin diye her biri kendi kopyasında çalışır.</dd></div>
