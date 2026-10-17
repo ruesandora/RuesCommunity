@@ -248,8 +248,8 @@ main{min-width:0}
 .ornek-isler .hangi{display:flex;align-items:center;gap:10px;justify-self:end}
 .ornek-isler .hangi > span:not(.model){font:600 13px/1.2 var(--f-mono);letter-spacing:.04em;color:var(--metin-2)}
 @media (max-width:620px){.ornek-isler li{grid-template-columns:minmax(0,1fr)}.ornek-isler .lider{display:none}.ornek-isler .hangi{justify-self:start}}
-.kurallar-3{list-style:none;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,250px),1fr));gap:1px;background:var(--cizgi);border:2px solid var(--murekkep);margin-top:28px}
-.kurallar-3 li{background:var(--panel);padding:20px 22px 22px;display:grid;gap:8px;align-content:start}
+.kurallar-3{list-style:none;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,250px),1fr));gap:0;background:var(--panel);border:2px solid var(--murekkep);margin-top:28px;overflow:hidden}
+.kurallar-3 li{background:var(--panel);box-shadow:1px 1px 0 0 var(--cizgi);padding:20px 22px 22px;display:grid;gap:8px;align-content:start}
 .kurallar-3 b{font:400 24px/1.15 var(--f-baslik);letter-spacing:.01em;color:var(--murekkep)}
 .kurallar-3 p{font-size:16.5px;line-height:1.55;color:var(--metin-2)}
 
@@ -476,6 +476,25 @@ footer{border-top:2px solid var(--murekkep);padding-block:28px 60px;display:grid
   .kod pre .sat{padding-left:3ch;text-indent:-3ch}
 }
 @media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+
+.agac{border:2px solid var(--murekkep);background:var(--panel);padding:22px;display:grid;gap:0;justify-items:center}
+.agac .dugum{border:2px solid var(--murekkep);padding:12px 16px;display:grid;gap:4px;text-align:center;background:var(--panel);min-width:0}
+.agac .dugum b{font:400 26px/1.1 var(--f-baslik);letter-spacing:.02em;color:var(--murekkep)}
+.agac .dugum span{font:600 12.5px/1.4 var(--f-mono);letter-spacing:.05em;color:var(--metin-2)}
+.agac .dugum.sef{background:var(--murekkep)}.agac .dugum.sef b,.agac .dugum.sef span{color:var(--panel)}
+.agac .ok{font:700 22px/1 var(--f-mono);color:var(--murekkep);padding:6px 0}
+.agac .ajanlar{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,210px),1fr));gap:14px;width:100%;align-items:start}
+.agac .ajan{display:grid;gap:0;justify-items:center;min-width:0}
+.agac .alt{display:grid;gap:8px;width:100%}
+.agac .alt .dugum{border-style:dashed;padding:8px 10px;animation:belir .5s both}
+.agac .alt .dugum b{font-size:19px}
+.agac .alt .dugum:nth-child(2){animation-delay:.15s}.agac .alt .dugum:nth-child(3){animation-delay:.3s}.agac .alt .dugum:nth-child(4){animation-delay:.45s}
+.agac .yasak{border:2px dashed var(--murekkep);padding:6px 10px;font:600 12.5px/1.4 var(--f-mono);letter-spacing:.04em;color:var(--metin-2);text-align:center}
+.agac .denetim{width:100%;margin-top:6px;border-top:2px solid var(--murekkep);padding-top:14px;display:grid;gap:4px;justify-items:center}
+@keyframes belir{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){.agac .alt .dugum{animation:none}}
+.kur-metin code,.alt-not code,.kurallar-3 code{overflow-wrap:anywhere}
+.alt-not{margin-top:20px;display:grid;gap:8px;border:2px dashed var(--murekkep);padding:18px 22px}.alt-not p{font-size:17.5px;line-height:1.6}
 </style>
 
 
@@ -511,7 +530,7 @@ footer{border-top:2px solid var(--murekkep);padding-block:28px 60px;display:grid
     <aside class="kenar" aria-label="Sözlük notu">
       <span class="etiket">Sözlük</span>
       <dl><div><dt>Ajan</dt><dd>Tek bir işe odaklanan, kendi bağlamında ayrı çalışan bir yapay zekâ oturumu.</dd></div></dl>
-      <a href="#sozluk">Tüm terimler, bölüm 12 →</a>
+      <a href="#sozluk">Tüm terimler, bölüm 14 →</a>
     </aside>
   </div>
   <ol class="denklem" aria-label="Sen istersin, şef dağıtır, ajanlar çalışır, denetçi onaylar; sonuç: iş biter.">
@@ -531,14 +550,16 @@ footer{border-top:2px solid var(--murekkep);padding-block:28px 60px;display:grid
     <li><a href="#kadro"><span>02</span><span>Kadro: kim ne çalıyor</span></a></li>
     <li><a href="#model"><span>03</span><span>Hangi işe hangi model</span></a></li>
     <li><a href="#yolculuk"><span>04</span><span>Bir işin yolculuğu</span></a></li>
-    <li><a href="#brif"><span>05</span><span>Brif şablonu</span></a></li>
-    <li><a href="#boyut"><span>06</span><span>İş boyutuna göre kadro</span></a></li>
-    <li><a href="#gun"><span>07</span><span>Gerçek bir gün</span></a></li>
-    <li><a href="#kurallar"><span>08</span><span>Değişmez kurallar</span></a></li>
-    <li><a href="#dersler"><span>09</span><span>Sahadan dersler</span></a></li>
-    <li><a href="#kur"><span>10</span><span>Kendi orkestranı kur</span></a></li>
-    <li><a href="#liste"><span>11</span><span>Başlangıç kontrol listesi</span></a></li>
-    <li><a href="#sozluk"><span>12</span><span>Sözlük</span></a></li>
+    <li><a href="#altajan"><span>05</span><span>Ajanın alt ajanı</span></a></li>
+    <li><a href="#brif"><span>06</span><span>Brif şablonu</span></a></li>
+    <li><a href="#boyut"><span>07</span><span>İş boyutuna göre kadro</span></a></li>
+    <li><a href="#gun"><span>08</span><span>Gerçek bir gün</span></a></li>
+    <li><a href="#kurallar"><span>09</span><span>Değişmez kurallar</span></a></li>
+    <li><a href="#dersler"><span>10</span><span>Sahadan dersler</span></a></li>
+    <li><a href="#kur"><span>11</span><span>Kendi orkestranı kur</span></a></li>
+    <li><a href="#baska"><span>12</span><span>Başka araçta kullan</span></a></li>
+    <li><a href="#liste"><span>13</span><span>Başlangıç kontrol listesi</span></a></li>
+    <li><a href="#sozluk"><span>14</span><span>Sözlük</span></a></li>
   </ol>
 </nav>
 
@@ -550,14 +571,16 @@ footer{border-top:2px solid var(--murekkep);padding-block:28px 60px;display:grid
     <li><a href="#kadro"><span>02</span><span>Kadro</span></a></li>
     <li><a href="#model"><span>03</span><span>Hangi işe hangi model</span></a></li>
     <li><a href="#yolculuk"><span>04</span><span>Bir işin yolculuğu</span></a></li>
-    <li><a href="#brif"><span>05</span><span>Brif şablonu</span></a></li>
-    <li><a href="#boyut"><span>06</span><span>İş boyutu</span></a></li>
-    <li><a href="#gun"><span>07</span><span>Gerçek bir gün</span></a></li>
-    <li><a href="#kurallar"><span>08</span><span>Değişmez kurallar</span></a></li>
-    <li><a href="#dersler"><span>09</span><span>Sahadan dersler</span></a></li>
-    <li><a href="#kur"><span>10</span><span>Kendi orkestranı kur</span></a></li>
-    <li><a href="#liste"><span>11</span><span>Kontrol listesi</span></a></li>
-    <li><a href="#sozluk"><span>12</span><span>Sözlük</span></a></li>
+    <li><a href="#altajan"><span>05</span><span>Ajanın alt ajanı</span></a></li>
+    <li><a href="#brif"><span>06</span><span>Brif şablonu</span></a></li>
+    <li><a href="#boyut"><span>07</span><span>İş boyutu</span></a></li>
+    <li><a href="#gun"><span>08</span><span>Gerçek bir gün</span></a></li>
+    <li><a href="#kurallar"><span>09</span><span>Değişmez kurallar</span></a></li>
+    <li><a href="#dersler"><span>10</span><span>Sahadan dersler</span></a></li>
+    <li><a href="#kur"><span>11</span><span>Kendi orkestranı kur</span></a></li>
+    <li><a href="#baska"><span>12</span><span>Başka araçta kullan</span></a></li>
+    <li><a href="#liste"><span>13</span><span>Kontrol listesi</span></a></li>
+    <li><a href="#sozluk"><span>14</span><span>Sözlük</span></a></li>
   </ol>
 </nav>
 
@@ -594,7 +617,7 @@ footer{border-top:2px solid var(--murekkep);padding-block:28px 60px;display:grid
         <span class="etiket">Sözlük</span>
         <dl>
           <div><dt>Model</dt><dd>Ajanın çalıştığı yapay zekâ; Claude'da en ucuzdan en pahalıya Haiku 5.5, Sonnet 5.5, Opus 5.5 ve isteğe bağlı en pahalı seçenek Fable 5.1.</dd></div>
-          <div><dt>Alt ajan</dt><dd>Şefin bir iş için başlattığı, işi bitince raporunu verip kapanan ajan.</dd></div>
+          <div><dt>Alt ajan</dt><dd>Bir iş için başlatılan, işi bitince raporunu verip kapanan ajan; ajan da en çok 4 alt ajan açabilir.</dd></div>
         </dl>
       </aside>
     </div>
@@ -834,38 +857,41 @@ footer{border-top:2px solid var(--murekkep);padding-block:28px 60px;display:grid
   <header class="bb">
     <p class="bb-no"><span class="no">03</span><span class="etiket">Model seçimi</span></p>
     <h2 id="model-b">Hangi işe hangi model?</h2>
-    <div class="bb-giris"><p>Model seçimi şefin işi ve iki soruyla verilir. Her iş, gerektirdiği en ucuz modelde yapılır; sonuç yetmezse bir üst modele çıkılır. Son analiz ve onay her zaman Opus 5.5'te kalır. En zor işlerde bir üst basamak var: Fable 5.1, isteğe bağlı ve en pahalı seçenek.</p></div>
+    <div class="bb-giris"><p>Model seçimi şefin işi ve iki soruyla verilir. Her iş, yetecek en ucuz modelde yapılır; sonuç yetmezse bir üst modele çıkılır. Güvenlik, para ya da veri kaybı riski olan denetim Opus 5.5'te kalır. Haiku 5.5 ve Sonnet 5.5'e artık daha çok iş verilir; bir işe yetip yetmediğini kendi işinde ölçerek gör: test geçiyor mu, denetçi ONAY veriyor mu? En zor işlerde bir üst basamak var: Fable 5.1, isteğe bağlı ve en pahalı seçenek.</p></div>
   </header>
 
   <div class="akis" role="group" aria-label="Model seçimi karar akışı">
     <div class="akis-satir">
-      <div class="soru"><span class="etiket">Soru 1</span><h3>Adımlar belli mi, iş mekanik mi?</h3><p>Taşıma, adlandırma, format dönüştürme, listeleme, sayma.</p></div>
+      <div class="soru"><span class="etiket">Soru 1</span><h3>Adımlar belli mi, iş mekanik ya da basit mi?</h3><p>Taşıma, adlandırma, format dönüştürme, listeleme, sayma; basit okuma, özetleme, sınıflama.</p></div>
       <p class="yon">EVET</p>
-      <div class="cikti"><div class="cikti-ust"><b>Haiku 5.5</b><span class="maliyet"><span class="metre" aria-hidden="true"><i class="d"></i><i></i><i></i></span>ucuz</span></div><p class="kim">Kadroda: Yükleyici, hafif denetim turu</p><p>En hızlı ve en ucuz. Mekanik işleri ve artık hafif denetim/kontrol turlarını da yapar; yorum katmadan uygular.</p></div>
+      <div class="cikti"><div class="cikti-ust"><b>Haiku 5.5</b><span class="maliyet"><span class="metre" aria-hidden="true"><i class="d"></i><i></i><i></i></span>ucuz</span></div><p class="kim">Kadroda: Yükleyici, alt ajanlarda okuma-ayıklama</p><p>En hızlı ve en ucuz. Mekanik işi, basit okuma, özet, sınıflama ve formatı yapar; yorum katmadan uygular. Emin olmadığını işaretler, uydurmaz.</p></div>
     </div>
     <p class="yon asagi">HAYIR ↓</p>
     <div class="akis-satir">
-      <div class="soru"><span class="etiket">Soru 2</span><h3>Yargı, zevk ya da risk var mı?</h3><p>Tasarım, video, işi bölüp birleştirmek; güvenlik, para ya da veri kaybı ihtimali.</p></div>
+      <div class="soru"><span class="etiket">Soru 2</span><h3>Yargı, zevk ya da risk var mı?</h3><p>Görsel tasarım yönü, video, işi bölüp birleştirmek; güvenlik, para ya da veri kaybı ihtimali.</p></div>
       <p class="yon">EVET</p>
-      <div class="cikti ters"><div class="cikti-ust"><b>Opus 5.5</b><span class="maliyet"><span class="metre" aria-hidden="true"><i class="d"></i><i class="d"></i><i class="d"></i></span>pahalı</span></div><p class="kim">Kadroda: Şef, Tasarımcı, Video üreticisi, riskli işte Denetçi</p><p>Günlük kadronun en yeteneklisi; eski Opus'tan daha ucuz. Yanlış kararın bedeli yüksekse buraya, en zoru Fable'a kalır.</p></div>
+      <div class="cikti ters"><div class="cikti-ust"><b>Opus 5.5</b><span class="maliyet"><span class="metre" aria-hidden="true"><i class="d"></i><i class="d"></i><i class="d"></i></span>pahalı</span></div><p class="kim">Kadroda: Şef, Tasarımcı, Video üreticisi, riskli işte Denetçi</p><p>Günlük kadronun en yeteneklisi. Görsel tasarım yönü ve güvenlik, para ya da veri kaybı riski olan denetim buradadır. Yanlış kararın bedeli yüksekse buraya, en zoru Fable'a kalır.</p></div>
     </div>
     <p class="yon asagi">HAYIR ↓</p>
     <div class="akis-satir" style="border-bottom:0">
-      <div class="cikti"><div class="cikti-ust"><b>Sonnet 5.5</b><span class="maliyet"><span class="metre" aria-hidden="true"><i class="d"></i><i class="d"></i><i></i></span>orta</span></div><p class="kim">Kadroda: Araştırmacı, Geliştirici, Denetçi, Genel amaçlı ajan</p><p>Hızlı ve yetenekli orta model. Araştırma, tarif edilmiş kod, varsayılan denetim, belge yazımı.</p></div>
+      <div class="cikti"><div class="cikti-ust"><b>Sonnet 5.5</b><span class="maliyet"><span class="metre" aria-hidden="true"><i class="d"></i><i class="d"></i><i></i></span>orta</span></div><p class="kim">Kadroda: Araştırmacı, Geliştirici, Denetçi, Genel amaçlı ajan</p><p>Hızlı ve yetenekli orta model, varsayılan. Kod (büyük de), araştırma, normal denetim, metin.</p></div>
     </div>
   </div>
-  <div class="prem-not"><div class="cikti"><div class="cikti-ust"><b>Fable 5.1</b><span class="model fable">Premium</span><span class="maliyet"><span class="metre" aria-hidden="true"><i class="d"></i><i class="d"></i><i class="d"></i><i class="d"></i></span>en pahalı</span></div><p class="kim">İsteğe bağlı üst basamak</p><p>En güçlü ve en pahalı model. En zor, uzun soluklu akıl yürütme için çağrılır. Bütçe elverince orkestranın tamamını ya da yalnızca en zorlu rollerini (şef, riskli denetim, tasarım) Fable 5.1'e çıkarabilirsin. Zorunlu değildir; varsayılan kadro Opus 5.5'te kalır.</p></div></div>
+  <div class="prem-not"><div class="cikti"><div class="cikti-ust"><b>Fable 5.1</b><span class="model fable">Premium</span><span class="maliyet"><span class="metre" aria-hidden="true"><i class="d"></i><i class="d"></i><i class="d"></i><i class="d"></i></span>en pahalı</span></div><p class="kim">İsteğe bağlı üst basamak</p><p>En güçlü ve en pahalı model; <code>derin-akil.md</code> ajanı bununla çalışır, nadir çağrılır. Şef onu şu durumlarda çağırır: çok adımlı belirsiz mimari ya da strateji kararı, çelişkili bulguların sentezi, zor hata ayıklama. Ölçüt: iş 2 DÜZELT turunda çözülmedi ya da yanlış kararın bedeli yüksek. Bütçe elverince en zorlu rolleri de ona çıkarabilirsin. Zorunlu değildir; tarifi belli iş ona verilmez.</p></div></div>
   <div class="workflow-not"><span class="etiket">Ayrı bir yol</span><p>İş çok alanda paralel ve çok adımlıysa (ör. altı alanda aynı anda denetim) model değil düzen değişir: <b>workflow</b>. Yalnızca sen "workflow kullan" dersen açılır; onlarca ajan çalıştırabildiği için maliyeti yüksektir.</p></div>
 
-  <div class="alt-bas"><h3>Sekiz örnek iş</h3><span class="etiket">İş → model · kim çalar</span></div>
+  <div class="alt-bas"><h3>On bir örnek iş</h3><span class="etiket">İş → model · kim çalar</span></div>
   <ol class="ornek-isler">
+    <li><span class="is">Tablodaki 300 satırı sınıflandır, kısa özetle</span><span class="lider" aria-hidden="true"></span><span class="hangi"><span class="model haiku">HAIKU 5.5</span><span>yükleyici</span></span></li>
+    <li><span class="is">Dört rakibi dört alt ajanla ayrı ayrı araştır</span><span class="lider" aria-hidden="true"></span><span class="hangi"><span class="model">Sonnet 5.5</span><span>araştırmacı + alt ajanlar</span></span></li>
+    <li><span class="is">Normal bir değişikliği denetle</span><span class="lider" aria-hidden="true"></span><span class="hangi"><span class="model">Sonnet 5.5</span><span>denetçi</span></span></li>
     <li><span class="is">200 dosyayı yeniden adlandır</span><span class="lider" aria-hidden="true"></span><span class="hangi"><span class="model haiku">HAIKU 5.5</span><span>yükleyici</span></span></li>
     <li><span class="is">Rakiplerin fiyat politikasını araştır</span><span class="lider" aria-hidden="true"></span><span class="hangi"><span class="model">Sonnet 5.5</span><span>araştırmacı</span></span></li>
     <li><span class="is">Bir form hatasını düzelt ve test yaz</span><span class="lider" aria-hidden="true"></span><span class="hangi"><span class="model">Sonnet 5.5</span><span>geliştirici</span></span></li>
     <li><span class="is">Logo ya da arayüz tasarla</span><span class="lider" aria-hidden="true"></span><span class="hangi"><span class="model opus">Opus 5.5</span><span>tasarımcı</span></span></li>
     <li><span class="is">Ödeme, güvenlik ya da veri silme içeren değişikliği denetle</span><span class="lider" aria-hidden="true"></span><span class="hangi"><span class="model opus">Opus 5.5</span><span>denetçi</span></span></li>
     <li><span class="is">Dağınık bir büyük işi parçalara böl</span><span class="lider" aria-hidden="true"></span><span class="hangi"><span class="model opus">Opus 5.5</span><span>şef</span></span></li>
-    <li><span class="is">En zor, uzun soluklu akıl yürütme</span><span class="lider" aria-hidden="true"></span><span class="hangi"><span class="model fable">Fable 5.1</span><span>isteğe bağlı · en pahalı</span></span></li>
+    <li><span class="is">Çelişen üç bulguyu sentezle, mimari kararı seç</span><span class="lider" aria-hidden="true"></span><span class="hangi"><span class="model fable">Fable 5.1</span><span>derin-akil · en pahalı</span></span></li>
     <li><span class="is">Altı alanda paralel denetim yap</span><span class="lider" aria-hidden="true"></span><span class="hangi"><span class="model haiku">Workflow</span><span>yalnızca sen istersen</span></span></li>
   </ol>
 
@@ -873,6 +899,8 @@ footer{border-top:2px solid var(--murekkep);padding-block:28px 60px;display:grid
     <li><b>Ucuz iş pahalı modele verilmez.</b><p>Dosya taşımak için Opus çağırmak, aynı sonuca daha pahalıya varmaktır.</p></li>
     <li><b>Yargı, zevk ya da risk ucuz modele verilmez.</b><p>Tasarım, şeflik ve riskli denetimde kaçan hata, modelin tasarrufundan pahalıya gelir.</p></li>
     <li><b>Model yazılmazsa miras kalır.</b><p>Model belirtilmeyen ajan ana oturumun modelini devralır. Genel amaçlı ajana modeli her zaman açıkça ver.</p></li>
+    <li><b>Takma ad her yerde aynı sürüm değil.</b><p>Anthropic API'de <code>sonnet</code> Sonnet 5.5'e çözülür. Bedrock ve Google Cloud'da aynı takma ad Sonnet 4.5'e çözülür; Foundry'de <code>opus</code> Opus 4.6'ya. Bu araçlarda tam model kimliğini yaz.</p></li>
+    <li><b>Çaba ayarı ayrı bir düğme.</b><p>Ajan dosyasında <code>effort:</code> alanı low, medium, high, xhigh ya da max olabilir. Hangi değerlerin desteklendiği modele göre değişir.</p></li>
   </ul>
 </section>
 
@@ -928,9 +956,51 @@ footer{border-top:2px solid var(--murekkep);padding-block:28px 60px;display:grid
 <div class="ayrac" aria-hidden="true"><svg><use href="#firca"/></svg></div>
 
 <!-- 05 -->
+<section class="bolum" id="altajan" aria-labelledby="altajan-b">
+  <header class="bb">
+    <p class="bb-no"><span class="no">05</span><span class="etiket">Ajanın alt ajanı</span></p>
+    <h2 id="altajan-b">Ajan da iş bölebilir, bir kat aşağı</h2>
+    <div class="bb-giris"><p>Büyük bir parça tek ajana fazla gelirse ajan kendi <a class="terim" href="#t-altajan">alt ajanlarını</a> açabilir. Kural basit: ajan açar, alt ajan açamaz. Şefe yine tek rapor gider.</p></div>
+  </header>
+
+  <div class="agac" role="group" aria-label="Şef, ajanlar ve alt ajanlar şeması">
+    <div class="dugum sef"><b>Şef</b><span>işi böler · opus / ana oturum</span></div>
+    <div class="ok" aria-hidden="true">↓</div>
+    <div class="ajanlar">
+      <div class="ajan">
+        <div class="dugum"><b>Araştırmacı</b><span>sonnet · tools: Agent</span></div>
+        <div class="ok" aria-hidden="true">↓</div>
+        <div class="alt"><div class="dugum"><b>Alt ajan 1</b><span>haiku · okuma</span></div><div class="dugum"><b>Alt ajan 2</b><span>haiku · okuma</span></div><div class="dugum"><b>Alt ajan 3</b><span>sonnet · zor parça</span></div></div>
+      </div>
+      <div class="ajan">
+        <div class="dugum"><b>Geliştirici</b><span>sonnet · tools: Agent</span></div>
+        <div class="ok" aria-hidden="true">↓</div>
+        <div class="alt"><div class="dugum"><b>Alt ajan 1</b><span>sonnet · kendi dosyaları</span></div><div class="dugum"><b>Alt ajan 2</b><span>sonnet · kendi dosyaları</span></div></div>
+      </div>
+      <div class="ajan">
+        <div class="dugum"><b>Tasarımcı</b><span>opus · tools: Agent</span></div>
+        <div class="ok" aria-hidden="true">↓</div>
+        <div class="alt"><div class="dugum"><b>Alt ajan 1</b><span>sonnet · varyant</span></div><div class="dugum"><b>Alt ajan 2</b><span>sonnet · varyant</span></div><div class="yasak">alt ajanın alt ajanı yok</div></div>
+      </div>
+    </div>
+    <div class="denetim"><div class="ok" aria-hidden="true">↑ tek rapor</div><div class="dugum"><b>Denetçi</b><span>işi üst ajanın raporundan ve diff'inden denetler · ONAY / DÜZELT</span></div></div>
+  </div>
+
+  <ul class="kurallar-3">
+    <li><b>Ajan açar, alt ajan açamaz.</b><p>Ajanın <code>tools</code> listesinde <code>Agent</code> olur; alt ajanların listesinde olmaz. Başka bir tool listesi yazılmazsa ajan hepsini devralır, <code>Agent</code> dahil; bu yüzden alt ajana liste yaz.</p></li>
+    <li><b>İş başına en çok 4 alt ajan.</b><p>3 ajan x 4 alt ajan = 12 ek çağrı. Sayı arttıkça toplam maliyet de artar; iş bölünmeden çözülüyorsa bölme.</p></li>
+    <li><b>Her alt ajana model açıkça verilir.</b><p>Üst ajan Sonnet ise okuma-ayıklama için Haiku, zor parça için Sonnet. Yazılmazsa miras kalır.</p></li>
+    <li><b>Birleştirme üst ajanın işi.</b><p>Ajan alt ajan sonuçlarını kendisi birleştirir ve şefe tek rapor verir. Alt ajanlar farklı dosyalarda çalışır; aynı dosyaya iki el yok.</p></li>
+  </ul>
+  <div class="alt-not"><span class="etiket">Araçtaki sınır</span><p>Claude Code belgesine göre iç içe alt ajan mümkündür ve ana konuşmanın altında en çok <b>3 katman</b> açılır. <code>CLAUDE_CODE_MAX_SUBAGENT_SPAWN_DEPTH</code> ortam değişkeni derinliği ayarlar (1 = kapalı). Bu sayfanın kuralı daha dardır: ajan bir kat açar, alt ajan açamaz. Denetim zinciri bozulmaz: alt ajanın işini üst ajan değil denetçi onaylar. Ayrıca deneysel <b>agent teams</b> özelliği vardır; varsayılan kapalıdır, token maliyeti yüksektir ve bu sayfada kullanılmaz.</p></div>
+</section>
+
+<div class="ayrac" aria-hidden="true"><svg><use href="#firca"/></svg></div>
+
+<!-- 06 -->
 <section class="bolum" id="brif" aria-labelledby="brif-b">
   <header class="bb">
-    <p class="bb-no"><span class="no">05</span><span class="etiket">Brif şablonu</span></p>
+    <p class="bb-no"><span class="no">06</span><span class="etiket">Brif şablonu</span></p>
     <h2 id="brif-b">İyi brif, işin yarısı</h2>
     <div class="bb-giris notlu">
       <p>Ajanlar birbirini ve seninle yaptığın sohbeti görmez. Bildikleri tek şey brif. Bu yüzden her brif aynı altı başlıkla yazılır.</p>
@@ -983,7 +1053,7 @@ RAPOR: {"dosyalar": [], "ozet": "", "testler": "",
 <!-- 06 -->
 <section class="bolum" id="boyut" aria-labelledby="boyut-b">
   <header class="bb">
-    <p class="bb-no"><span class="no">06</span><span class="etiket">İş boyutuna göre kadro</span></p>
+    <p class="bb-no"><span class="no">07</span><span class="etiket">İş boyutuna göre kadro</span></p>
     <h2 id="boyut-b">Küçük işe orkestra kurulmaz</h2>
     <div class="bb-giris notlu">
       <p>Her ajan zaman ve para demek. Şef işin büyüklüğüne bakıp kadroyu ona göre kurar.</p>
@@ -1015,7 +1085,7 @@ RAPOR: {"dosyalar": [], "ozet": "", "testler": "",
 <!-- 07 -->
 <section class="bolum" id="gun" aria-labelledby="gun-b">
   <header class="bb">
-    <p class="bb-no"><span class="no">07</span><span class="etiket">Gerçek bir gün</span></p>
+    <p class="bb-no"><span class="no">08</span><span class="etiket">Gerçek bir gün</span></p>
     <h2 id="gun-b">Bir günde üç şerit, onlarca ajan</h2>
     <div class="bb-giris"><p>Aşağıdakilerin hepsi gerçek bir projede, tek bir günde oldu. Üç iş yan yana yürüdü. Her şeritte soldan sağa sıra var; üst üste duran çubuklar aynı anda çalışan ajanlar. Saat yazmıyoruz; öğretici olan süre değil, sıra.</p></div>
   </header>
@@ -1089,7 +1159,7 @@ RAPOR: {"dosyalar": [], "ozet": "", "testler": "",
 <section class="bolum" id="kurallar" aria-labelledby="kurallar-b">
   <div class="kurallar ters">
     <header class="bb">
-      <p class="bb-no"><span class="no">08</span><span class="etiket">Değişmez kurallar</span></p>
+      <p class="bb-no"><span class="no">09</span><span class="etiket">Değişmez kurallar</span></p>
       <h2 id="kurallar-b">Her brife eklenen altı kural</h2>
       <div class="bb-giris"><p>Bu kuralları çiğneyen bir iş gelirse ajan yapmaz, sorar.</p></div>
     </header>
@@ -1109,7 +1179,7 @@ RAPOR: {"dosyalar": [], "ozet": "", "testler": "",
 <!-- 09 -->
 <section class="bolum" id="dersler" aria-labelledby="dersler-b">
   <header class="bb">
-    <p class="bb-no"><span class="no">09</span><span class="etiket">Sahadan dersler</span></p>
+    <p class="bb-no"><span class="no">10</span><span class="etiket">Sahadan dersler</span></p>
     <h2 id="dersler-b">Başımıza gelenler, kurala dönüşenler</h2>
     <div class="bb-giris"><p>Bu düzen masa başında yazılmadı. Aşağıdakilerin hepsi gerçek bir projede, aynı anda on ajan çalışırken yaşandı. Solda ne oldu, sağda bugün hangi kurala dönüştü.</p></div>
   </header>
@@ -1128,13 +1198,13 @@ RAPOR: {"dosyalar": [], "ozet": "", "testler": "",
 <!-- 10 -->
 <section class="bolum" id="kur" aria-labelledby="kur-b">
   <header class="bb">
-    <p class="bb-no"><span class="no">10</span><span class="etiket">Kendi orkestranı kur</span></p>
-    <h2 id="kur-b">Altı ajan dosyası, bir kural, bir ilk iş</h2>
+    <p class="bb-no"><span class="no">11</span><span class="etiket">Kendi orkestranı kur</span></p>
+    <h2 id="kur-b">Yedi ajan dosyası, bir kural, bir ilk iş</h2>
     <div class="bb-giris"><p>Claude Code'da ajan tanımları proje içindeki <code>.claude/agents/</code> klasöründe birer Markdown dosyasıdır. Kalıcı kurallar da <code>CLAUDE.md</code> dosyasına yazılır ve her oturumda okunur. Aşağıdaki dosyalar genel; kendi projene göre düzenle.</p></div>
   </header>
 
   <div class="kur-adim">
-    <div class="kur-metin"><span class="etiket">Adım 1</span><h3>Kadroyu tanımla, denetçiyle başla</h3><p>İlk kurulacak ajan denetçi olsun. En çok hatayı o yakalar. Araç listesinde dosya yazma yok; yalnızca okur ve test koşar. Sonra diğer beşini ekle.</p></div>
+    <div class="kur-metin"><span class="etiket">Adım 1</span><h3>Kadroyu tanımla, denetçiyle başla</h3><p>İlk kurulacak ajan denetçi olsun. En çok hatayı o yakalar. Araç listesinde dosya yazma yok; yalnızca okur ve test koşar. Sonra diğerlerini ekle. <code>derin-akil.md</code> en pahalı ajandır; ancak gerçekten gerekirse kur.</p></div>
     <div class="sekmeler">
       <div class="sekme-liste" role="tablist" aria-label="Ajan dosyaları">
         <button type="button" role="tab" id="st-den" aria-controls="sp-den" aria-selected="true">denetci.md<small>sonnet</small></button>
@@ -1143,6 +1213,7 @@ RAPOR: {"dosyalar": [], "ozet": "", "testler": "",
         <button type="button" role="tab" id="st-yuk" aria-controls="sp-yuk" aria-selected="false" tabindex="-1">yukleyici.md<small>HAIKU</small></button>
         <button type="button" role="tab" id="st-tas" aria-controls="sp-tas" aria-selected="false" tabindex="-1">tasarimci.md<small>opus</small></button>
         <button type="button" role="tab" id="st-vid" aria-controls="sp-vid" aria-selected="false" tabindex="-1">video-ureticisi.md<small>opus</small></button>
+        <button type="button" role="tab" id="st-der" aria-controls="sp-der" aria-selected="false" tabindex="-1">derin-akil.md<small>fable</small></button>
       </div>
 
       <div class="sekme-panel" role="tabpanel" id="sp-den" aria-labelledby="st-den" tabindex="0">
@@ -1154,6 +1225,7 @@ description: Başka bir ajanın yaptığı değişikliği bağımsız
   kontrol eder. Dosya değiştirmez; ONAY ya da DUZELT döner.
 model: sonnet
 tools: Read, Grep, Glob, Bash
+# effort: medium   # isteğe bağlı: low | medium | high | xhigh | max
 ---
 Kontrol ettiğin işi yapan ajan değilsin. Hiçbir dosyayı
 düzeltmezsin, commit atmazsın.
@@ -1181,7 +1253,8 @@ description: Tarif edilmiş kod değişiklikleri - hata düzeltme,
   yeni bileşen, veri kuralı, test ekleme. Tasarım kararı ya
   da belirsiz mimari iş bu ajana verilmez.
 model: sonnet
-tools: Read, Write, Edit, Grep, Glob, Bash
+tools: Read, Write, Edit, Grep, Glob, Bash, Agent
+# effort: medium   # isteğe bağlı: low | medium | high | xhigh | max
 ---
 Yalnızca brifte "senin dosyaların" diye yazan dosyaları
 değiştirirsin. Kendi dalında çalışır, her anlamlı adımda
@@ -1196,7 +1269,12 @@ kaydedersin. Ana dala dokunmazsın.
   şefe sorarsın.
 
 Bitince değişen dosyaları, test sonucunu ve açık kalan
-sorunları kısa bir raporla bildirirsin.</pre></div>
+sorunları kısa bir raporla bildirirsin.
+
+Alt ajan (isteğe bağlı): işin bağımsız parçalarını en çok 4 alt
+ajana bölebilirsin. Her birine modeli açıkça ver, dosyalarını
+ayır. Alt ajan sonuçlarını sen birleştirirsin; şefe tek rapor
+verirsin. Alt ajan alt ajan açamaz.</pre></div>
       </div>
 
       <div class="sekme-panel" role="tabpanel" id="sp-ara" aria-labelledby="st-ara" tabindex="0" hidden>
@@ -1208,7 +1286,8 @@ description: Web araştırması ve özet - hukuk, marka, pazar,
   rakip, lisans kontrolü, belge okuma. Kod yazmaz, dosya
   değiştirmez.
 model: sonnet
-tools: Read, Grep, Glob, WebSearch, WebFetch
+tools: Read, Grep, Glob, WebSearch, WebFetch, Agent
+# effort: medium   # isteğe bağlı: low | medium | high | xhigh | max
 ---
 Her iddianın yanına kaynak URL'sini yazarsın.
 
@@ -1220,7 +1299,12 @@ Her iddianın yanına kaynak URL'sini yazarsın.
   uydurmazsın; neye izin gerektiğini söylersin.
 - Hukuki konularda sona "Bu hukuki tavsiye değildir."
   notunu eklersin.
-- Kod yazmazsın, dosya değiştirmezsin.</pre></div>
+- Kod yazmazsın, dosya değiştirmezsin.
+
+Alt ajan (isteğe bağlı): ayrı konuları en çok 4 alt ajana
+bölebilirsin (örn. dört rakip). Her birine modeli açıkça ver
+(okuma-ayıklama için haiku). Sonuçları sen birleştirir, kaynak
+yanında tek rapor verirsin. Alt ajan alt ajan açamaz.</pre></div>
       </div>
 
       <div class="sekme-panel" role="tabpanel" id="sp-yuk" aria-labelledby="st-yuk" tabindex="0" hidden>
@@ -1228,18 +1312,22 @@ Her iddianın yanına kaynak URL'sini yazarsın.
         <div class="kod"><div class="kod-bas"><span>.claude/agents/yukleyici.md</span><button type="button" class="kopya" data-kopya="k-yuk-md">Kopyala</button></div>
 <pre id="k-yuk-md">---
 name: yukleyici
-description: Mekanik, düşünme gerektirmeyen toplu işler için
-  en ucuz ajan - dosya taşıma ve yükleme, adlandırma, format
-  dönüştürme, listeleme, sayma. Karar, tasarım ya da kod
-  gerektiren işe verilmez.
+description: En ucuz ajan - mekanik toplu işler (taşıma, yükleme,
+  adlandırma, format dönüştürme, listeleme, sayma) ve basit
+  okuma, özetleme, sınıflama, hafif ilk-geçiş kontrol. Karar,
+  tasarım ya da belirsiz kod gerektiren işe verilmez.
 model: haiku
 tools: Read, Write, Edit, Glob, Bash
+# effort: medium   # isteğe bağlı: low | medium | high | xhigh | max
 ---
 Sana verilen adımları birebir uygularsın. Yorum katmaz,
 adım eklemez, adım atlamazsın.
 
 - Bir adım belirsizse ya da beklenmedik bir durum çıkarsa
   durur ve şefe sorarsın; tahmin etmezsin.
+- Basit okuma, özet ve sınıflamada kaynağı gösterirsin; emin
+  olmadığını "emin değilim" diye işaretlersin. Haiku'nun bir
+  işe yetip yetmediğini kendi işinde ölçerek gör.
 - Karar, tasarım ya da kod gerektiren bir işle karşılaşırsan
   yapmazsın, şefe geri verirsin.
 - Bitince ne yaptığını, kaç dosyaya dokunduğunu ve hangi
@@ -1255,6 +1343,8 @@ description: Görsel yargı gerektiren işler - logo, sosyal
   medya görseli, marka dili, arayüz, ızgara ve tipografi,
   karakter.
 model: opus
+tools: Read, Write, Edit, Glob, Bash, Agent
+# effort: medium   # isteğe bağlı: low | medium | high | xhigh | max
 ---
 Ürettiğin her görseli PNG olarak açıp bakarsın.
 
@@ -1264,7 +1354,12 @@ model: opus
   temada ayrı ayrı görürsün.
 - Rakam ve metin uydurmazsın; içerik brifte ya da kaynakta
   yoksa yer tutucu koyar ve bunu raporda belirtirsin.
-- Bitince ekran görüntülerinin yollarıyla rapor verirsin.</pre></div>
+- Bitince ekran görüntülerinin yollarıyla rapor verirsin.
+
+Alt ajan (isteğe bağlı): ayrı ekran ya da varyantları en çok 4
+alt ajana bölebilirsin; görsel yargı sende kalır. Her birine
+modeli açıkça ver, sonuçları sen birleştirir ve tek rapor
+verirsin. Alt ajan alt ajan açamaz.</pre></div>
       </div>
 
       <div class="sekme-panel" role="tabpanel" id="sp-vid" aria-labelledby="st-vid" tabindex="0" hidden>
@@ -1275,7 +1370,8 @@ name: video-ureticisi
 description: Video ve ses - storyboard, sahne, render, müzik
   ve efekt, seslendirme yerleşimi. Uzun, çok adımlı işler.
 model: opus
-tools: Read, Write, Edit, Glob, Bash
+tools: Read, Write, Edit, Glob, Bash, Agent
+# effort: medium   # isteğe bağlı: low | medium | high | xhigh | max
 ---
 Sesi dinleyemezsin; bu yüzden her şeyi ölçerek doğrularsın.
 
@@ -1285,10 +1381,44 @@ Sesi dinleyemezsin; bu yüzden her şeyi ölçerek doğrularsın.
   olmadığını ölçersin.
 - Render'dan sonra kareleri temas kâğıdına döküp bakarsın.
 - Uzun işte her sahneden sonra kaydedersin; iş yarıda
-  kalırsa başka bir ajan oradan devam edebilir.</pre></div>
+  kalırsa başka bir ajan oradan devam edebilir.
+
+Alt ajan (isteğe bağlı): bağımsız sahneleri en çok 4 alt ajana
+bölebilirsin. Her birine modeli açıkça ver, dosyalarını ayır.
+Ölçüm ve son birleştirme sende kalır; şefe tek rapor verirsin.
+Alt ajan alt ajan açamaz.</pre></div>
+      </div>
+      <div class="sekme-panel" role="tabpanel" id="sp-der" aria-labelledby="st-der" tabindex="0" hidden>
+        <p class="sekme-ozet"><span class="model fable">Fable 5.1</span>Pahalı ve nadir. Dosya değiştirmez, karar önerir. Tarifi belli ya da mekanik işe verilmez.</p>
+        <div class="kod"><div class="kod-bas"><span>.claude/agents/derin-akil.md</span><button type="button" class="kopya" data-kopya="k-der-md">Kopyala</button></div>
+<pre id="k-der-md">---
+name: derin-akil
+description: Pahalı, nadir ajan - çok adımlı belirsiz mimari ya da
+  strateji kararı, çelişkili bulguların sentezi, zor hata
+  ayıklama. Tarifi belli ya da mekanik işe verilmez.
+model: fable
+tools: Read, Grep, Glob, Bash
+# effort: high   # isteğe bağlı: low | medium | high | xhigh | max
+---
+En pahalı basamaksın; yalnızca şef seni çağırır. Dosya
+değiştirmezsin, karar önerirsin.
+
+Şef seni şu ölçütlerden en az ikisi varsa çağırır:
+- İş 2 DÜZELT turunda çözülmedi.
+- İş çok adımlı ve belirsiz (mimari ya da strateji seçimi).
+- Bulgular birbiriyle çelişiyor ve sentez gerekiyor.
+- Hata kaynağı bulunamıyor (zor hata ayıklama).
+- Yanlış kararın bedeli yüksek.
+
+Nasıl çalışırsın:
+- Önce soruyu bir cümleyle yeniden yazarsın.
+- Seçenekleri A, B diye adlandırır, her birinin bedelini
+  ve riskini yazar, tek öneri verirsin.
+- Doğrulayamadığını "doğrulanamadı" yazarsın.
+- Cevabın kısa olur: karar, gerekçe, sıradaki adım.</pre></div>
       </div>
     </div>
-    <p class="not">Genel amaçlı ajan ile Explore ve Plan için dosya gerekmez; hazır gelirler. Genel amaçlı ajanı çağırırken modeli açıkça <code>sonnet</code> ver.</p>
+    <p class="not">Genel amaçlı ajan ile Explore ve Plan için dosya gerekmez; hazır gelirler. Genel amaçlı ajanı çağırırken modeli açıkça <code>sonnet</code> ver. Ajan dosyasına <code>effort:</code> (low, medium, high, xhigh, max) yazabilirsin; örneklerde yorum satırı olarak durur. <code>Agent</code> yazılı olan ajanlar kendi alt ajanını açabilir.</p>
   </div>
 
   <div class="kur-adim">
@@ -1301,10 +1431,26 @@ Sesi dinleyemezsin; bu yüzden her şeyi ölçerek doğrularsın.
   dille raporla.
 - Kod, tasarım ya da metni kendin üretme; kendi
   işini kendin onaylama.
-- Model: mekanik iş haiku; araştırma, tarif
-  edilmiş kod ve denetim sonnet; tasarım, video
-  ve riskli denetim opus. Genel amaçlı ajana
-  modeli açıkça ver.
+- Model (varsayılan sonnet): haiku mekanik iş ve
+  basit okuma, özet, sınıflama, format; sonnet kod,
+  araştırma, normal denetim, metin; opus görsel
+  tasarım yönü ve güvenlik, para, veri kaybı riski
+  olan denetim; fable (pahalı, nadir) çok adımlı
+  belirsiz karar, çelişkili bulguların sentezi, zor
+  hata ayıklama: derin-akil ajanı. Genel amaçlı
+  ajana modeli açıkça ver. Haiku bir işe yeter mi,
+  kendi işinde ölçerek gör. Bedrock/Vertex'te
+  "sonnet" takma adı başka (eski) sürüme çözülebilir;
+  tam model kimliği yaz.
+- Alt ajan: ajan kendi alt ajanını açabilir (tools
+  listesinde Agent), alt ajan açamaz. İş başına en
+  çok 4; her birine model açıkça verilir. Ajan alt
+  ajan sonuçlarını kendisi birleştirir, bana tek
+  rapor verir. Belgedeki sınır: ana oturumun altında
+  en çok 3 katman; CLAUDE_CODE_MAX_SUBAGENT_SPAWN_DEPTH
+  ortam değişkeni derinliği ayarlar (1 = kapalı).
+- Ajan dosyasında effort: low, medium, high, xhigh
+  ya da max yazılabilir (modele göre değişir).
 - Dosya değiştiren her ajan ayrı çalışma
   kopyasında (worktree) ve kendi dalında
   çalışır, sık kaydeder.
@@ -1327,10 +1473,112 @@ Sesi dinleyemezsin; bu yüzden her şeyi ölçerek doğrularsın.
 
 <div class="ayrac" aria-hidden="true"><svg><use href="#firca"/></svg></div>
 
-<!-- 11 -->
+<!-- 12 -->
+<section class="bolum" id="baska" aria-labelledby="baska-b">
+  <header class="bb">
+    <p class="bb-no"><span class="no">12</span><span class="etiket">Başka araçta kullan</span></p>
+    <h2 id="baska-b">Claude Code'da değil misin? Fikir aynı</h2>
+    <div class="bb-giris"><p>Orkestra bir araca bağlı değil: şef, ajan, bağımsız denetçi, üç katmanlı model. Değişen şey dosya biçimi ve model adları. Aşağıda üç yol var; hepsinin dosyası <a href="diger-araclar/">diger-araclar/</a> klasöründe.</p></div>
+  </header>
+
+  <div class="kur-adim">
+    <div class="kur-metin"><span class="etiket">Yol 1</span><h3>AGENTS.md ile şef kuralı</h3><p>Codex proje kökünden alt klasörlere doğru <code>AGENTS.md</code> okur (genel dosya <code>~/.codex</code> altında; <code>AGENTS.override.md</code> önce gelir; boyut sınırı 32 KiB). Claude Code da <code>AGENTS.md</code> okuyabilir. Model adlarını kendi aracına göre yaz: katmanlar UCUZ, ORTA, GÜÇLÜ olarak yazıldı.</p></div>
+    <div class="kod"><div class="kod-bas"><span>AGENTS.md</span><button type="button" class="kopya" data-kopya="k-agents">Kopyala</button></div>
+<pre id="k-agents"># Orkestra kuralı (AGENTS.md okuyan araçlar için)
+
+Codex ve AGENTS.md okuyan araçlarda bu dosyayı proje köküne
+koy. Claude Code da AGENTS.md okuyabilir. Dosya yolu ve
+boyut sınırı için aracın kendi belgesine bak (Codex: 32 KiB).
+
+- Sen şefsin: işi böl, brif yaz, ajan ve model seç,
+  denetçiye kontrol ettir, birleştir, sade dille raporla.
+- Kod, tasarım ya da metni kendin üretme; kendi işini
+  kendin onaylama.
+- Model katmanları (kendi aracındaki model adını yaz):
+  - UCUZ: mekanik iş, basit okuma, özet, sınıflama, format.
+  - ORTA (varsayılan): kod, araştırma, normal denetim, metin.
+  - GÜÇLÜ: görsel tasarım yönü; güvenlik, para, veri kaybı
+    riski olan denetim.
+  - EN GÜÇLÜ (pahalı, nadir): çok adımlı belirsiz karar,
+    çelişkili bulguların sentezi, zor hata ayıklama.
+  Bir işe ucuz katman yeter mi, kendi işinde ölçerek gör.
+- Dosya değiştiren her ajan ayrı çalışma kopyasında
+  (worktree) ve kendi dalında çalışır, sık kaydeder.
+- Ana dala yalnızca sen, testler geçtikten sonra birleştirirsin.
+- DÜZELT en fazla 3 tur; sonra bana sor.
+- Alt ajan: ajan kendi alt ajanını açabilir, alt ajan açamaz.
+  İş başına en çok 4; her birine model açıkça verilir. Ajan
+  sonuçları kendisi birleştirir, şefe tek rapor verir. Aracın
+  derinlik sınırı için kendi belgesine bak.
+- Küçük iş: denetçi yok, diff'e sen bak. Orta: 1 ajan +
+  denetçi. Büyük: paralel ajanlar.
+- Tehlikeli git komutları yok: stash, reset --hard, rebase,
+  push --force.
+- Sır (anahtar, şifre) dosyaya ya da loga yazılmaz.</pre></div>
+  </div>
+
+  <div class="kur-adim">
+    <div class="kur-metin"><span class="etiket">Yol 2</span><h3>Codex alt ajanları: .toml</h3><p>Codex alt ajanları <code>.codex/agents/*.toml</code> dosyasıdır: <code>name</code>, <code>description</code>, <code>developer_instructions</code>, ayrıca <code>model</code> ve <code>model_reasoning_effort</code>. <code>model</code> alanında yer tutucu var; kendi aracındaki model adını yaz. Paralel sayısı için <code>agents.max_concurrent_threads_per_session</code> ayarı var. Derinlik sınırını doğrulayamadık; aracın belgesine bak. Gelistirici, denetci ve arastirmaci örnekleri klasörde.</p></div>
+    <div class="kod"><div class="kod-bas"><span>.codex/agents/gelistirici.toml</span><button type="button" class="kopya" data-kopya="k-toml">Kopyala</button></div>
+<pre id="k-toml"># .codex/agents/gelistirici.toml
+# model: kendi aracındaki model adını yaz (bu dosyada yer tutucu var).
+# model_reasoning_effort: aracın kabul ettiği değeri yaz.
+name = "gelistirici"
+description = "Tarif edilmiş kod değişiklikleri: hata düzeltme, yeni bileşen, test ekleme. Tasarım ya da belirsiz mimari iş verilmez."
+model = "KENDI-ARACINDAKI-MODEL-ADI"
+model_reasoning_effort = "medium"
+developer_instructions = """
+Yalnızca brifte 'senin dosyaların' diye yazan dosyaları değiştirirsin.
+Kendi dalında çalışır, her anlamlı adımda kaydedersin. Ana dala dokunmazsın.
+Her değişiklikten sonra testleri çalıştırırsın.
+Düzelttiğin hata için test yazarsın; düzeltmeyi geri alınca testin kırıldığını görürsün.
+İş tasarım ya da mimari karar gerektiriyorsa durur, şefe sorarsın.
+Bitince değişen dosyaları, test sonucunu ve açık sorunları kısa raporla bildirirsin.
+"""</pre></div>
+  </div>
+
+  <div class="kur-adim">
+    <div class="kur-metin"><span class="etiket">Yol 3</span><h3>Herhangi bir yapay zekâya yapıştır</h3><p>Aracının dosya biçimini bilmiyorsan bu metni sohbetine yapıştır. Araç kendi modellerini üç katmana eşler, dosya yollarını söyler, yapamadığını açıkça yazar. Model adı uydurmaması istenir.</p></div>
+    <div class="kod"><div class="kod-bas"><span>yapistir-prompt.md</span><button type="button" class="kopya" data-kopya="k-prompt">Kopyala</button></div>
+<pre id="k-prompt">Sana bir "yapay zekâ orkestrası" düzeni vereceğim. Bunu benim
+kullandığım araca uyarla.
+
+1. Kullandığın araç ve sürümün nedir? Hangi modellere erişimin
+   var? Model adlarını yalnızca bildiğin ya da araçtan okuyabildiğin
+   gibi yaz; bilmediğin adı uydurma, "bilmiyorum" de.
+2. Modelleri üç katmana ayır: UCUZ, ORTA, GÜÇLÜ (varsa dördüncü:
+   EN GÜÇLÜ, pahalı ve nadir). Bir tablo yap: katman, bu araçtaki
+   model adı, düşünme/çaba ayarı (varsa), hangi iş.
+3. İş dağılımı:
+   - UCUZ: mekanik iş, basit okuma, özet, sınıflama, format.
+   - ORTA (varsayılan): kod, araştırma, normal denetim, metin.
+   - GÜÇLÜ: görsel tasarım yönü, güvenlik/para/veri kaybı riski olan denetim.
+   - EN GÜÇLÜ: çok adımlı belirsiz karar, çelişkili bulguların sentezi, zor hata ayıklama.
+4. Roller: şef (işi böler, birleştirir, kendi işini onaylamaz),
+   geliştirici, araştırmacı, bağımsız denetçi (dosya değiştirmez,
+   ONAY ya da DUZELT döner). Aracın ajan/alt ajan dosya biçimini
+   ve konumunu söyle; emin değilsen resmi belgesine bak de.
+5. Alt ajan kuralı: ajan kendi alt ajanını açabilir, alt ajan
+   açamaz; iş başına en çok 4; her alt ajana model açıkça verilir;
+   ajan sonuçları birleştirip şefe tek rapor verir. Aracın bunu
+   destekleyip desteklemediğini ve derinlik sınırını söyle.
+6. Ortak kurallar: dosya değiştiren ajan ayrı dalda çalışır;
+   ana dala yalnız şef, testler geçince birleştirir; DUZELT en
+   fazla 3 tur; stash, reset --hard, rebase, push --force yok;
+   sır dosyaya yazılmaz.
+7. Çıktı: (a) eşleme tablosu, (b) araca konacak dosyalar ve
+   yolları, (c) bu araçta yapamadıkların ve doğrulayamadıkların.
+   Yapamadığın şeyi yapmış gibi gösterme.</pre></div>
+  </div>
+  <div class="alt-not"><span class="etiket">Dikkat</span><p>Aynı takma ad her yerde aynı sürüme çözülmez. Claude Code'da Bedrock ve Google Cloud'da <code>sonnet</code> Sonnet 4.5'e çözülür, Anthropic API'de Sonnet 5.5'e. Başka araçta ya da bulutta çalışırken tam model kimliğini yaz ve sonucu kendi işinde ölç.</p></div>
+</section>
+
+<div class="ayrac" aria-hidden="true"><svg><use href="#firca"/></svg></div>
+
+<!-- 13 -->
 <section class="bolum" id="liste" aria-labelledby="liste-b">
   <header class="bb">
-    <p class="bb-no"><span class="no">11</span><span class="etiket">Başlangıç kontrol listesi</span></p>
+    <p class="bb-no"><span class="no">13</span><span class="etiket">Başlangıç kontrol listesi</span></p>
     <h2 id="liste-b">Sahneye çıkmadan önce</h2>
     <div class="bb-giris"><p>Kutuları işaretle; işaretlerin yalnızca bu tarayıcıda saklanır. Hepsi işaretliyse orkestra hazır.</p></div>
   </header>
@@ -1344,9 +1592,9 @@ Sesi dinleyemezsin; bu yüzden her şeyi ölçerek doğrularsın.
       <h3>Kurulum</h3>
       <ul>
         <li><label><input type="checkbox" id="k1"><span><code>CLAUDE.md</code> dosyasına orkestra kuralını yazdım.</span></label></li>
-        <li><label><input type="checkbox" id="k2"><span>Altı ajan dosyasını <code>.claude/agents/</code> klasörüne koydum; önce denetçiyi.</span></label></li>
+        <li><label><input type="checkbox" id="k2"><span>Yedi ajan dosyasını <code>.claude/agents/</code> klasörüne koydum; önce denetçiyi.</span></label></li>
         <li><label><input type="checkbox" id="k3"><span>Denetçinin araçlarında dosya yazma yok: Read, Grep, Glob, Bash.</span></label></li>
-        <li><label><input type="checkbox" id="k4"><span>Her ajan dosyasında model açıkça yazılı.</span></label></li>
+        <li><label><input type="checkbox" id="k4"><span>Her ajan dosyasında model açıkça yazılı; alt ajan açacak ajanın <code>tools</code> listesinde <code>Agent</code> var, alt ajanlarda yok.</span></label></li>
       </ul>
     </div>
     <div class="liste-grup">
@@ -1376,13 +1624,14 @@ Sesi dinleyemezsin; bu yüzden her şeyi ölçerek doğrularsın.
 <!-- 12 -->
 <section class="bolum" id="sozluk" aria-labelledby="sozluk-b">
   <header class="bb">
-    <p class="bb-no"><span class="no">12</span><span class="etiket">Sözlük</span></p>
-    <h2 id="sozluk-b">Bu sayfanın on iki terimi</h2>
+    <p class="bb-no"><span class="no">14</span><span class="etiket">Sözlük</span></p>
+    <h2 id="sozluk-b">Bu sayfanın on üç terimi</h2>
     <div class="bb-giris"><p>Metinde noktalı altı çizili her terim buraya bağlanır. Her biri tek cümle.</p></div>
   </header>
   <dl class="sozluk">
     <div id="t-ajan"><dt><b>Ajan</b><span>agent</span></dt><dd>Tek bir işe odaklanan, kendi bağlamında ayrı çalışan bir yapay zekâ oturumu.</dd></div>
-    <div id="t-altajan"><dt><b>Alt ajan</b><span>subagent</span></dt><dd>Şefin bir iş için başlattığı, işi bitince raporunu verip kapanan ajan; bu sayfadaki bütün çalanlar alt ajandır.</dd></div>
+    <div id="t-altajan"><dt><b>Alt ajan</b><span>subagent</span></dt><dd>Bir iş için başlatılan, işi bitince raporunu verip kapanan ajan. Şefin başlattığı çalanlar alt ajandır; ajan da (tools listesinde Agent varsa) en çok 4 alt ajan açabilir, alt ajan açamaz.</dd></div>
+    <div id="t-caba"><dt><b>Çaba</b><span>effort</span></dt><dd>Ajan dosyasındaki <code>effort:</code> alanı: low, medium, high, xhigh ya da max; modelin ne kadar uzun düşüneceğini ayarlar, desteklenen değerler modele göre değişir.</dd></div>
     <div id="t-anadal"><dt><b>Ana dal</b><span>main</span></dt><dd>Yayının beslendiği dal; buraya yalnızca şef, testler geçtikten sonra birleştirir.</dd></div>
     <div id="t-brif"><dt><b>Brif</b><span>brief</span></dt><dd>Ajana verilen kısa iş tarifi: ne yapılacak, hangi dosyalara dokunulur, neye dokunulmaz, iş ne zaman bitmiş sayılır.</dd></div>
     <div id="t-commit"><dt><b>Commit</b><span>kayıt</span></dt><dd>Değişikliklerin kısa bir notla dala kaydedilmesi; iş yarıda kalırsa son kayıttan devam edilir.</dd></div>

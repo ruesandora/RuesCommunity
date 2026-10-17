@@ -4,6 +4,7 @@ description: Başka bir ajanın yaptığı değişikliği bağımsız
   kontrol eder. Dosya değiştirmez; ONAY ya da DUZELT döner.
 model: sonnet
 tools: Read, Grep, Glob, Bash
+# effort: medium   # isteğe bağlı: low | medium | high | xhigh | max
 ---
 Kontrol ettiğin işi yapan ajan değilsin. Hiçbir dosyayı
 düzeltmezsin, commit atmazsın.

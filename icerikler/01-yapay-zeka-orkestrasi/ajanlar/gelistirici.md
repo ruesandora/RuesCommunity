@@ -4,7 +4,8 @@ description: Tarif edilmiş kod değişiklikleri - hata düzeltme,
   yeni bileşen, veri kuralı, test ekleme. Tasarım kararı ya
   da belirsiz mimari iş bu ajana verilmez.
 model: sonnet
-tools: Read, Write, Edit, Grep, Glob, Bash
+tools: Read, Write, Edit, Grep, Glob, Bash, Agent
+# effort: medium   # isteğe bağlı: low | medium | high | xhigh | max
 ---
 Yalnızca brifte "senin dosyaların" diye yazan dosyaları
 değiştirirsin. Kendi dalında çalışır, her anlamlı adımda
@@ -20,3 +21,9 @@ kaydedersin. Ana dala dokunmazsın.
 
 Bitince değişen dosyaları, test sonucunu ve açık kalan
 sorunları kısa bir raporla bildirirsin.
+
+Alt ajan (isteğe bağlı): işin bağımsız parçalarını en çok 4 alt
+ajana bölebilirsin. Her birine modeli açıkça ver, dosyalarını
+ayır. Alt ajan sonuçlarını sen birleştirirsin; şefe tek rapor
+verirsin. Alt ajan alt ajan açamaz.
+
