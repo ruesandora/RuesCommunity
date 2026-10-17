@@ -2,7 +2,9 @@
 
 Topluluk için ürettiğim içerikler ve araçlar. Her içerik kendi klasöründe, açıklamasıyla birlikte duruyor.
 
-**Canlı sayfa:** [Yapay Zekâ Orkestrası](https://claude.ai/artifact/2aUHSAwuRb5pNgoTopiv4Q)
+**Canlı sayfalar:** [Yapay Zekâ Orkestrası](https://ruesandora.github.io/RuesCommunity/icerikler/01-yapay-zeka-orkestrasi/) · [Red Agents](https://ruesandora.github.io/RuesCommunity/icerikler/02-red-agents/)
+
+**Son güncelleme (17 Ekim 2026):** Orkestra'ya Fable "derin akıl" ajanı, ajanın alt ajanı, yeni model görev tablosu ve Codex/AGENTS.md ile başka araçta kullanım eklendi. Red Agents'a yapay zekâ uygulamaları (Grup 10), sır ve bağımlılık, oran sınırlama ve izleme, "Yapmayacaklarımız" ve bulgu rapor şablonu eklendi; Red Agents kırmızı temaya geçti.
 
 **Takip et:** [Telegram duyuru kanalı](https://t.me/RuesAnnouncement) · [Telegram](https://t.me/ruesandora) · [X @Ruesandora0](https://x.com/Ruesandora0)
 
@@ -11,6 +13,7 @@ Topluluk için ürettiğim içerikler ve araçlar. Her içerik kendi klasöründ
 | # | İçerik | Konu |
 |---|---|---|
 | 01 | [Yapay Zekâ Orkestrası](icerikler/01-yapay-zeka-orkestrasi) | Yapay zekâ ajanlarıyla şef, uzman ajanlar ve bağımsız denetçiden oluşan bir ekip kurmak; model görev tablosu, ajanın alt ajanı ve başka araçta (Codex vb.) kullanım ([sayfa](icerikler/01-yapay-zeka-orkestrasi/index.html)) |
+| 02 | [Red Agents](icerikler/02-red-agents) | Kendi projende açığı başkasından önce bul: kırmızı takım ajanları, 10 grup / 45 zayıflık sınıfı (yapay zekâ uygulamaları dahil), güvenli tatbikat kuralları, bulgu rapor şablonu ([sayfa](icerikler/02-red-agents/index.html)) |
 
 ## Araçlar
 
