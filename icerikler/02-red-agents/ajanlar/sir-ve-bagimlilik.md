@@ -23,7 +23,10 @@ tools: Read, Grep, Glob, Bash
 - *Ne aranır:* geçmiş commit'lerde anahtar, token, şifre, özel anahtar;
   silinmiş ama geçmişte duran dosyalar.
 - *Nasıl:* gitleaks, trufflehog gibi tarayıcıları **yerelde, deponun kendi
-  kopyasında** koş. Çıktıyı hemen maskele.
+  kopyasında** koş. trufflehog'u **mutlaka `--no-verification` ile** koş:
+  varsayılanda bulduğu anahtarı sağlayıcının API'sinde doğrular, yani sırrı
+  kullanır ve dışarıya istek atar. Çıktıyı hemen maskele. Araç kurulu değilse
+  kurmadan önce sahibine sor.
 - *Düzeltme:* sırrı **iptal ettir ve yenile** (geçmişi temizlemek tek başına
   yetmez, sır zaten ifşa olmuştur); sonra tarayıcıyı commit öncesi kancaya ve
   CI'ya ekle.
@@ -52,7 +55,8 @@ tools: Read, Grep, Glob, Bash
 **5. CI gizli değişkenleri ve GitHub Actions izinleri.**
 - *Ne aranır:* iş akışlarında gereğinden geniş `permissions`, sabit
   sürüm yerine hareketli etiketle çağrılan üçüncü taraf action, çekme
-  isteğinden (fork) gizli değişkene erişim, loga yazılan gizli değer.
+  isteğinden (fork) gizli değişkene erişim, `pull_request_target` ile fork
+  kodunu çalıştırıp gizli değişken/yazma yetkisi vermek, loga yazılan gizli değer.
 - *Düzeltme:* `permissions` varsayılanı salt okunur, gerektiği kadar aç;
   üçüncü taraf action'ı tam commit kimliğine sabitle; gizli değişkenleri
   yalnız gereken işe ve ortama bağla; fork kaynaklı işlerde gizli

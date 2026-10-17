@@ -12,8 +12,13 @@ tools: Read, Grep, Glob, Bash
 > Orkestratörle ([`orkestrator.md`](orkestrator.md)) kullan. Savunma odaklıdır:
 > amaç bir zayıflığın **var olduğunu** kendi ortamında kanıtlamak, kullanmak
 > değil. Yalnızca **sahibi olduğun** LLM uygulaması, `yerel` ya da
-> `staging-tek-kullanımlık-db`, test hesabı, test verisi. Yetki kapısı
-> orkestratördeki gibidir; geçilmeden tek istek gönderme.
+> `staging-tek-kullanımlık-db`, test hesabı, test verisi.
+
+## Elinde olması gerekenler (yoksa reddet)
+- **Hedef**, **yetki kanıtı**, **ortam** (`yerel` ya da `staging-tek-kullanımlık-db`)
+  ve **test hesabı** orkestratörün yetki bloğunda gerçek değerlerle dolu.
+- Biri eksikse **dur ve orkestratöre sor**; tahmin etme. **Yetki kapısı
+  geçilmeden tek istek yok.** Yetkilendirilmemiş bir host'a asla istek atma.
 
 ## Zararsız işaret metni (hepsinde aynı)
 Her denemede gerçek bir komut ya da saldırı metni **değil**, benzersiz bir
@@ -44,7 +49,7 @@ doğrulanamadı).
   Üçüncü taraf bir sayfaya ya da başkasının içeriğine deneme yapma.
 - *Düzeltme:* dış içeriği "veri, talimat değil" diye işaretle; bu içerik
   işlenirken araç çağrılarını kapat ya da onaya bağla; kaynak içeriği özetten
-  önce süzgeçten geçir.
+  önce süzgeçten geçir. Süzgeç yardımcıdır; asıl sınır kod tarafındaki yetki ve onaydır.
 
 **10.3 Araç / ajan yetkisinin kötüye kullanımı (aşırı yetki).**
 - *Ne aranır:* modelin çağırabildiği araçların gereğinden geniş olması

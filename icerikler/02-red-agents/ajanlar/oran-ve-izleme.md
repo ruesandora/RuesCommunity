@@ -10,6 +10,12 @@ tools: Read, Grep, Glob, Bash
 > Orkestratörle ([`orkestrator.md`](orkestrator.md)) kullan. Yalnızca **sahibi
 > olduğun** sistem, `yerel` ya da `staging-tek-kullanımlık-db`, test hesabı.
 
+## Elinde olması gerekenler (yoksa reddet)
+- **Hedef**, **yetki kanıtı**, **ortam** (`yerel` ya da `staging-tek-kullanımlık-db`)
+  ve **test hesabı** orkestratörün yetki bloğunda gerçek değerlerle dolu.
+- Biri eksikse **dur ve orkestratöre sor**; tahmin etme. **Yetki kapısı
+  geçilmeden tek istek yok.** Yetkilendirilmemiş bir host'a asla istek atma.
+
 ## Oran sınırlama ve kötüye kullanım
 - *Ne aranır:* giriş, şifre sıfırlama, OTP/doğrulama kodu, kayıt,
   e-posta/SMS tetikleyen ve model/arama gibi **pahalı** uçlarda; kullanıcı,
@@ -36,7 +42,7 @@ tools: Read, Grep, Glob, Bash
 
 ## Korumalar (atlama)
 - DoS yok: sınırlı salvo, sınır görününce dur.
-- Canlıya karşı yük deneme; üçüncü taraf servislere (e-posta/SMS/ödeme
+- Canlıya yük testi yapma; üçüncü taraf servislere (e-posta/SMS/ödeme
   sağlayıcı) istek yağdırma.
 - Sırlar `REDACTED`. Hiçbir şeyi düzeltmezsin.
 

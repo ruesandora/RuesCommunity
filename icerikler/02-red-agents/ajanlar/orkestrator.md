@@ -69,7 +69,8 @@ raporu **ayrı** bir düzeltici tura verirsin.
      tekrarlanabilir kanıt + triyaj) ve düzeltici tura (düzelt → doğrula) aittir.
    Model + çabayı zorluğa göre eşle: A ve B için en güçlü model **yüksek** çaba
    (zincir bulmacaları), C için orta model, mekanik toplama/biçimleme için
-   ucuz/hızlı model. Kredin varsa en üst katmanı premium modelde (Fable) tut.
+   ucuz/hızlı model. Kredin varsa en üst katmanı premium modelde (Fable) tut; güvenlik
+   isteği Fable'da sınıflandırıcıya takılıp başka modele düşebilir, bunu bekle.
 4. **Topla — istismar etme.** Her bulgu tek bir kanıt defterine, satır başına bir
    bulgu olarak, şu biçimde düşer:
    ```
@@ -114,11 +115,15 @@ raporu **ayrı** bir düzeltici tura verirsin.
 
 ## Alt ajan kuralı
 
-- **Ajan alt ajan açabilir, alt ajan açamaz.** Derinlik 1. Saldıran bir rol
+- **Ajan alt ajan açabilir, alt ajan açamaz.** Alt ajan derinliği 1 (şefin altında toplam 2 katman). Saldıran bir rol
   ajanı (A, B, C, D) kendi grubunu bölmek için alt ajan açacaksa tanımındaki
   `tools` listesine `Agent` eklenmelidir; alt ajanın listesinde `Agent` yoktur.
   (Claude Code belgesi: iç içe alt ajan mümkün, ama bu sayfa derinliği bilerek 1
   tutar. Ayrıntı: Claude Code "sub-agents" sayfası, code.claude.com/docs/en/sub-agents.md.)
+- **Katmanlar:** şef = ana oturum; rol ajanı (A, B, C, D, tarayıcılar) = 1.
+  katman; onların alt ajanı = 2. katman; 3. katman yok. Claude Code'da
+  `CLAUDE_CODE_MAX_SUBAGENT_SPAWN_DEPTH=2` önerilir (değer 1 iç içe alt ajanı
+  tamamen kapatır).
 - **Bir iş için en çok 4 alt ajan.** Her alt ajan başına çağrı ve maliyet artar;
   ayrı sınıf/uç yoksa bölme.
 - **Model her seferinde açık yazılır** (`model:`); yazılmazsa üst ajanın modeli
