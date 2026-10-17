@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 660" width="1200" height="660" role="img" aria-label="38 zayıflık sınıfı, dokuz grupta: kimliğe bürünme (7), UI'nin güvendiği sınırlar (5), enjeksiyon (5), köken-ötesi güven (4), protokol katmanı (3), sunucunun uzanması (3), ifşa ve altyapı (8), tespit (1), disiplin (2).">
+  <style>
+    :root{ --bg:#f7f7f7; --panel:#ffffff; --ink:#0c0c0c; --line:#cfcfcf; --muted:#5c5c5c; }
+    @media (prefers-color-scheme: dark){ :root{ --bg:#0c0c0c; --panel:#141414; --ink:#f3f3f3; --line:#3a3a3a; --muted:#a2a2a2; } }
+    .bg{fill:var(--bg)} .ink{fill:var(--ink)}
+    rect.tile{fill:var(--panel);stroke:var(--ink);stroke-width:2.5}
+    .h{font-family:'Anton','Arial Narrow Bold',Impact,sans-serif;fill:var(--ink)}
+    .hp{font-family:'Anton','Arial Narrow Bold',Impact,sans-serif;fill:var(--panel)}
+    .m{font-family:ui-monospace,'JetBrains Mono',Consolas,monospace;fill:var(--muted)}
+    .mi{font-family:ui-monospace,'JetBrains Mono',Consolas,monospace;fill:var(--ink)}
+    .mp{font-family:ui-monospace,'JetBrains Mono',Consolas,monospace;fill:var(--panel)}
+    .no{font-family:ui-monospace,'JetBrains Mono',Consolas,monospace;fill:var(--muted)}
+  </style>
+  <rect class="bg" width="1200" height="660"/>
+  <rect x="0" y="0" width="1200" height="4" class="ink"/>
+  <text class="h" x="40" y="56" font-size="30">38 ZAYIFLIK SINIFI, 9 GRUP</text>
+  <text class="m" x="40" y="82" font-size="14" letter-spacing="1.5">bir saldırganın düşündüğü gibi gruplandı · dört giriş yolu, tespit ve tatbikatı tatbikat yapan disiplin</text>
+
+  <!-- row generator: each tile -->
+  <!-- G1 -->
+  <g><rect class="tile" x="40" y="104" width="360" height="156"/>
+    <text class="no" x="58" y="134" font-size="13">GRUP 1</text>
+    <rect class="ink" x="320" y="116" width="62" height="24"/><text class="mp" x="351" y="133" font-size="12" text-anchor="middle">7 SINIF</text>
+    <text class="h" x="58" y="166" font-size="20">KİMLİĞE BÜRÜN &amp; YETKİ YÜKSELT</text>
+    <text class="mi" x="58" y="196" font-size="12.5">IDOR/BOLA · dikey yükseltme (BFLA)</text>
+    <text class="mi" x="58" y="216" font-size="12.5">kimlik atlatma · oturum &amp; token</text>
+    <text class="mi" x="58" y="236" font-size="12.5">OAuth/OIDC/SSO · hesap devralma · MFA</text>
+  </g>
+  <!-- G2 -->
+  <g><rect class="tile" x="420" y="104" width="360" height="156"/>
+    <text class="no" x="438" y="134" font-size="13">GRUP 2</text>
+    <rect class="ink" x="700" y="116" width="62" height="24"/><text class="mp" x="731" y="133" font-size="12" text-anchor="middle">5 SINIF</text>
+    <text class="h" x="438" y="166" font-size="20">UI'NİN GÜVENDİĞİ SINIRLAR</text>
+    <text class="mi" x="438" y="196" font-size="12.5">istemci doğrulamasını aşma</text>
+    <text class="mi" x="438" y="216" font-size="12.5">kütle atama · iş mantığı istismarı</text>
+    <text class="mi" x="438" y="236" font-size="12.5">yarış/TOCTOU · hız sınırı boşluğu</text>
+  </g>
+  <!-- G3 -->
+  <g><rect class="tile" x="800" y="104" width="360" height="156"/>
+    <text class="no" x="818" y="134" font-size="13">GRUP 3</text>
+    <rect class="ink" x="1080" y="116" width="62" height="24"/><text class="mp" x="1111" y="133" font-size="12" text-anchor="middle">5 SINIF</text>
+    <text class="h" x="818" y="166" font-size="20">ENJEKSİYON &amp; KOD ÇALIŞTIRMA</text>
+    <text class="mi" x="818" y="196" font-size="12.5">XSS · SQL/NoSQL/komut/LDAP</text>
+    <text class="mi" x="818" y="216" font-size="12.5">SSTI · güvensiz deserializasyon</text>
+    <text class="mi" x="818" y="236" font-size="12.5">prototype pollution</text>
+  </g>
+  <!-- G4 -->
+  <g><rect class="tile" x="40" y="284" width="360" height="156"/>
+    <text class="no" x="58" y="314" font-size="13">GRUP 4</text>
+    <rect class="ink" x="320" y="296" width="62" height="24"/><text class="mp" x="351" y="313" font-size="12" text-anchor="middle">4 SINIF</text>
+    <text class="h" x="58" y="346" font-size="20">KÖKEN-ÖTESİ &amp; TARAYICI GÜVENİ</text>
+    <text class="mi" x="58" y="376" font-size="12.5">CSRF · CORS yanlış yapılandırma</text>
+    <text class="mi" x="58" y="396" font-size="12.5">clickjacking / çerçeveleme</text>
+    <text class="mi" x="58" y="416" font-size="12.5">açık yönlendirme</text>
+  </g>
+  <!-- G5 -->
+  <g><rect class="tile" x="420" y="284" width="360" height="156"/>
+    <text class="no" x="438" y="314" font-size="13">GRUP 5</text>
+    <rect class="ink" x="700" y="296" width="62" height="24"/><text class="mp" x="731" y="313" font-size="12" text-anchor="middle">3 SINIF</text>
+    <text class="h" x="438" y="346" font-size="20">İSTEK &amp; PROTOKOL KATMANI</text>
+    <text class="mi" x="438" y="376" font-size="12.5">Host-header enjeksiyonu</text>
+    <text class="mi" x="438" y="396" font-size="12.5">request smuggling / desync</text>
+    <text class="mi" x="438" y="416" font-size="12.5">cache zehirleme &amp; aldatma</text>
+  </g>
+  <!-- G6 -->
+  <g><rect class="tile" x="800" y="284" width="360" height="156"/>
+    <text class="no" x="818" y="314" font-size="13">GRUP 6</text>
+    <rect class="ink" x="1080" y="296" width="62" height="24"/><text class="mp" x="1111" y="313" font-size="12" text-anchor="middle">3 SINIF</text>
+    <text class="h" x="818" y="346" font-size="20">SUNUCUNUN UZANMASI &amp; API'LER</text>
+    <text class="mi" x="818" y="376" font-size="12.5">SSRF (bulut metadata, DNS rebinding)</text>
+    <text class="mi" x="818" y="396" font-size="12.5">GraphQL'e özgü sorunlar</text>
+    <text class="mi" x="818" y="416" font-size="12.5">aşırı veri ifşası / over-fetch</text>
+  </g>
+  <!-- G7 -->
+  <g><rect class="tile" x="40" y="464" width="360" height="156"/>
+    <text class="no" x="58" y="494" font-size="13">GRUP 7</text>
+    <rect class="ink" x="320" y="476" width="62" height="24"/><text class="mp" x="351" y="493" font-size="12" text-anchor="middle">8 SINIF</text>
+    <text class="h" x="58" y="526" font-size="20">İFŞA &amp; ALTYAPI</text>
+    <text class="mi" x="58" y="556" font-size="12.5">dosya yükleme · güvenlik başlıkları</text>
+    <text class="mi" x="58" y="576" font-size="12.5">sır/PII ifşası · log sırları · bağımlılık</text>
+    <text class="mi" x="58" y="596" font-size="12.5">ayrıntılı hata · bilgi ifşası · subdomain</text>
+  </g>
+  <!-- G8 -->
+  <g><rect class="tile" x="420" y="464" width="360" height="156"/>
+    <text class="no" x="438" y="494" font-size="13">GRUP 8</text>
+    <rect class="ink" x="700" y="476" width="62" height="24"/><text class="mp" x="731" y="493" font-size="12" text-anchor="middle">1 SINIF</text>
+    <text class="h" x="438" y="526" font-size="20">TESPİT &amp; YANIT</text>
+    <text class="mi" x="438" y="556" font-size="12.5">eksik denetim log'u / izleme</text>
+    <text class="m" x="438" y="582" font-size="12">hiçbiri fark edilmediyse bu da bir bulgudur</text>
+  </g>
+  <!-- G9 -->
+  <g><rect class="tile" x="800" y="464" width="360" height="156"/>
+    <text class="no" x="818" y="494" font-size="13">GRUP 9</text>
+    <rect class="ink" x="1080" y="476" width="62" height="24"/><text class="mp" x="1111" y="493" font-size="12" text-anchor="middle">2 SINIF</text>
+    <text class="h" x="818" y="526" font-size="20">DİSİPLİN</text>
+    <text class="mi" x="818" y="556" font-size="12.5">maskeli, tekrarlanabilir kanıt</text>
+    <text class="mi" x="818" y="576" font-size="12.5">triyaj → düzelt → doğrula</text>
+    <text class="m" x="818" y="602" font-size="12">bir taramayı tatbikata çeviren kısım</text>
+  </g>
+</svg>
