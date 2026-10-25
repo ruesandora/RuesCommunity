@@ -2,7 +2,7 @@
 
 [Telegram duyuru](https://t.me/RuesAnnouncement) · [Telegram](https://t.me/ruesandora) · [X @Ruesandora0](https://x.com/Ruesandora0)
 
-Rues Community · Ekim 2026 · Gerçek bir projede her gün kullanılan düzenden derlendi.
+Rues Community · Ekim 2026 · Son güncelleme: 26 Ekim 2026 · Gerçek bir projede her gün kullanılan düzenden derlendi.
 
 ---
 
@@ -20,11 +20,11 @@ Rues Community · Ekim 2026 · Gerçek bir projede her gün kullanılan düzende
 | Kadro | Şef, yükleyici, araştırmacı, geliştirici, tasarımcı, video üreticisi, denetçi: her biri için model, neden o model, örnek işler, ne zaman kullanılmaz |
 | Hangi işe hangi model | Haiku 5.5, Sonnet 5.5, Opus 5.5 için iki soruluk karar akışı (Haiku ve Sonnet'e artık daha çok iş); en zor işler için isteğe bağlı premium basamak Fable 5.1; `effort:` alanı; Bedrock/Vertex uyarısı |
 | Bir işin yolculuğu | İstekten yayına 7 adım, en fazla 3 turluk DÜZELT döngüsü |
-| Ajanın alt ajanı | Ajan kendi alt ajanını açar (en çok 4), alt ajan açamaz; model açıkça verilir; tek rapor; 3 katman sınırı ve `CLAUDE_CODE_MAX_SUBAGENT_SPAWN_DEPTH` |
-| Brif şablonu | GÖREV · SENİN DOSYALARIN · DOKUNMA · ÖNCE OKU · BİTTİ TANIMI · RAPOR |
+| Ajanın alt ajanı | Ajan kendi alt ajanını açar (en çok 4), alt ajan açamaz; model açıkça verilir; tek rapor; 3 katman sınırı ve `CLAUDE_CODE_MAX_SUBAGENT_SPAWN_DEPTH`; ayrı hesaplardaki ajanlar için depo üzerinden kanal (teslim dosyası, durum tablosu, şef notu) |
+| Brif şablonu | GÖREV · SENİN DOSYALARIN · DOKUNMA · ÖNCE OKU · BAĞLAM · BİTTİ TANIMI · RAPOR |
 | Gerçek bir gün | Aynı gün paralel çalışan denetim, tasarım ve workflow ajanları |
-| Değişmez kurallar | Para kuralı, uydurma yok, mutasyon kontrolü, tehlikeli git komutları |
-| Sahadan dersler | Bitmeyen bekleme döngüsü, dolan disk, yeniden başlayan makine, denetçinin yakaladığı donma… |
+| Değişmez kurallar | On kural: para, ücretsiz limitin en çok %99'u, uydurma yok, mutasyon kontrolü, tehlikeli komutlar ve araç düzeyinde engel, konuşulan iş bırakılmaz (açık işler), kısa cevap ve doğrudan link |
+| Sahadan dersler | Bitmeyen bekleme döngüsü, dolan disk, yeniden başlayan makine, denetçinin yakaladığı donma, yük altında düşen tarayıcı testleri, denetim bitmeden birleştirme… |
 | Kendi orkestranı kur | Kopyalanabilir ajan dosyaları, kontrol listesi, sözlük |
 | Başka araçta kullan | Codex ve AGENTS.md okuyan araçlar için kural, `.toml` ajan örnekleri, her yapay zekâya yapıştırılacak eşleme promptu |
 
