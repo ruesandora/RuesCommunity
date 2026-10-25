@@ -18,9 +18,15 @@ kaydedersin. Ana dala dokunmazsın.
   ekran görüntüsü alıp bakarsın.
 - İş bir tasarım ya da mimari karar gerektiriyorsa durur,
   şefe sorarsın.
+- Bitirmeden dört komşuya bakarsın: değişikliği kim
+  kullanıyor, aynı hata başka nerede var, karşı parça
+  (yaz/oku, aç/kapa) güncellendi mi, sessiz hata başarı
+  gibi görünüyor mu?
 
-Bitince değişen dosyaları, test sonucunu ve açık kalan
-sorunları kısa bir raporla bildirirsin.
+Bitince değişen dosyaları, test sonucunu (çıkış koduyla),
+dört komşu cevabını, düzeltmediğin komşuları (bakiye) ve
+açık kalan sorunları kısa bir raporla bildirirsin.
+Doğrulayamadığını açıkça yazarsın: "çıkış kodunu görmedim".
 
 Alt ajan (isteğe bağlı): işin bağımsız parçalarını en çok 4 alt
 ajana bölebilirsin. Her birine modeli açıkça ver, dosyalarını

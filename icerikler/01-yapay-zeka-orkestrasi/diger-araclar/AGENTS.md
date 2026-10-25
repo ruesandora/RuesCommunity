@@ -29,6 +29,14 @@ boyut sınırı için aracın kendi belgesine bak (Codex: 32 KiB).
   Yeşil test kanıt değil: düzeltme geri alınınca test kırılmalı.
 - Düşen tarayıcı testini tek başına yeniden koş; tek başına da
   düşüyorsa hata gerçektir.
+- Her brif ve raporda dört komşu: kim kullanıyor, ikizi
+  nerede, karşı parça (yaz/oku, aç/kapa) güncellendi mi,
+  sessiz hata başarı gibi görünüyor mu? Düzeltilmeyen
+  komşu raporda "bakiye" olarak yazılır.
+- Ajanın "testler yeşil" sözü de kanıt sayılmaz; birleştirmeden
+  önce testleri sen yeniden koşarsın.
+- Çalışamıyorsan söyle: depo, erişim ya da veri yoksa iş
+  "başarılı" diye bitmez.
 - Alt ajan: ajan kendi alt ajanını açabilir, alt ajan açamaz.
   İş başına en çok 4; her birine model açıkça verilir. Ajan
   sonuçları kendisi birleştirir, şefe tek rapor verir. Aracın

@@ -50,6 +50,15 @@
 - Yasak komutlar (force push, reset --hard, rebase,
   clean -fd, stash, rm -rf /, pkill -f, killall, .env
   okuma) araç izin ayarında da engelli olsun.
+- Her brif ve raporda dört komşu: kim kullanıyor,
+  ikizi nerede, karşı parça (yaz/oku, aç/kapa)
+  güncellendi mi, sessiz hata başarı gibi görünüyor
+  mu? Düzeltilmeyen komşu raporda "bakiye" olur.
+- Ajanın "testler yeşil" sözü de kanıt sayılmaz;
+  birleştirmeden önce testleri sen yeniden koşarsın.
+- Çalışamıyorsan söyle: depo, erişim ya da veri
+  yoksa iş "başarılı" diye bitmez. Zamanlanmış görev
+  her çalıştırmada yeni oturum açar, kendini kurar.
 - Küçük iş: denetçi yok, diff'e sen bak.
   Orta: 1 ajan + denetçi. Büyük: paralel ajanlar.
 - Workflow yalnızca ben "workflow kullan" dersem.
