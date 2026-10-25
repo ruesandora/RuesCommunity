@@ -21,10 +21,10 @@ Rues Community · Ekim 2026 · Gerçek bir projede her gün kullanılan düzende
 | Hangi işe hangi model | Haiku 5.5, Sonnet 5.5, Opus 5.5 için iki soruluk karar akışı (Haiku ve Sonnet'e artık daha çok iş); en zor işler için isteğe bağlı premium basamak Fable 5.1; `effort:` alanı; Bedrock/Vertex uyarısı |
 | Bir işin yolculuğu | İstekten yayına 7 adım, en fazla 3 turluk DÜZELT döngüsü |
 | Ajanın alt ajanı | Ajan kendi alt ajanını açar (en çok 4), alt ajan açamaz; model açıkça verilir; tek rapor; 3 katman sınırı ve `CLAUDE_CODE_MAX_SUBAGENT_SPAWN_DEPTH` |
-| Brif şablonu | GÖREV · SENİN DOSYALARIN · DOKUNMA · ÖNCE OKU · BİTTİ TANIMI · RAPOR |
+| Brif şablonu | GÖREV · SENİN DOSYALARIN · DOKUNMA · ÖNCE OKU · BİTTİ TANIMI · DÖRT KOMŞU · RAPOR; dört komşu (kullananlar, ikizler, karşı parça, sessiz hata) ve raporda `bakiye` |
 | Gerçek bir gün | Aynı gün paralel çalışan denetim, tasarım ve workflow ajanları |
-| Değişmez kurallar | Para kuralı, uydurma yok, mutasyon kontrolü, tehlikeli git komutları |
-| Sahadan dersler | Bitmeyen bekleme döngüsü, dolan disk, yeniden başlayan makine, denetçinin yakaladığı donma… |
+| Değişmez kurallar | Para kuralı, uydurma yok, mutasyon kontrolü ve şefin testleri yeniden koşması, tehlikeli git komutları ve yasak listesi, dört komşu, "çalışamıyorsan söyle" |
+| Sahadan dersler | 14 ders: bitmeyen bekleme döngüsü, dolan disk, "başarılı" biten ama hiçbir şey yapmayan zamanlanmış görev, kırmızıyken "yeşil" denen test, üç teknik kilit (yasak listesi, salt okuma, komut kaydı; kopyalanabilir örnekler), tek tanımlı ölçü, kesintisiz yayın… |
 | Kendi orkestranı kur | Kopyalanabilir ajan dosyaları, kontrol listesi, sözlük |
 | Başka araçta kullan | Codex ve AGENTS.md okuyan araçlar için kural, `.toml` ajan örnekleri, her yapay zekâya yapıştırılacak eşleme promptu |
 

@@ -30,6 +30,15 @@
 - Ana dala yalnızca sen, testler geçtikten sonra,
   merge --no-ff ile birleştirirsin.
 - DÜZELT en fazla 3 tur; sonra bana sor.
+- Her brif ve raporda dört komşu: kim kullanıyor,
+  ikizi nerede, karşı parça (yaz/oku, aç/kapa)
+  güncellendi mi, sessiz hata başarı gibi görünüyor
+  mu? Düzeltilmeyen komşu raporda "bakiye" olur.
+- Ajanın "testler yeşil" sözü kanıt sayılmaz;
+  birleştirmeden önce testleri sen yeniden koşarsın.
+- Çalışamıyorsan söyle: depo, erişim ya da veri
+  yoksa iş "başarılı" diye bitmez. Zamanlanmış görev
+  her çalıştırmada yeni oturum açar, kendini kurar.
 - Küçük iş: denetçi yok, diff'e sen bak.
   Orta: 1 ajan + denetçi. Büyük: paralel ajanlar.
 - Workflow yalnızca ben "workflow kullan" dersem.
