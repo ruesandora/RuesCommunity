@@ -2,7 +2,7 @@
 
 [Telegram duyuru](https://t.me/RuesAnnouncement) · [Telegram](https://t.me/ruesandora) · [X @Ruesandora0](https://x.com/Ruesandora0)
 
-Rues Community · Ekim 2026 · Gerçek bir projede her gün kullanılan düzenden derlendi.
+Rues Community · Ekim 2026 · Son güncelleme: 26 Ekim 2026 · Gerçek bir projede her gün kullanılan düzenden derlendi.
 
 ---
 
@@ -21,9 +21,12 @@ Rues Community · Ekim 2026 · Gerçek bir projede her gün kullanılan düzende
 | Hangi işe hangi model | Haiku 5.5, Sonnet 5.5, Opus 5.5 için iki soruluk karar akışı (Haiku ve Sonnet'e artık daha çok iş); en zor işler için isteğe bağlı premium basamak Fable 5.1; `effort:` alanı; Bedrock/Vertex uyarısı |
 | Bir işin yolculuğu | İstekten yayına 7 adım, en fazla 3 turluk DÜZELT döngüsü |
 | Ajanın alt ajanı | Ajan kendi alt ajanını açar (en çok 4), alt ajan açamaz; model açıkça verilir; tek rapor; 3 katman sınırı ve `CLAUDE_CODE_MAX_SUBAGENT_SPAWN_DEPTH` |
-| Brif şablonu | GÖREV · SENİN DOSYALARIN · DOKUNMA · ÖNCE OKU · BİTTİ TANIMI · RAPOR |
+| Brif şablonu | GÖREV · SENİN DOSYALARIN · DOKUNMA · ÖNCE OKU · BAĞLAM · BİTTİ TANIMI · RAPOR (fırsatlar alanı dahil) |
 | Gerçek bir gün | Aynı gün paralel çalışan denetim, tasarım ve workflow ajanları |
-| Değişmez kurallar | Para kuralı, uydurma yok, mutasyon kontrolü, tehlikeli git komutları |
+| Değişmez kurallar | Para kuralı, uydurma yok, geri-al (mutasyon) kontrolü, ücretsiz limitin en çok %99'u (sayaç ve ret kodda), takılma kuralı, tehlikeli git komutları |
+| Denetim ve şefin kontrolü | Orta işe 1 denetçi, riskte Opus denetçi, DÜZELT en çok 3 tur, şef diff'e bakar, birleşince testler yeniden |
+| Sahibe nasıl yazılır | En çok 5 satır, görselle anlat, resimli karar sayfası, "sahibe arayüzde göster" notu |
+| Dış ajan kanalı | İş listesi, `claude/dis-<iş>` dalları, teslim dosyası, DURUM tablosu |
 | Sahadan dersler | Bitmeyen bekleme döngüsü, dolan disk, yeniden başlayan makine, denetçinin yakaladığı donma… |
 | Kendi orkestranı kur | Kopyalanabilir ajan dosyaları, kontrol listesi, sözlük |
 | Başka araçta kullan | Codex ve AGENTS.md okuyan araçlar için kural, `.toml` ajan örnekleri, her yapay zekâya yapıştırılacak eşleme promptu |
@@ -41,7 +44,7 @@ Rues Community · Ekim 2026 · Gerçek bir projede her gün kullanılan düzende
 | [`arastirmaci.md`](ajanlar/arastirmaci.md) | Sonnet 5.5 | Kaynaklı araştırma; kod yazmaz; alt ajan açabilir |
 | [`yukleyici.md`](ajanlar/yukleyici.md) | Haiku 5.5 | Mekanik toplu iş, basit okuma, özet, sınıflama, format |
 | [`tasarimci.md`](ajanlar/tasarimci.md) | Opus 5.5 | Görsel tasarım yönü; alt ajan açabilir |
-| [`video-ureticisi.md`](ajanlar/video-ureticisi.md) | Sonnet 5.5 | Video ve ses; ölçerek doğrular; alt ajan açabilir |
+| [`video-ureticisi.md`](ajanlar/video-ureticisi.md) | Opus 5.5 (varsayılan Sonnet kuralının istisnası) | Video ve ses; ölçerek doğrular; alt ajan açabilir |
 | [`derin-akil.md`](ajanlar/derin-akil.md) | Fable 5.1 (pahalı, nadir) | Çok adımlı belirsiz karar, çelişkili bulguların sentezi, zor hata ayıklama |
 
 **Model görev tablosu:** Haiku 5.5 (en ucuz): mekanik iş + basit okuma, özet, sınıflama, format. Sonnet 5.5 (orta, varsayılan): kod, araştırma, normal denetim, metin. Opus 5.5 (yetenekli): görsel tasarım yönü, güvenlik/para/veri kaybı riski olan denetim. Fable 5.1 (premium, nadir): `derin-akil.md`; ölçüt: iş 2 DÜZELT turunda çözülmedi, çok adımlı ve belirsiz, çelişkili bulgular ya da zor hata, yanlış kararın bedeli yüksek. Bir işe ucuz modelin yetip yetmediğini kendi işinde ölçerek gör.
