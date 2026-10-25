@@ -514,7 +514,7 @@ footer{border-top:2px solid var(--murekkep);padding-block:28px 60px;display:grid
 
 <header class="ust">
   <a class="marka" href="#baslik"><span class="avatar" aria-hidden="true"></span>Rues Community</a>
-  <div class="ust-sag"><span class="etiket">Yapay Zekâ Notları · #1</span><span class="etiket">Ekim 2026</span></div>
+  <div class="ust-sag"><span class="etiket">Yapay Zekâ Notları · #1</span><span class="etiket">Ekim 2026</span><span class="etiket">Güncellendi: 26 Ekim 2026</span></div>
 </header>
 
 <section class="acilis" aria-labelledby="baslik">
@@ -540,7 +540,7 @@ footer{border-top:2px solid var(--murekkep);padding-block:28px 60px;display:grid
     <li><b>Denetçi</b><span>onaylar</span></li><li class="op" aria-hidden="true">=</li>
     <li class="sonuc"><b>İş biter</b><span>ana dala girer</span></li>
   </ol>
-  <p class="kunye"><span class="etiket">12 bölüm</span><span class="etiket">7 rol kartı</span><span class="etiket">6 kopyalanabilir ajan dosyası</span><span class="etiket">Kontrol listesi</span></p>
+  <p class="kunye"><span class="etiket">14 bölüm</span><span class="etiket">7 rol kartı</span><span class="etiket">7 kopyalanabilir ajan dosyası</span><span class="etiket">Kontrol listesi</span></p>
 </section>
 
 <nav class="icindekiler" aria-label="İçindekiler">
@@ -900,6 +900,8 @@ footer{border-top:2px solid var(--murekkep);padding-block:28px 60px;display:grid
     <li><b>Yargı, zevk ya da risk ucuz modele verilmez.</b><p>Tasarım, şeflik ve riskli denetimde kaçan hata, modelin tasarrufundan pahalıya gelir.</p></li>
     <li><b>Model yazılmazsa miras kalır.</b><p>Model belirtilmeyen ajan ana oturumun modelini devralır. Genel amaçlı ajana modeli her zaman açıkça ver.</p></li>
     <li><b>Takma ad her yerde aynı sürüm değil.</b><p>Anthropic API'de <code>sonnet</code> Sonnet 5.5'e çözülür. Bedrock ve Google Cloud'da aynı takma ad Sonnet 4.5'e çözülür; Foundry'de <code>opus</code> Opus 4.6'ya. Bu araçlarda tam model kimliğini yaz.</p></li>
+    <li><b>Opus yalnızca iki durumda verilir.</b><p>Görsel tasarım yönü ve güvenlik, para ya da veri kaybı riski olan denetim. Ajan dosyasında yazan modeli şef kendiliğinden üstüne yazmaz; dosyada yazan model geçerlidir.</p></li>
+    <li><b>Tasarruf kararı sende.</b><p>Varsayılan Sonnet'tir ve iş paralel bölünebiliyorsa her parçaya ayrı ajan verilir. Kredi tasarrufu yalnızca sen "tasarruf et" dersen devreye girer; şef kendiliğinden zor işi ucuz modele sıkıştırmaz.</p></li>
     <li><b>Çaba ayarı ayrı bir düğme.</b><p>Ajan dosyasında <code>effort:</code> alanı low, medium, high, xhigh ya da max olabilir. Hangi değerlerin desteklendiği modele göre değişir.</p></li>
   </ul>
 </section>
@@ -945,10 +947,10 @@ footer{border-top:2px solid var(--murekkep);padding-block:28px 60px;display:grid
       <li class="adim-k" data-adim="1"><span class="n">1</span><span class="etiket">Sen</span><h3>İsteğini sade bir dille söylersin.</h3><p>Ne istediğini ve neden istediğini söylemen yeter. Kimin çalışacağına sen değil şef karar verir.</p></li>
       <li class="adim-k" data-adim="2"><span class="n">2</span><span class="etiket">Şef</span><h3>İşi böler, brif yazar, ajanı seçer.</h3><p>Her parça için bir <a class="terim" href="#t-brif">brif</a> yazılır: ne yapılacak, hangi dosyalara dokunulabilir, neye dokunulmaz, iş ne zaman bitmiş sayılır. Model de bu adımda seçilir.</p></li>
       <li class="adim-k" data-adim="3"><span class="n">3</span><span class="etiket">Ajan</span><h3>Kendi dalında çalışır, sık sık kaydeder.</h3><p>Ajan her anlamlı adımda işini kendi dalına kaydeder. Yarım işin notunun başına <code>[ara kayıt]</code> yazılır; iş yarıda kalırsa başka bir ajan oradan devam eder.</p></li>
-      <li class="adim-k" data-adim="4"><span class="n">4</span><span class="etiket">Denetçi</span><h3>Bağımsız kontrol eder.</h3><p>İşi yapan ajan değil, başka bir ajan bakar ve iki karardan birini verir: <span class="damga onay">ONAY</span> ya da <span class="damga duzelt">DÜZELT</span></p><p class="dongu"><span class="damga duzelt">DÜZELT</span> gelirse iş ajana geri döner. En fazla 3 tur; 3 turda bitmezse şef sana sorar.</p></li>
-      <li class="adim-k" data-adim="5"><span class="n">5</span><span class="etiket">Şef</span><h3>Testleri koşar, ana dala birleştirir.</h3><p>Ajanlar ana dala hiç dokunmaz. Birleştirmeyi yalnızca şef, testler geçtikten sonra yapar.</p></li>
+      <li class="adim-k" data-adim="4"><span class="n">4</span><span class="etiket">Denetçi</span><h3>Bağımsız kontrol eder.</h3><p>İşi yapan ajan değil, başka bir ajan bakar ve iki karardan birini verir: <span class="damga onay">ONAY</span> ya da <span class="damga duzelt">DÜZELT</span></p><p class="dongu"><span class="damga duzelt">DÜZELT</span> gelirse iş ajana geri döner. Denetçi bir kez bakar; en fazla 3 DÜZELT turu olur, 3 turda bitmezse şef sana sorar. Denetimli iş ONAY gelmeden birleştirilmez: ajan raporu gelir gelmez birleştirmek yanlıştır.</p></li>
+      <li class="adim-k" data-adim="5"><span class="n">5</span><span class="etiket">Şef</span><h3>Testleri koşar, ana dala birleştirir.</h3><p>Ajanlar ana dala hiç dokunmaz. Birleştirmeyi yalnızca şef, testler ve denetim geçtikten sonra yapar. Her sohbetin kendi çalışma dalı varsa şef ajan dalını önce o dala <code>merge --no-ff</code> ile alır (öncesinde <code>fetch</code> ve merge); ana dala yalnızca sen istersen, PR ile girilir.</p></li>
       <li class="adim-k" data-adim="6"><span class="n">6</span><span class="etiket">Yayın</span><h3>Sunucu ana dalı alıp yayına koyar.</h3><p>Yayın ana daldan beslendiği için yarım iş yayına çıkmasın diye birleştirmeyi yalnızca şef yapar.</p></li>
-      <li class="adim-k" data-adim="7"><span class="n">7</span><span class="etiket">Sen</span><h3>Sonucu sade bir dille duyarsın.</h3><p>Ne yapıldı, ne denetlendi, neyin senin kararını beklediği. Teknik ayrıntı istersen şef ayrıca verir.</p></li>
+      <li class="adim-k" data-adim="7"><span class="n">7</span><span class="etiket">Sen</span><h3>Sonucu sade bir dille duyarsın.</h3><p>En çok 5 satır: ne oldu, ne yapılacak, senden ne lazım. Teknik ayrıntı dosyaya yazılır; istersen şef ayrıca verir. Bir ayarı tarif ederken menü menü anlatmaz, doğrudan sayfanın linkini verir ve yalnız o sayfadaki son adımı yazar.</p></li>
     </ol>
   </div>
 </section>
@@ -993,6 +995,16 @@ footer{border-top:2px solid var(--murekkep);padding-block:28px 60px;display:grid
     <li><b>Birleştirme üst ajanın işi.</b><p>Ajan alt ajan sonuçlarını kendisi birleştirir ve şefe tek rapor verir. Alt ajanlar farklı dosyalarda çalışır; aynı dosyaya iki el yok.</p></li>
   </ul>
   <div class="alt-not"><span class="etiket">Araçtaki sınır</span><p>Claude Code belgesine göre iç içe alt ajan mümkündür ve ana konuşmanın altında en çok <b>3 katman</b> açılır. <code>CLAUDE_CODE_MAX_SUBAGENT_SPAWN_DEPTH</code> ortam değişkeni derinliği ayarlar (1 = kapalı). Bu sayfanın kuralı daha dardır: ajan bir kat açar, alt ajan açamaz. Denetim zinciri bozulmaz: alt ajanın işini üst ajan değil denetçi onaylar. Ayrıca deneysel <b>agent teams</b> özelliği vardır; varsayılan kapalıdır, token maliyeti yüksektir ve bu sayfada kullanılmaz.</p></div>
+
+  <div class="alt-bas"><h3>Ayrı hesaplardaki ajanlar: depo üzerinden kanal</h3><span class="etiket">Aynı depo, ortak bellek yok</span></div>
+  <p class="not">Bazen ikinci bir ajan başka bir hesapta, başka bir oturumda çalışır. İki oturum birbirinin sohbetini göremez; ortak olan tek şey depodur. O yüzden konuşma yerine dosya kullanılır: her dosyanın tek bir yazarı vardır, böylece çakışma çıkmaz.</p>
+  <ul class="kurallar-3">
+    <li><b>İş listesi tek başına yeter.</b><p>Şef, dış ajan için kendi başına anlaşılır bir iş listesi yazar: kurallar, her iş için dal adı, büyüklük, bitti tanımı. Dış ajan başka hiçbir sohbeti okumak zorunda kalmaz.</p></li>
+    <li><b>Teslim, işin kendi dalında bir dosyadır.</b><p>Dış ajan her iş için kendi dalında bir teslim dosyası yazar: dal ve son kayıt, tabanı, ne yapıldı, testler, ekran görüntüsü. "Emin olmadıklarım ve doğrulanamayanlar" alanı zorunludur, boş bırakılmaz; yoksa "yok" yazılır.</p></li>
+    <li><b>Durum tablosu ve şef notu ayrı dosyalardır.</b><p>Durum tablosunu yalnız dış ajan, notları yalnız şef yazar. Durumlar: bekliyor, çalışıyor, engelli, teslim, düzelt, şefte, iptal. Engel varsa ajan beklemez; "engelli" yazar ve sonraki işe geçer.</p></li>
+    <li><b>Ana dala dokunulmaz.</b><p>Dış ajan yalnız kendi dalına gönderir; ana dala birleştirme ve PR yoktur. Onaylananı şef sonradan, sahibin onayıyla birleştirir. Düzeltme gerekirse yine en çok 3 tur.</p></li>
+    <li><b>Ritim saatte bir.</b><p>Dış ajan saatte bir depoyu çeker ve şefin notu değiştiyse okur. Her iş bitince gönderir, durumu günceller, sonrakine geçer.</p></li>
+  </ul>
 </section>
 
 <div class="ayrac" aria-hidden="true"><svg><use href="#firca"/></svg></div>
@@ -1003,7 +1015,7 @@ footer{border-top:2px solid var(--murekkep);padding-block:28px 60px;display:grid
     <p class="bb-no"><span class="no">06</span><span class="etiket">Brif şablonu</span></p>
     <h2 id="brif-b">İyi brif, işin yarısı</h2>
     <div class="bb-giris notlu">
-      <p>Ajanlar birbirini ve seninle yaptığın sohbeti görmez. Bildikleri tek şey brif. Bu yüzden her brif aynı altı başlıkla yazılır.</p>
+      <p>Ajanlar birbirini ve seninle yaptığın sohbeti görmez. Bildikleri tek şey brif. Bu yüzden her brif aynı yedi başlıkla yazılır.</p>
       <aside class="kenar" aria-label="Sözlük notu">
         <span class="etiket">Sözlük</span>
         <dl><div><dt>Brif</dt><dd>Ajana verilen kısa iş tarifi: ne yapılacak, nereye dokunulur, iş ne zaman bitmiş sayılır.</dd></div></dl>
@@ -1016,8 +1028,9 @@ footer{border-top:2px solid var(--murekkep);padding-block:28px 60px;display:grid
       <div><dt>SENİN DOSYALARIN</dt><dd>Ajanın değiştirebileceği dosyalar.</dd></div>
       <div><dt>DOKUNMA</dt><dd>Başka ajanın çalıştığı ya da riskli dosyalar.</dd></div>
       <div><dt>ÖNCE OKU</dt><dd>Kuralların ve bağlamın yazılı olduğu belgeler.</dd></div>
+      <div><dt>BAĞLAM</dt><dd>Ajanın bilmediği şeyler: senin sözün, daha önce denenip olmayanlar, ilgili karar satırı.</dd></div>
       <div><dt>BİTTİ TANIMI</dt><dd>Ölçülebilir olmalı: "testler geçiyor", "uydurma rakam yok", "375 px ekranda taşma yok".</dd></div>
-      <div><dt>RAPOR</dt><dd>Ajanın nasıl biteceği: sabit alanlı kısa bir özet.</dd></div>
+      <div><dt>RAPOR</dt><dd>Ajanın nasıl biteceği: sabit alanlı kısa bir özet. İş sırasında fark ettiği fırsat ya da risk için ayrı bir alan olur.</dd></div>
     </dl>
     <div class="kod">
       <div class="kod-bas"><span>brif.txt · örnek</span><button type="button" class="kopya" data-kopya="k-brif">Kopyala</button></div>
@@ -1027,12 +1040,15 @@ footer{border-top:2px solid var(--murekkep);padding-block:28px 60px;display:grid
 SENİN DOSYALARIN: src/format.js, test/format.test.js
 DOKUNMA: src/odeme/* (başka ajan çalışıyor)
 ÖNCE OKU: docs/KURALLAR.md
+BAĞLAM: Ayraç olarak nokta istendi (docs/KARARLAR.md);
+  boşluk daha önce denendi ve geri alındı.
 BİTTİ TANIMI:
   - tek bir num() biçimleyici var ve testli
   - tüm testler geçiyor
   - düzeltme geri alınınca yeni test kırılıyor
 RAPOR: {"dosyalar": [], "ozet": "", "testler": "",
-        "acikSorunlar": [], "oneriler": []}</pre>
+        "acikSorunlar": [], "oneriler": [],
+        "firsatlar": []}</pre>
     </div>
   </div>
   <div class="balon-sira">
@@ -1160,14 +1176,18 @@ RAPOR: {"dosyalar": [], "ozet": "", "testler": "",
   <div class="kurallar ters">
     <header class="bb">
       <p class="bb-no"><span class="no">09</span><span class="etiket">Değişmez kurallar</span></p>
-      <h2 id="kurallar-b">Her brife eklenen altı kural</h2>
+      <h2 id="kurallar-b">Her brife eklenen on kural</h2>
       <div class="bb-giris"><p>Bu kuralları çiğneyen bir iş gelirse ajan yapmaz, sorar.</p></div>
     </header>
     <ul class="kural-liste">
-      <li><h3>Para kuralı</h3><p>Ücretli bir bulut kaynağı açılmadan önce aylık tutarı yazılır ve açık onay alınır. Önce bütçe alarmı, sonra kaynak. Şüphede kalınırsa yapılmaz, sorulur.</p></li>
+      <li><h3>Para kuralı</h3><p>Ücretli bir bulut kaynağı açılmadan önce aylık tutarı yazılır ve açık onay alınır. Önce bütçe alarmı, sonra kaynak. Yeni paket bağımlılığı da sormadan eklenmez. Şüphede kalınırsa yapılmaz, sorulur.</p></li>
+      <li><h3>Ücretsiz limitin en çok yüzde 99'u</h3><p>Ücretsiz katmanı olan her kaynakta (depolama, veritabanı, e-posta, API kotası) kodda sert sınır olur: ücretsiz limitin en çok yüzde 99'u kullanılır, 100 hak varsa 99'da durulur. Sınır sayaçla ve reddetmeyle zorlanır; yalnız uyarı yetmez. Sınıra gelince iş durur, sana bildirilir, ücretli kullanıma asla taşmaz.</p></li>
       <li><h3>Engel varsa uydurma yok</h3><p>Bir siteye erişilemezse ajan başka yoldan dolanmaz, içerik uydurmaz. "Doğrulanamadı" yazar ve neye izin gerektiğini söyler.</p></li>
       <li><h3>Yeşil test kanıt değildir</h3><p>Düzeltme geri alınınca test kırmızıya dönmüyorsa test hiçbir şey ölçmüyor demektir. Buna <a class="terim" href="#t-mutasyon">mutasyon kontrolü</a> denir.</p></li>
       <li><h3>Tehlikeli git komutları yasak</h3><p>Ajanlara <code>stash</code>, <code>reset --hard</code>, <code>rebase</code>, <code>push --force</code> yasak. Birleştirme <code>merge --no-ff</code> ile ve yalnızca şefte.</p></li>
+      <li><h3>Yasak komutlar araç düzeyinde engellenir</h3><p>Yasağı yalnız talimata yazma; aracın izin ayarına da yaz (Claude Code'da <code>.claude/settings.json</code> içindeki <code>permissions.deny</code>). Force push, <code>reset --hard</code>, <code>rebase</code>, <code>git clean -fd</code>, <code>stash</code>, <code>rm -rf /</code>, <code>pkill -f</code>, <code>killall</code>, sır değiştirme komutları ve <code>.env</code> ile özel anahtar dosyalarını okumak kapalı kalır. Bu liste kaza önleyicidir, güvenlik duvarı değil: komutun başka yazılışlarını yakalamaz.</p></li>
+      <li><h3>Konuşulan iş bırakılmaz</h3><p>Konuşulan bir iş, sen açıkça "boşver" ya da "bırak" demedikçe bırakılmaz; beğenilmese de peşi bırakılmaz. Bekleyen her iş devir dosyasındaki "Açık işler" listesinde durur, şef her oturumda oradan takip eder ve oturum bitmeden dosyayı günceller.</p></li>
+      <li><h3>Kısa cevap, doğrudan link</h3><p>Sahibe cevap en çok 5 satırdır, her madde tek cümle. Ayrıntı dosyaya yazılır, sohbete değil. Bir ayar tarif edilirken menü menü (A &gt; B &gt; C) anlatılmaz; sayfanın linki verilir ve yalnız o sayfadaki son adım yazılır. Karar sorusu adlandırılmış seçenekle gelir: "A: …, B: …, Önerim A."</p></li>
       <li><h3>Sırlar kodda durmaz</h3><p>API anahtarı ve şifreler sohbete yapıştırılmaz, depoya yazılmaz; sunucudaki ortam dosyasında durur.</p></li>
       <li><h3>Hassas veri toplanmaz</h3><p>İşin gerektirmediği kişisel veri hiçbir formda istenmez, saklanmaz.</p></li>
     </ul>
@@ -1184,12 +1204,17 @@ RAPOR: {"dosyalar": [], "ozet": "", "testler": "",
     <div class="bb-giris"><p>Bu düzen masa başında yazılmadı. Aşağıdakilerin hepsi gerçek bir projede, aynı anda on ajan çalışırken yaşandı. Solda ne oldu, sağda bugün hangi kurala dönüştü.</p></div>
   </header>
   <div class="dersler">
-    <article class="ders" id="ders-1"><div class="ders-bas"><span class="no">DERS 01</span><h3>Bitmeyen bekleme döngüsü</h3></div><div class="ders-govde"><div><span class="etiket">Ne oldu</span><p>İki ajan, başka bir işin bitmesini <code>pgrep -f "desen"</code> ile bekledi. Komut kendi satırını da bulduğu için döngü hiç bitmedi; ajanlar saatlerce boşa bekledi.</p></div><div class="kural"><span class="etiket">Kural oldu</span><p>Beklerken yalnızca kendi başlattığın işin numarasıyla <code>while kill -0 $PID</code> kullan.</p></div></div></article>
+    <article class="ders" id="ders-1"><div class="ders-bas"><span class="no">DERS 01</span><h3>Bitmeyen bekleme döngüsü</h3></div><div class="ders-govde"><div><span class="etiket">Ne oldu</span><p>İki ajan, başka bir işin bitmesini <code>pgrep -f "desen"</code> ile bekledi. Komut kendi satırını da bulduğu için döngü hiç bitmedi; ajanlar saatlerce boşa bekledi.</p></div><div class="kural"><span class="etiket">Kural oldu</span><p>Beklerken yalnızca kendi başlattığın işin numarasıyla <code>while kill -0 $PID</code> kullan. Süreci de yalnız kendi numaranla kapat; aynı makinede başkalarının işi çalışıyor, <code>pkill -f</code> ve <code>killall</code> yok.</p></div></div></article>
     <article class="ders" id="ders-2"><div class="ders-bas"><span class="no">DERS 02</span><h3>Makine iki kez yeniden başladı</h3></div><div class="ders-govde"><div><span class="etiket">Ne oldu</span><p>Paralel ajanların hepsi aynı anda ağır testler koşunca bellek doldu ve çalışma ortamı yeniden başladı. Kaydedilmemiş iş gitti.</p></div><div class="kural"><span class="etiket">Kural oldu</span><p>Sık <code>[ara kayıt]</code>, ağır adımlar sırayla, testler sınırlı eşzamanlılıkla.</p></div></div></article>
-    <article class="ders" id="ders-3"><div class="ders-bas"><span class="no">DERS 03</span><h3>Disk sessizce doldu</h3></div><div class="ders-govde"><div><span class="etiket">Ne oldu</span><p>Her ajanın ayrı çalışma kopyası ve geçici dosyaları birikti. Bir ajanın testleri "diskte yer yok" diye düştü; hata koddan değil ortamdandı.</p></div><div class="kural"><span class="etiket">Kural oldu</span><p>Biten işin geçici dosyaları silinir; disk düzenli kontrol edilir.</p></div></div></article>
+    <article class="ders" id="ders-3"><div class="ders-bas"><span class="no">DERS 03</span><h3>Disk sessizce doldu</h3></div><div class="ders-govde"><div><span class="etiket">Ne oldu</span><p>Her ajanın ayrı çalışma kopyası ve geçici dosyaları birikti. Bir ajanın testleri "diskte yer yok" diye düştü; hata koddan değil ortamdandı.</p></div><div class="kural"><span class="etiket">Kural oldu</span><p>Biten işin geçici dosyaları silinir; disk düzenli kontrol edilir. Testler bellek diskindeki ayrı bir geçici klasörle koşulur.</p></div></div></article>
     <article class="ders" id="ders-4"><div class="ders-bas"><span class="no">DERS 04</span><h3>Denetçi yakaladı: 20 saniyelik donma</h3></div><div class="ders-govde"><div><span class="etiket">Ne oldu</span><p>Yeni bir bileşen, tek bir sonuç göstermek için tüm veritabanını belleğe yüklüyordu. Testler yeşildi; gerçek ölçekte sayfa 20 saniye donacaktı.</p></div><div class="kural"><span class="etiket">Kural oldu</span><p>Denetçi, gerçek veri boyutunda ölçüm yapmadan ONAY vermez.</p></div></div></article>
     <article class="ders" id="ders-5"><div class="ders-bas"><span class="no">DERS 05</span><h3>Aynı dosyaya iki el</h3></div><div class="ders-govde"><div><span class="etiket">Ne oldu</span><p>İki paralel ajan aynı sık kullanılan dosyayı değiştirdi; birleştirirken çakıştı.</p></div><div class="kural"><span class="etiket">Kural oldu</span><p>"Sıcak" dosyalar aynı anda tek ajana verilir; brifte kimin hangi dosyada olduğu yazılır.</p></div></div></article>
     <article class="ders" id="ders-6"><div class="ders-bas"><span class="no">DERS 06</span><h3>Kod güncellendi ama yayına çıkmadı</h3></div><div class="ders-govde"><div><span class="etiket">Ne oldu</span><p>Veri ve kod aynı anda değişince sunucu yalnızca veriyi yeniledi; yeni kod eski süreçte kaldı.</p></div><div class="kural"><span class="etiket">Kural oldu</span><p>Yayından sonra çalışan sürüm ile son kayıt karşılaştırılır; farklıysa servis yeniden başlatılır.</p></div></div></article>
+    <article class="ders" id="ders-7"><div class="ders-bas"><span class="no">DERS 07</span><h3>Yük altında tarayıcı testi düştü</h3></div><div class="ders-govde"><div><span class="etiket">Ne oldu</span><p>Birçok ajan aynı anda çalışırken gerçek tarayıcıyla koşan birkaç test arada "Page crashed" ya da zaman aşımıyla düştü. Aynı testler tek başına koşunca geçiyordu; hata koddan değil yükten geliyordu.</p></div><div class="kural"><span class="etiket">Kural oldu</span><p>Düşen tarayıcı testi tek başına yeniden koşulur. Tek başına da düşüyorsa hata gerçektir. Geçiyorsa yük gürültüsüdür; rapora yazılır, kod boşuna değiştirilmez.</p></div></div></article>
+    <article class="ders" id="ders-8"><div class="ders-bas"><span class="no">DERS 08</span><h3>Denetim bitmeden dal birleştirildi</h3></div><div class="ders-govde"><div><span class="etiket">Ne oldu</span><p>Üçüncü tur güvenlik denetimi bitmeden bir iş birleştirildi. Ana dala girmedi ama onaysız parça yanlış yere sızabilirdi.</p></div><div class="kural"><span class="etiket">Kural oldu</span><p>Denetimli işte birleştirme ONAY'dan sonra yapılır. Ajan raporu gelir gelmez birleştirme alışkanlığı yanlıştır; onay bekleyen parça ayrı bekletilir.</p></div></div></article>
+    <article class="ders" id="ders-9"><div class="ders-bas"><span class="no">DERS 09</span><h3>Ajan eski daldan açıldı</h3></div><div class="ders-govde"><div><span class="etiket">Ne oldu</span><p>Ajanların çalışma kopyaları güncel çalışma dalından değil eski ana daldan açıldı. Ajanlar eski dosyalarla çalıştı ve birleştirirken çakıştı.</p></div><div class="kural"><span class="etiket">Kural oldu</span><p>Her brifin ilk adımı güncel çalışma dalını kendi dalına birleştirmektir. Tabanın hangi dal olduğu brifte yazar.</p></div></div></article>
+    <article class="ders" id="ders-10"><div class="ders-bas"><span class="no">DERS 10</span><h3>Kaynaktan çıkarım sahada yanlış çıktı</h3></div><div class="ders-govde"><div><span class="etiket">Ne oldu</span><p>İki bulgu sayfa kaynağından ve bir API cevabından çıkarılmıştı. Gerçek kullanıcı tıklayınca ikisi de yanlış çıktı.</p></div><div class="kural"><span class="etiket">Kural oldu</span><p>Dışarıya gidecek her bulgu, mümkünse gerçek tarayıcıda ya da ilgili kişi tarafından teyit edilir. Teyitsiz bulgu rapora girmez, "doğrulanamadı" diye işaretlenir.</p></div></div></article>
+    <article class="ders" id="ders-11"><div class="ders-bas"><span class="no">DERS 11</span><h3>Aynı dalda iki yazar</h3></div><div class="ders-govde"><div><span class="etiket">Ne oldu</span><p>Dışarıdan insanlar ve botlar da aynı dala yazıyordu. Gönderme reddedildi ve not dosyalarında çakışma çıktı.</p></div><div class="kural"><span class="etiket">Kural oldu</span><p>Göndermeden önce <code>fetch</code> ve merge yapılır; çakışmada iki tarafın da notu korunur.</p></div></div></article>
   </div>
 </section>
 
@@ -1429,19 +1454,28 @@ Nasıl çalışırsın:
 - Sen şefsin: işi böl, brif yaz, ajan ve model
   seç, denetçiye kontrol ettir, birleştir, sade
   dille raporla.
+- Bana cevap en çok 5 satır: ne oldu, ne yapacaksın,
+  benden ne lazım. Ayrıntı dosyaya. Ayar tarifinde
+  menü anlatma; doğrudan sayfa linki + son adım.
+  Karar sorusu: "A: …, B: …, Önerim A."
+- Konuştuğumuz iş, ben "boşver" demedikçe
+  bırakılmaz; bekleyenleri devir dosyasındaki
+  "Açık işler" listesinde tut, oturum bitmeden
+  güncelle.
 - Kod, tasarım ya da metni kendin üretme; kendi
   işini kendin onaylama.
 - Model (varsayılan sonnet): haiku mekanik iş ve
   basit okuma, özet, sınıflama, format; sonnet kod,
-  araştırma, normal denetim, metin; opus görsel
-  tasarım yönü ve güvenlik, para, veri kaybı riski
-  olan denetim; fable (pahalı, nadir) çok adımlı
-  belirsiz karar, çelişkili bulguların sentezi, zor
-  hata ayıklama: derin-akil ajanı. Genel amaçlı
-  ajana modeli açıkça ver. Haiku bir işe yeter mi,
-  kendi işinde ölçerek gör. Bedrock/Vertex'te
-  "sonnet" takma adı başka (eski) sürüme çözülebilir;
-  tam model kimliği yaz.
+  araştırma, normal denetim, metin; opus yalnız
+  görsel tasarım yönü ve güvenlik, para, veri kaybı
+  riski olan denetim; fable (pahalı, nadir) çok
+  adımlı belirsiz karar, çelişkili bulguların
+  sentezi, zor hata ayıklama: derin-akil ajanı.
+  Ajan dosyasındaki modeli üstüne yazma. Genel
+  amaçlı ajana modeli açıkça ver. Kredi tasarrufu
+  yalnız ben söylersem. Bedrock/Vertex'te "sonnet"
+  takma adı başka (eski) sürüme çözülebilir; tam
+  model kimliği yaz.
 - Alt ajan: ajan kendi alt ajanını açabilir (tools
   listesinde Agent), alt ajan açamaz. İş başına en
   çok 4; her birine model açıkça verilir. Ajan alt
@@ -1454,9 +1488,20 @@ Nasıl çalışırsın:
 - Dosya değiştiren her ajan ayrı çalışma
   kopyasında (worktree) ve kendi dalında
   çalışır, sık kaydeder.
-- Ana dala yalnızca sen, testler geçtikten sonra,
-  merge --no-ff ile birleştirirsin.
-- DÜZELT en fazla 3 tur; sonra bana sor.
+- Ana dala yalnızca sen, testler ve denetim
+  geçtikten sonra, merge --no-ff ile birleştirirsin
+  (önce fetch + merge). ONAY gelmeden birleştirme yok.
+- Denetçi bir kez bakar. DÜZELT en fazla 3 tur;
+  sonra bana sor. Yeşil test kanıt değil: düzeltme
+  geri alınınca test kırılmalı.
+- Düşen tarayıcı testini tek başına yeniden koş;
+  tek başına da düşüyorsa hata gerçektir.
+- Ücretsiz katmanı olan her kaynakta kodla zorlanan
+  sert sınır: ücretsiz limitin en çok %99'u. Sınıra
+  gelince dur, bana bildir; ücretliye taşma.
+- Yasak komutlar (force push, reset --hard, rebase,
+  clean -fd, stash, rm -rf /, pkill -f, killall, .env
+  okuma) araç izin ayarında da engelli olsun.
 - Küçük iş: denetçi yok, diff'e sen bak.
   Orta: 1 ajan + denetçi. Büyük: paralel ajanlar.
 - Workflow yalnızca ben "workflow kullan" dersem.</pre></div>
@@ -1584,7 +1629,7 @@ kullandığım araca uyarla.
     <div class="bb-giris"><p>Kutuları işaretle; işaretlerin yalnızca bu tarayıcıda saklanır. Hepsi işaretliyse orkestra hazır.</p></div>
   </header>
   <div class="liste-ust">
-    <p class="sayac" aria-live="polite"><b id="sayac-n">0</b><span>/ <span id="sayac-t">13</span> tamam</span></p>
+    <p class="sayac" aria-live="polite"><b id="sayac-n">0</b><span>/ <span id="sayac-t">16</span> tamam</span></p>
     <span class="sayac-cubuk" aria-hidden="true"><i id="sayac-c"></i></span>
     <button type="button" class="dugme" id="liste-temizle">Listeyi temizle</button>
   </div>
@@ -1601,7 +1646,7 @@ kullandığım araca uyarla.
     <div class="liste-grup">
       <h3>Her brifte</h3>
       <ul>
-        <li><label><input type="checkbox" id="k5"><span>Altı başlık var: görev, senin dosyaların, dokunma, önce oku, bitti tanımı, rapor.</span></label></li>
+        <li><label><input type="checkbox" id="k5"><span>Yedi başlık var: görev, senin dosyaların, dokunma, önce oku, bağlam, bitti tanımı, rapor.</span></label></li>
         <li><label><input type="checkbox" id="k6"><span>Bitti tanımı ölçülebilir.</span></label></li>
         <li><label><input type="checkbox" id="k7"><span>Değişmez kurallar brife eklendi.</span></label></li>
         <li><label><input type="checkbox" id="k8"><span>Genel amaçlı ajan kullanılıyorsa modeli açıkça verildi.</span></label></li>
@@ -1615,6 +1660,9 @@ kullandığım araca uyarla.
         <li><label><input type="checkbox" id="k11"><span>Ana dala yalnızca şef, testler geçtikten sonra birleştiriyor.</span></label></li>
         <li><label><input type="checkbox" id="k12"><span>Denetçi mutasyon kontrolü yapıyor; ONAY olmadan birleştirme yok.</span></label></li>
         <li><label><input type="checkbox" id="k13"><span>Biten işlerin geçici dosyaları siliniyor, disk düzenli kontrol ediliyor.</span></label></li>
+        <li><label><input type="checkbox" id="k14"><span>Konuşulan işler devir dosyasındaki "Açık işler" listesinde; oturum bitmeden güncelliyorum.</span></label></li>
+        <li><label><input type="checkbox" id="k15"><span>Ücretsiz katmanlı her kaynakta kodla zorlanan sınır var (en çok yüzde 99).</span></label></li>
+        <li><label><input type="checkbox" id="k16"><span>Yasak komutlar ajanın izin ayarında da engelli, yalnız talimatta değil.</span></label></li>
       </ul>
     </div>
   </div>
@@ -1651,7 +1699,7 @@ kullandığım araca uyarla.
 
 <footer>
   <p class="imza"><span class="avatar" aria-hidden="true"></span>Rues Community</p>
-  <p>Yapay Zekâ Notları #1 · Ekim 2026</p>
+  <p>Yapay Zekâ Notları #1 · Ekim 2026 · Son güncelleme: 26 Ekim 2026</p>
   <p><a href="https://t.me/RuesAnnouncement">Telegram duyuru</a> · <a href="https://t.me/ruesandora">Telegram</a> · <a href="https://x.com/Ruesandora0">X @Ruesandora0</a> · <a href="https://github.com/ruesandora/RuesCommunity">GitHub</a></p>
   <p>Gerçek bir projede her gün kullanılan düzenden derlendi. Claude Code'un alt ajan (subagent) ve çalışma kopyası (worktree) özellikleriyle kurulabilir.</p>
 </footer>
