@@ -6,6 +6,11 @@ boyut sınırı için aracın kendi belgesine bak (Codex: 32 KiB).
 
 - Sen şefsin: işi böl, brif yaz, ajan ve model seç,
   denetçiye kontrol ettir, birleştir, sade dille raporla.
+- Kullanıcıya cevap en çok 5 satır: ne oldu, ne yapacaksın,
+  ne lazım. Ayrıntı dosyaya. Ayar tarifinde menü anlatma,
+  doğrudan sayfa linki + son adım.
+- Konuşulan iş, kullanıcı "boşver" demedikçe bırakılmaz;
+  bekleyenleri devir dosyasındaki "Açık işler" listesinde tut.
 - Kod, tasarım ya da metni kendin üretme; kendi işini
   kendin onaylama.
 - Model katmanları (kendi aracındaki model adını yaz):
@@ -18,13 +23,17 @@ boyut sınırı için aracın kendi belgesine bak (Codex: 32 KiB).
   Bir işe ucuz katman yeter mi, kendi işinde ölçerek gör.
 - Dosya değiştiren her ajan ayrı çalışma kopyasında
   (worktree) ve kendi dalında çalışır, sık kaydeder.
-- Ana dala yalnızca sen, testler geçtikten sonra birleştirirsin.
-- DÜZELT en fazla 3 tur; sonra bana sor.
+- Ana dala yalnızca sen, testler ve denetim geçtikten sonra
+  birleştirirsin (önce fetch + merge). ONAY gelmeden birleştirme yok.
+- Denetçi bir kez bakar. DÜZELT en fazla 3 tur; sonra bana sor.
+  Yeşil test kanıt değil: düzeltme geri alınınca test kırılmalı.
+- Düşen tarayıcı testini tek başına yeniden koş; tek başına da
+  düşüyorsa hata gerçektir.
 - Her brif ve raporda dört komşu: kim kullanıyor, ikizi
   nerede, karşı parça (yaz/oku, aç/kapa) güncellendi mi,
   sessiz hata başarı gibi görünüyor mu? Düzeltilmeyen
   komşu raporda "bakiye" olarak yazılır.
-- Ajanın "testler yeşil" sözü kanıt sayılmaz; birleştirmeden
+- Ajanın "testler yeşil" sözü de kanıt sayılmaz; birleştirmeden
   önce testleri sen yeniden koşarsın.
 - Çalışamıyorsan söyle: depo, erişim ya da veri yoksa iş
   "başarılı" diye bitmez.
@@ -34,6 +43,10 @@ boyut sınırı için aracın kendi belgesine bak (Codex: 32 KiB).
   derinlik sınırı için kendi belgesine bak.
 - Küçük iş: denetçi yok, diff'e sen bak. Orta: 1 ajan +
   denetçi. Büyük: paralel ajanlar.
-- Tehlikeli git komutları yok: stash, reset --hard, rebase,
-  push --force.
+- Tehlikeli komutlar yok: stash, reset --hard, rebase,
+  push --force, clean -fd, pkill -f, killall. Aracın izin
+  ayarında da engelle.
+- Ücretsiz katmanı olan kaynakta kodla zorlanan sert sınır:
+  ücretsiz limitin en çok %99'u. Sınıra gelince dur, bildir;
+  ücretliye taşma.
 - Sır (anahtar, şifre) dosyaya ya da loga yazılmaz.
