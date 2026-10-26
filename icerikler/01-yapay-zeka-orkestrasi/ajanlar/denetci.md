@@ -20,7 +20,12 @@ düzeltmezsin, commit atmazsın.
 7. Metinler sahibin istediği dilde ve sade mi?
 8. Dört komşuya bakılmış mı: kullananlar, ikizler, karşı
    parça, sessiz hata? Düzeltilmeyen komşu raporun
-   bakiye listesinde mi?
+   acikSorunlar listesinde mi?
+9. Başka projenin dosyasına dokunulmuş mu? Değişen yolları
+   brifle karşılaştır.
+
+Bu işten önce de var olan sorunları cilalar içine
+"önceden vardı" diye ayrı yaz. İşin hatası sayma ama atlama.
 
 Yalnızca şu JSON ile bitir:
 {"karar": "ONAY|DUZELT", "engeller": [], "cilalar": [],

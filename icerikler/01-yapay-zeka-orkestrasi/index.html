@@ -525,7 +525,7 @@ footer{border-top:2px solid var(--murekkep);padding-block:28px 60px;display:grid
 
 <header class="ust">
   <a class="marka" href="#baslik"><span class="avatar" aria-hidden="true"></span>Rues Community</a>
-  <div class="ust-sag"><span class="etiket">Yapay Zekâ Notları · #1</span><span class="etiket">Ekim 2026</span><span class="etiket">Güncellendi: 26 Ekim 2026</span></div>
+  <div class="ust-sag"><span class="etiket">Yapay Zekâ Notları · #1</span><span class="etiket">Ekim 2026, güncelleme 26 Ekim</span></div>
 </header>
 
 <section class="acilis" aria-labelledby="baslik">
@@ -1026,7 +1026,7 @@ footer{border-top:2px solid var(--murekkep);padding-block:28px 60px;display:grid
     <p class="bb-no"><span class="no">06</span><span class="etiket">Brif şablonu</span></p>
     <h2 id="brif-b">İyi brif, işin yarısı</h2>
     <div class="bb-giris notlu">
-      <p>Ajanlar birbirini ve seninle yaptığın sohbeti görmez. Bildikleri tek şey brif. Bu yüzden her brif aynı sekiz başlıkla yazılır.</p>
+      <p>Ajanlar birbirini ve seninle yaptığın sohbeti görmez. Bildikleri tek şey brif. Bu yüzden her brif aynı yedi başlıkla yazılır.</p>
       <aside class="kenar" aria-label="Sözlük notu">
         <span class="etiket">Sözlük</span>
         <dl><div><dt>Brif</dt><dd>Ajana verilen kısa iş tarifi: ne yapılacak, nereye dokunulur, iş ne zaman bitmiş sayılır.</dd></div></dl>
@@ -1041,8 +1041,7 @@ footer{border-top:2px solid var(--murekkep);padding-block:28px 60px;display:grid
       <div><dt>ÖNCE OKU</dt><dd>Kuralların ve bağlamın yazılı olduğu belgeler.</dd></div>
       <div><dt>BAĞLAM</dt><dd>Ajanın bilmediği şeyler: senin sözün, daha önce denenip olmayanlar, ilgili karar satırı.</dd></div>
       <div><dt>BİTTİ TANIMI</dt><dd>Ölçülebilir olmalı: "testler geçiyor", "uydurma rakam yok", "375 px ekranda taşma yok".</dd></div>
-      <div><dt>DÖRT KOMŞU</dt><dd>İş bitmeden sorulan dört soru: kim kullanıyor, aynı hata başka nerede var, karşı parça güncellendi mi, sessiz hata başarı gibi görünüyor mu? Düzeltilmeyen komşu raporda <a class="terim" href="#t-bakiye">bakiye</a> olur.</dd></div>
-      <div><dt>RAPOR</dt><dd>Ajanın nasıl biteceği: sabit alanlı kısa bir özet. İş sırasında fark ettiği fırsat ya da risk için ayrı bir alan olur.</dd></div>
+      <div><dt>RAPOR</dt><dd>Ajanın nasıl biteceği: sabit alanlı kısa özet. Kod ve veri işinde dört komşunun cevabı da buraya yazılır. İş sırasında fark ettiği az emekle büyük getirili fırsat ya da risk için <code>firsatlar</code> alanı olur.</dd></div>
     </dl>
     <div class="kod">
       <div class="kod-bas"><span>brif.txt · örnek</span><button type="button" class="kopya" data-kopya="k-brif">Kopyala</button></div>
@@ -1058,27 +1057,23 @@ BİTTİ TANIMI:
   - tek bir num() biçimleyici var ve testli
   - tüm testler geçiyor
   - düzeltme geri alınınca yeni test kırılıyor
-DÖRT KOMŞU:
-  - kullananlar: num() başka nerede çağrılıyor?
-  - ikizler: sepette ve e-postada da ayraçsız sayı var mı?
-  - karşı parça: sayıyı geri okuyan form "293.437"
-    yazısını çözebiliyor mu?
-  - sessiz hata: geçersiz girdide boş metin mi dönüyor?
+  - dört komşu cevabı raporda (num() başka nerede
+    çağrılıyor, sepette ve e-postada da ayraçsız
+    sayı var mı)
 RAPOR: {"dosyalar": [], "ozet": "", "testler": "",
-        "dortKomsu": "", "bakiye": [],
         "acikSorunlar": [], "oneriler": [],
         "firsatlar": []}</pre>
     </div>
   </div>
   <div class="komsular" id="dort-komsu">
-    <p class="etiket">Dört komşu · her değişiklik bitmeden</p>
+    <p class="etiket">Dört komşu · kod ve veri işinde, bitmeden önce</p>
     <ol>
       <li><b>Kullananlar</b><span>Değişen kodu, veriyi ya da kuralı başka kim kullanıyor? İkinci giriş noktası, panel, test, belge.</span></li>
       <li><b>İkizler</b><span>Aynı desen ya da aynı hata başka nerede duruyor?</span></li>
       <li><b>Karşı parça</b><span>Yaz/oku, aç/kapa, ekle/kaldır: simetriği de güncellendi mi?</span></li>
       <li><b>Sessiz hata</b><span>Boş, yarım ya da hatalı bir sonuç başarı gibi görünüyor mu?</span></li>
     </ol>
-    <p class="not">Bulunup bu işte düzeltilmeyen komşu silinmez. Raporun <code>bakiye</code> alanına dosya, satır ve etkisiyle yazılır; şef onu yeni bir işe çevirir ya da bilerek bırakır. Önceden var olan sorunlar da ayrı listelenir, sessizce elenmez.</p>
+    <p class="not">Ajan cevabı rapora yazar. Kapsam dışında kalan komşuyu düzeltmez, <code>acikSorunlar</code> alanına dosya:satır ile yazar. Şef onu yeni bir işe çevirir ya da bilerek bırakır.</p>
   </div>
   <div class="balon-sira">
     <span class="balon-yuz" aria-hidden="true"></span>
@@ -1089,7 +1084,8 @@ RAPOR: {"dosyalar": [], "ozet": "", "testler": "",
 <pre id="k-den">{"karar": "ONAY | DUZELT",
  "engeller": [],        // düzelmeden iş bitmiş sayılmaz
  "cilalar": [],         // küçük, engel olmayan öneriler
- "gercekHatalari": []}  // uydurma veri, yanlış hesap, boş test</pre>
+ "gercekHatalari": []}  // uydurma veri, yanlış hesap, boş test, proje sınırı ihlali</pre>
+    <p class="not">İşten önce de var olan sorunlar <code>cilalar</code> içine "önceden vardı" diye ayrı yazılır. İşin hatası sayılmaz ama atlanmaz.</p>
   </div>
 </section>
 
@@ -1205,11 +1201,12 @@ RAPOR: {"dosyalar": [], "ozet": "", "testler": "",
   <div class="kurallar ters">
     <header class="bb">
       <p class="bb-no"><span class="no">09</span><span class="etiket">Değişmez kurallar</span></p>
-      <h2 id="kurallar-b">Her brife eklenen on iki kural</h2>
+      <h2 id="kurallar-b">Her brife eklenen on dört kural</h2>
       <div class="bb-giris"><p>Bu kuralları çiğneyen bir iş gelirse ajan yapmaz, sorar.</p></div>
     </header>
     <ul class="kural-liste">
-      <li><h3>Para kuralı</h3><p>Ücretli bir bulut kaynağı açılmadan önce aylık tutarı yazılır ve açık onay alınır. Önce bütçe alarmı, sonra kaynak. Yeni paket bağımlılığı da sormadan eklenmez. Şüphede kalınırsa yapılmaz, sorulur.</p></li>
+      <li><h3>Para kuralı</h3><p>Ücretli bir bulut kaynağı açılmadan önce aylık tutarı yazılır ve açık onay alınır. Önce bütçe alarmı, sonra kaynak. Şüphede kalınırsa yapılmaz, sorulur.</p></li>
+      <li><h3>Yeni paket sormadan eklenmez</h3><p>Yeni paket bağımlılığı sana sorulmadan eklenmez. Ajan ihtiyaç görürse raporda önerir.</p></li>
       <li><h3>Ücretsiz limitin en çok yüzde 99'u</h3><p>Ücretsiz katmanı olan her kaynakta (depolama, veritabanı, e-posta, API kotası) kodda sert sınır olur: ücretsiz limitin en çok yüzde 99'u kullanılır, 100 hak varsa 99'da durulur. Sınır sayaçla ve reddetmeyle zorlanır; yalnız uyarı yetmez. Sınıra gelince iş durur, sana bildirilir, ücretli kullanıma asla taşmaz.</p></li>
       <li><h3>Engel varsa uydurma yok</h3><p>Bir siteye erişilemezse ajan başka yoldan dolanmaz, içerik uydurmaz. "Doğrulanamadı" yazar ve neye izin gerektiğini söyler.</p></li>
       <li><h3>Yeşil test kanıt değildir</h3><p>Düzeltme geri alınınca test kırmızıya dönmüyorsa test hiçbir şey ölçmüyor demektir. Buna <a class="terim" href="#t-mutasyon">mutasyon kontrolü</a> denir. Ajanın "testler yeşil" sözü de kanıt sayılmaz: şef testleri kendisi yeniden koşar ve çıkış kodunu görür.</p></li>
@@ -1219,7 +1216,8 @@ RAPOR: {"dosyalar": [], "ozet": "", "testler": "",
       <li><h3>Kısa cevap, doğrudan link</h3><p>Sahibe cevap en çok 5 satırdır, her madde tek cümle. Ayrıntı dosyaya yazılır, sohbete değil. Bir ayar tarif edilirken menü menü (A &gt; B &gt; C) anlatılmaz; sayfanın linki verilir ve yalnız o sayfadaki son adım yazılır. Karar sorusu adlandırılmış seçenekle gelir: "A: …, B: …, Önerim A."</p></li>
       <li><h3>Sırlar kodda durmaz</h3><p>API anahtarı ve şifreler sohbete yapıştırılmaz, depoya yazılmaz; sunucudaki ortam dosyasında durur.</p></li>
       <li><h3>Hassas veri toplanmaz</h3><p>İşin gerektirmediği kişisel veri hiçbir formda istenmez, saklanmaz.</p></li>
-      <li><h3>Dört komşu sorulur</h3><p>Her değişiklik bitmeden dört soru: kim kullanıyor, ikizi nerede, karşı parçası güncellendi mi, sessiz hata başarı gibi görünüyor mu? Düzeltilmeyen komşu raporda bakiye olur (<a href="#dort-komsu">bölüm 06</a>).</p></li>
+      <li><h3>Projeler karışmaz</h3><p>Bir projenin verisi başka bir projeye taşınmaz, karıştırılmaz. Ajan yalnız brifte yazan projenin dosyalarına dokunur, denetçi bunu değişen yollara bakarak kontrol eder.</p></li>
+      <li><h3>Dört komşu sorulur</h3><p>Her değişiklik bitmeden dört soru: kim kullanıyor, ikizi nerede, karşı parçası güncellendi mi, sessiz hata başarı gibi görünüyor mu? Düzeltilmeyen komşu raporda açık sorun olur (<a href="#dort-komsu">bölüm 06</a>).</p></li>
       <li><h3>Çalışamıyorsan söyle</h3><p>Depo yoksa, erişim yoksa, veri boş geldiyse iş "başarılı" diye bitmez. Ajan da zamanlanmış görev de neyin eksik olduğunu yazar ve başarısız biter.</p></li>
     </ul>
   </div>
@@ -1253,6 +1251,9 @@ RAPOR: {"dosyalar": [], "ozet": "", "testler": "",
     <article class="ders" id="ders-16"><div class="ders-bas"><span class="no">DERS 16</span><h3>İki ekran, iki farklı sayı</h3></div><div class="ders-govde"><div><span class="etiket">Ne oldu</span><p>Yönetim paneli ziyaretçinin düştüğünü gösterirken arama konsolunda tıklamalar artıyordu. Paneldeki sayıya botlar da giriyordu ve henüz kapanmamış günler kesinmiş gibi toplanıyordu.</p></div><div class="kural"><span class="etiket">Kural oldu</span><p>Her ölçünün tek tanımı var ve tek yerden hesaplanır. Bot ve ham sayı ayrı ekranda; bugün "kısmi", kesinleşmemiş gün "tahmin" etiketiyle görünür. İki ekran ayrışınca önce iki tanım yan yana konur.</p></div></div></article>
     <article class="ders" id="ders-17"><div class="ders-bas"><span class="no">DERS 17</span><h3>Biten iş ertesi sabahı bekledi</h3></div><div class="ders-govde"><div><span class="etiket">Ne oldu</span><p>Her yayın sunucuyu yeniden başlatıyor, açılış sırasında site kısa bir süre cevap vermiyordu. Bu yüzden yayınlar günde bire, sabah saatine toplandı; biten iş bir gün bekledi.</p></div><div class="kural"><span class="etiket">Kural oldu</span><p>Önce <a class="terim" href="#t-kesintisiz">kesintisiz yayın</a> kuruldu: yeni süreç ısınınca trafiği alır, eskisi elindeki istekleri bitirip kapanır. Artık testi yeşil iş hemen yayına çıkar; ancak somut bir neden varsa beklenir.</p></div></div></article>
     <article class="ders" id="ders-18"><div class="ders-bas"><span class="no">DERS 18</span><h3>Düzeltme yalnız bir yere yapıldı</h3></div><div class="ders-govde"><div><span class="etiket">Ne oldu</span><p>Liste sayfalarındaki uzun açıklama ürünlerin altına alındı, ama yalnız bir grup sayfada. Proje sahibi bir marka sayfasında aynı eski düzeni görünce "bu bütün listelere lazım" dedi ve iş yeniden açıldı.</p></div><div class="kural"><span class="etiket">Kural oldu</span><p>Her brif ve rapor <a href="#dort-komsu">dört komşuyu</a> sorar. "İkizler" sorusu bu hatayı iş bitmeden yakalar.</p></div></div></article>
+    <article class="ders" id="ders-19"><div class="ders-bas"><span class="no">DERS 19</span><h3>Şefin toplu kaydı ajanın yarım işini aldı</h3></div><div class="ders-govde"><div><span class="etiket">Ne oldu</span><p>Ajan aynı depoda çalışırken şef "hepsini ekle" komutuyla kayıt aldı. Ajanın bitmemiş dosyaları şefin kaydına girdi.</p></div><div class="kural"><span class="etiket">Kural oldu</span><p>Ajan çalışırken depoda toplu ekleme (<code>git add -A</code>, <code>commit -a</code>) yapılmaz. Şef yalnız kendi dosyalarını adıyla ekler.</p></div></div></article>
+    <article class="ders" id="ders-20"><div class="ders-bas"><span class="no">DERS 20</span><h3>Aynı engele dört kez çarpıldı</h3></div><div class="ders-govde"><div><span class="etiket">Ne oldu</span><p>Bir araç aynı oturumda dört kez arandı. Oturum araç listesini yenilemiyordu ve her deneme aynı sonucu verdi.</p></div><div class="kural"><span class="etiket">Kural oldu</span><p>Aynı engele iki üç farklı yolla çözüm denendiyse yeniden denemeden önce dur. Kök nedeni ve engeli tek satırla söyle. Aynı komut ya da hata üç kez tekrarlarsa yaklaşım değişir, beşincide ajan durur ve şefe ne denediğini yazar.</p></div></div></article>
+    <article class="ders" id="ders-21"><div class="ders-bas"><span class="no">DERS 21</span><h3>Adı "izin" olan kural, işi "doğrulama ekranı" çıktı</h3></div><div class="ders-govde"><div><span class="etiket">Ne oldu</span><p>Bir güvenlik kuralının adı botlara izin verdiğini söylüyordu. Kuralın yaptığı iş ise ziyaretçiye doğrulama ekranı göstermekti. Ada bakan okuma yanlış sonuç verdi.</p></div><div class="kural"><span class="etiket">Kural oldu</span><p>Adı ile işi uyuşmayan kural ya da ayar ayrı bulgu sayılır. Ada güvenilmez, kuralın yaptığı işlem okunur.</p></div></div></article>
   </div>
 
   <div class="kur-adim kilitler" id="kilitler">
@@ -1350,7 +1351,12 @@ düzeltmezsin, commit atmazsın.
 7. Metinler sahibin istediği dilde ve sade mi?
 8. Dört komşuya bakılmış mı: kullananlar, ikizler, karşı
    parça, sessiz hata? Düzeltilmeyen komşu raporun
-   bakiye listesinde mi?
+   acikSorunlar listesinde mi?
+9. Başka projenin dosyasına dokunulmuş mu? Değişen yolları
+   brifle karşılaştır.
+
+Bu işten önce de var olan sorunları cilalar içine
+"önceden vardı" diye ayrı yaz. İşin hatası sayma ama atlama.
 
 Yalnızca şu JSON ile bitir:
 {"karar": "ONAY|DUZELT", "engeller": [], "cilalar": [],
@@ -1386,8 +1392,8 @@ kaydedersin. Ana dala dokunmazsın.
   gibi görünüyor mu?
 
 Bitince değişen dosyaları, test sonucunu (çıkış koduyla),
-dört komşu cevabını, düzeltmediğin komşuları (bakiye) ve
-açık kalan sorunları kısa bir raporla bildirirsin.
+dört komşu cevabını ve açık kalan sorunları (düzeltmediğin
+komşular dosya:satır ile) kısa bir raporla bildirirsin.
 Doğrulayamadığını açıkça yazarsın: "çıkış kodunu görmedim".
 
 Alt ajan (isteğe bağlı): işin bağımsız parçalarını en çok 4 alt
@@ -1599,7 +1605,7 @@ Nasıl çalışırsın:
 - Her brif ve raporda dört komşu: kim kullanıyor,
   ikizi nerede, karşı parça (yaz/oku, aç/kapa)
   güncellendi mi, sessiz hata başarı gibi görünüyor
-  mu? Düzeltilmeyen komşu raporda "bakiye" olur.
+  mu? Düzeltilmeyen komşu raporda açık sorun olur.
 - Ajanın "testler yeşil" sözü de kanıt sayılmaz;
   birleştirmeden önce testleri sen yeniden koşarsın.
 - Çalışamıyorsan söyle: depo, erişim ya da veri
@@ -1607,6 +1613,13 @@ Nasıl çalışırsın:
   her çalıştırmada yeni oturum açar, kendini kurar.
 - Küçük iş: denetçi yok, diff'e sen bak.
   Orta: 1 ajan + denetçi. Büyük: paralel ajanlar.
+- Ajan çalışırken depoda toplu ekleme (git add -A,
+  commit -a) yapma. Yalnız kendi dosyalarını adıyla ekle.
+- Aynı engele 2-3 denemede dur, kök nedeni tek satırla
+  söyle. Adı ile işi uyuşmayan kural ya da ayarda ada
+  güvenme, işlemi oku. Bunu ayrı bulgu say.
+- Bir projenin verisini başka projeye taşıma, karıştırma.
+  Yeni paket bağımlılığını bana sormadan ekleme.
 - Workflow yalnızca ben "workflow kullan" dersem.</pre></div>
     </div>
   </div>
@@ -1666,7 +1679,7 @@ boyut sınırı için aracın kendi belgesine bak (Codex: 32 KiB).
 - Her brif ve raporda dört komşu: kim kullanıyor, ikizi
   nerede, karşı parça (yaz/oku, aç/kapa) güncellendi mi,
   sessiz hata başarı gibi görünüyor mu? Düzeltilmeyen
-  komşu raporda "bakiye" olarak yazılır.
+  komşu raporda açık sorun olarak yazılır.
 - Ajanın "testler yeşil" sözü de kanıt sayılmaz; birleştirmeden
   önce testleri sen yeniden koşarsın.
 - Çalışamıyorsan söyle: depo, erişim ya da veri yoksa iş
@@ -1683,6 +1696,13 @@ boyut sınırı için aracın kendi belgesine bak (Codex: 32 KiB).
 - Ücretsiz katmanı olan kaynakta kodla zorlanan sert sınır:
   ücretsiz limitin en çok %99'u. Sınıra gelince dur, bildir;
   ücretliye taşma.
+- Ajan çalışırken depoda toplu ekleme (git add -A,
+  commit -a) yapma. Yalnız kendi dosyalarını adıyla ekle.
+- Aynı engele 2-3 denemede dur, kök nedeni tek satırla söyle.
+  Adı ile işi uyuşmayan kural ya da ayarda ada güvenme,
+  işlemi oku. Bunu ayrı bulgu say.
+- Bir projenin verisini başka projeye taşıma, karıştırma.
+  Yeni paket bağımlılığını sormadan ekleme.
 - Sır (anahtar, şifre) dosyaya ya da loga yazılmaz.</pre></div>
   </div>
 
@@ -1704,7 +1724,7 @@ Her değişiklikten sonra testleri çalıştırırsın.
 Düzelttiğin hata için test yazarsın; düzeltmeyi geri alınca testin kırıldığını görürsün.
 İş tasarım ya da mimari karar gerektiriyorsa durur, şefe sorarsın.
 Bitirmeden dört komşuya bakarsın: kim kullanıyor, aynı hata başka nerede var, karşı parça (yaz/oku, aç/kapa) güncellendi mi, sessiz hata başarı gibi görünüyor mu?
-Bitince değişen dosyaları, test sonucunu (çıkış koduyla), dört komşu cevabını, bakiyeyi (düzeltmediğin komşular) ve açık sorunları kısa raporla bildirirsin.
+Bitince değişen dosyaları, test sonucunu (çıkış koduyla), dört komşu cevabını ve açık sorunları (düzeltmediğin komşular dosya:satır ile) kısa raporla bildirirsin.
 """</pre></div>
   </div>
 
@@ -1738,7 +1758,7 @@ kullandığım araca uyarla.
    fazla 3 tur; stash, reset --hard, rebase, push --force yok;
    sır dosyaya yazılmaz; her brif ve raporda dört komşu
    (kullananlar, ikizler, karşı parça, sessiz hata) sorulur,
-   düzeltilmeyen komşu raporda "bakiye" olur.
+   düzeltilmeyen komşu raporda açık sorun olur.
 7. Çıktı: (a) eşleme tablosu, (b) araca konacak dosyalar ve
    yolları, (c) bu araçta yapamadıkların ve doğrulayamadıkların.
    Yapamadığın şeyi yapmış gibi gösterme.</pre></div>
@@ -1774,9 +1794,9 @@ kullandığım araca uyarla.
     <div class="liste-grup">
       <h3>Her brifte</h3>
       <ul>
-        <li><label><input type="checkbox" id="k5"><span>Sekiz başlık var: görev, senin dosyaların, dokunma, önce oku, bağlam, bitti tanımı, dört komşu, rapor.</span></label></li>
+        <li><label><input type="checkbox" id="k5"><span>Yedi başlık var: görev, senin dosyaların, dokunma, önce oku, bağlam, bitti tanımı, rapor.</span></label></li>
         <li><label><input type="checkbox" id="k6"><span>Bitti tanımı ölçülebilir.</span></label></li>
-        <li><label><input type="checkbox" id="k18"><span>Raporda dört komşu cevabı ve bakiye listesi var; düzeltilmeyen komşu sessizce elenmedi.</span></label></li>
+        <li><label><input type="checkbox" id="k18"><span>Kod ve veri işinde raporda dört komşu cevabı var, düzeltilmeyen komşu açık sorunlara dosya:satır ile yazıldı.</span></label></li>
         <li><label><input type="checkbox" id="k7"><span>Değişmez kurallar brife eklendi.</span></label></li>
         <li><label><input type="checkbox" id="k8"><span>Genel amaçlı ajan kullanılıyorsa modeli açıkça verildi.</span></label></li>
       </ul>
@@ -1785,6 +1805,8 @@ kullandığım araca uyarla.
       <h3>Çalışırken</h3>
       <ul>
         <li><label><input type="checkbox" id="k9"><span>Dosya değiştiren her ajan kendi çalışma kopyasında ve kendi dalında.</span></label></li>
+        <li><label><input type="checkbox" id="k22"><span>Ajan çalışırken depoda toplu ekleme yok, yalnız kendi dosyalarımı adıyla ekliyorum.</span></label></li>
+        <li><label><input type="checkbox" id="k23"><span>Aynı engele iki üç denemeden sonra durdum, kök nedeni tek satırla yazdım.</span></label></li>
         <li><label><input type="checkbox" id="k10"><span>"Sıcak" dosyalar aynı anda tek ajanda.</span></label></li>
         <li><label><input type="checkbox" id="k11"><span>Ana dala yalnızca şef, testler geçtikten sonra birleştiriyor.</span></label></li>
         <li><label><input type="checkbox" id="k20"><span>Ajanın "testler yeşil" sözüne yaslanmadan testleri kendim yeniden koştum, çıkış kodunu gördüm.</span></label></li>
@@ -1805,7 +1827,7 @@ kullandığım araca uyarla.
 <section class="bolum" id="sozluk" aria-labelledby="sozluk-b">
   <header class="bb">
     <p class="bb-no"><span class="no">14</span><span class="etiket">Sözlük</span></p>
-    <h2 id="sozluk-b">Bu sayfanın on yedi terimi</h2>
+    <h2 id="sozluk-b">Bu sayfanın on altı terimi</h2>
     <div class="bb-giris"><p>Metinde noktalı altı çizili her terim buraya bağlanır. Her biri tek cümle.</p></div>
   </header>
   <dl class="sozluk">
@@ -1813,7 +1835,6 @@ kullandığım araca uyarla.
     <div id="t-altajan"><dt><b>Alt ajan</b><span>subagent</span></dt><dd>Bir iş için başlatılan, işi bitince raporunu verip kapanan ajan. Şefin başlattığı çalanlar alt ajandır; ajan da (tools listesinde Agent varsa) en çok 4 alt ajan açabilir, alt ajan açamaz.</dd></div>
     <div id="t-caba"><dt><b>Çaba</b><span>effort</span></dt><dd>Ajan dosyasındaki <code>effort:</code> alanı: low, medium, high, xhigh ya da max; modelin ne kadar uzun düşüneceğini ayarlar, desteklenen değerler modele göre değişir.</dd></div>
     <div id="t-anadal"><dt><b>Ana dal</b><span>main</span></dt><dd>Yayının beslendiği dal; buraya yalnızca şef, testler geçtikten sonra birleştirir.</dd></div>
-    <div id="t-bakiye"><dt><b>Bakiye</b><span>leftover</span></dt><dd>İş sırasında bulunan ama bu işte düzeltilmeyen sorunların listesi; raporda dosya, satır ve etkisiyle yazılır.</dd></div>
     <div id="t-brif"><dt><b>Brif</b><span>brief</span></dt><dd>Ajana verilen kısa iş tarifi: ne yapılacak, hangi dosyalara dokunulur, neye dokunulmaz, iş ne zaman bitmiş sayılır.</dd></div>
     <div id="t-commit"><dt><b>Commit</b><span>kayıt</span></dt><dd>Değişikliklerin kısa bir notla dala kaydedilmesi; iş yarıda kalırsa son kayıttan devam edilir.</dd></div>
     <div id="t-dal"><dt><b>Dal</b><span>branch</span></dt><dd>Projenin, yayındaki hâli bozmadan üzerinde çalışılan ayrı bir kolu.</dd></div>
@@ -1834,7 +1855,7 @@ kullandığım araca uyarla.
 
 <footer>
   <p class="imza"><span class="avatar" aria-hidden="true"></span>Rues Community</p>
-  <p>Yapay Zekâ Notları #1 · Ekim 2026 · Son güncelleme: 26 Ekim 2026</p>
+  <p>Yapay Zekâ Notları #1 · Ekim 2026, güncelleme 26 Ekim</p>
   <p><a href="https://t.me/RuesAnnouncement">Telegram duyuru</a> · <a href="https://t.me/ruesandora">Telegram</a> · <a href="https://x.com/Ruesandora0">X @Ruesandora0</a> · <a href="https://github.com/ruesandora/RuesCommunity">GitHub</a></p>
   <p>Gerçek bir projede her gün kullanılan düzenden derlendi. Claude Code'un alt ajan (subagent) ve çalışma kopyası (worktree) özellikleriyle kurulabilir.</p>
 </footer>

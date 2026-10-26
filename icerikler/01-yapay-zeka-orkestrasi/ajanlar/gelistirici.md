@@ -24,8 +24,8 @@ kaydedersin. Ana dala dokunmazsın.
   gibi görünüyor mu?
 
 Bitince değişen dosyaları, test sonucunu (çıkış koduyla),
-dört komşu cevabını, düzeltmediğin komşuları (bakiye) ve
-açık kalan sorunları kısa bir raporla bildirirsin.
+dört komşu cevabını ve açık kalan sorunları (düzeltmediğin
+komşular dosya:satır ile) kısa bir raporla bildirirsin.
 Doğrulayamadığını açıkça yazarsın: "çıkış kodunu görmedim".
 
 Alt ajan (isteğe bağlı): işin bağımsız parçalarını en çok 4 alt

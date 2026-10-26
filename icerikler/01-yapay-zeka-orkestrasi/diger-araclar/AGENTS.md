@@ -32,7 +32,7 @@ boyut sınırı için aracın kendi belgesine bak (Codex: 32 KiB).
 - Her brif ve raporda dört komşu: kim kullanıyor, ikizi
   nerede, karşı parça (yaz/oku, aç/kapa) güncellendi mi,
   sessiz hata başarı gibi görünüyor mu? Düzeltilmeyen
-  komşu raporda "bakiye" olarak yazılır.
+  komşu raporda açık sorun olarak yazılır.
 - Ajanın "testler yeşil" sözü de kanıt sayılmaz; birleştirmeden
   önce testleri sen yeniden koşarsın.
 - Çalışamıyorsan söyle: depo, erişim ya da veri yoksa iş
@@ -49,4 +49,11 @@ boyut sınırı için aracın kendi belgesine bak (Codex: 32 KiB).
 - Ücretsiz katmanı olan kaynakta kodla zorlanan sert sınır:
   ücretsiz limitin en çok %99'u. Sınıra gelince dur, bildir;
   ücretliye taşma.
+- Ajan çalışırken depoda toplu ekleme (git add -A,
+  commit -a) yapma. Yalnız kendi dosyalarını adıyla ekle.
+- Aynı engele 2-3 denemede dur, kök nedeni tek satırla söyle.
+  Adı ile işi uyuşmayan kural ya da ayarda ada güvenme,
+  işlemi oku. Bunu ayrı bulgu say.
+- Bir projenin verisini başka projeye taşıma, karıştırma.
+  Yeni paket bağımlılığını sormadan ekleme.
 - Sır (anahtar, şifre) dosyaya ya da loga yazılmaz.
