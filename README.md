@@ -4,7 +4,7 @@ Topluluk için ürettiğim içerikler ve araçlar. Her içerik kendi klasöründ
 
 **Canlı sayfalar:** [Yapay Zekâ Orkestrası](https://ruesandora.github.io/RuesCommunity/icerikler/01-yapay-zeka-orkestrasi/) · [Red Agents](https://ruesandora.github.io/RuesCommunity/icerikler/02-red-agents/)
 
-**Son güncelleme (26 Ekim 2026):** Orkestra sayfası bugünkü düzene getirildi: model seçimi (varsayılan Sonnet, Opus yalnız iki durumda, video üreticisi istisna), denetim kuralları, geri-al kontrolü, ücretsiz limitin %99'u, dış ajan kanalı, şefin diff kontrolü ve sahibe yazım kuralı eklendi. Önceki güncelleme (17 Ekim): Orkestra'ya Fable "derin akıl" ajanı, alt ajan ve Codex/AGENTS.md; Red Agents'a Grup 10 ve kırmızı tema.
+**Son güncelleme (30 Ekim 2026):** Orkestra sayfasına Bitti tanımı, kritik iddiada ham veriye bakma, yeni ajan rolü için 10 örnekli deneme ve tam geçmişli otomatik kontrol dersi eklendi. Önceki (26 Ekim): Orkestra sayfası bugünkü düzene getirildi: model seçimi (varsayılan Sonnet, Opus yalnız iki durumda, video üreticisi istisna), denetim kuralları, geri-al kontrolü, ücretsiz limitin %99'u, dış ajan kanalı, şefin diff kontrolü ve sahibe yazım kuralı eklendi. Önceki güncelleme (17 Ekim): Orkestra'ya Fable "derin akıl" ajanı, alt ajan ve Codex/AGENTS.md; Red Agents'a Grup 10 ve kırmızı tema.
 
 **Takip et:** [Telegram duyuru kanalı](https://t.me/RuesAnnouncement) · [Telegram](https://t.me/ruesandora) · [X @Ruesandora0](https://x.com/Ruesandora0)
 

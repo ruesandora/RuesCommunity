@@ -43,6 +43,15 @@
 - Ajanın raporuna güvenme: diff'e ve koda bak.
 - Yeşil test tek başına kanıt sayılmaz. Düzeltme
   geri alınınca test kırılmalı.
+- Bitti tanımı: ajan işi kapatmadan her maddeye
+  evet, hayır ya da doğrulanamadı yazar (görünür
+  değişiklik tarayıcıda açıldı, testler geçti,
+  geri-al kontrolü, denetçi ONAY, iş uzak dalda).
+  Bakılmayan şey doğrulanamadı yazılır.
+- Kritik iddiada (rakam, canlı değişiklik) ajan
+  özetine güvenme, ham dosyaya ya da denetçiye bak.
+- Yeni ajan rolü açmadan önce 10 örnekli
+  önce/sonra denemesi yap.
 - Ücretsiz katmanlı kaynakta limitin en çok %99'u,
   kodla zorlanır (sayaç + ret), yalnız uyarı yetmez.
 - Aynı komut ya da hata 3 kez tekrarlarsa yaklaşımı

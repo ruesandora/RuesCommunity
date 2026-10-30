@@ -2,7 +2,7 @@
 
 [Telegram duyuru](https://t.me/RuesAnnouncement) · [Telegram](https://t.me/ruesandora) · [X @Ruesandora0](https://x.com/Ruesandora0)
 
-Rues Community · Ekim 2026 · Son güncelleme: 26 Ekim 2026 · Gerçek bir projede her gün kullanılan düzenden derlendi.
+Rues Community · Ekim 2026 · Son güncelleme: 30 Ekim 2026 · Gerçek bir projede her gün kullanılan düzenden derlendi.
 
 ---
 
@@ -24,7 +24,7 @@ Rues Community · Ekim 2026 · Son güncelleme: 26 Ekim 2026 · Gerçek bir proj
 | Brif şablonu | GÖREV · SENİN DOSYALARIN · DOKUNMA · ÖNCE OKU · BAĞLAM · BİTTİ TANIMI · RAPOR (fırsatlar alanı dahil) |
 | Gerçek bir gün | Aynı gün paralel çalışan denetim, tasarım ve workflow ajanları |
 | Değişmez kurallar | Para kuralı, uydurma yok, geri-al (mutasyon) kontrolü, ücretsiz limitin en çok %99'u (sayaç ve ret kodda), takılma kuralı, tehlikeli git komutları |
-| Denetim ve şefin kontrolü | Orta işe 1 denetçi, riskte Opus denetçi, DÜZELT en çok 3 tur, şef diff'e bakar, birleşince testler yeniden |
+| Denetim ve şefin kontrolü | Orta işe 1 denetçi, riskte Opus denetçi, DÜZELT en çok 3 tur, şef diff'e bakar, birleşince testler yeniden, Bitti tanımı, kritik iddiada ham veri, yeni rol için 10 örnekli deneme |
 | Sahibe nasıl yazılır | En çok 5 satır, görselle anlat, resimli karar sayfası, "sahibe arayüzde göster" notu |
 | Dış ajan kanalı | İş listesi, `claude/dis-<iş>` dalları, teslim dosyası, DURUM tablosu |
 | Sahadan dersler | Bitmeyen bekleme döngüsü, dolan disk, yeniden başlayan makine, denetçinin yakaladığı donma… |

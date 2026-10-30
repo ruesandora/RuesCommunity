@@ -514,7 +514,7 @@ footer{border-top:2px solid var(--murekkep);padding-block:28px 60px;display:grid
 
 <header class="ust">
   <a class="marka" href="#baslik"><span class="avatar" aria-hidden="true"></span>Rues Community</a>
-  <div class="ust-sag"><span class="etiket">Yapay Zekâ Notları · #1</span><span class="etiket">Ekim 2026</span><span class="etiket">Son güncelleme: 26 Ekim 2026</span></div>
+  <div class="ust-sag"><span class="etiket">Yapay Zekâ Notları · #1</span><span class="etiket">Ekim 2026</span><span class="etiket">Son güncelleme: 30 Ekim 2026</span></div>
 </header>
 
 <section class="acilis" aria-labelledby="baslik">
@@ -1210,6 +1210,9 @@ RAPOR: {"dosyalar": [], "ozet": "", "testler": "",
     <li><b>Geri-al kontrolü.</b><p>Yeşil test tek başına kanıt sayılmaz. Düzeltmeyi geri alınca yeni test kırılmalı, kırılmıyorsa test boştur.</p></li>
     <li><b>Şef diff'e ve koda bakar.</b><p>Ajanın raporu bir iddiadır. Şef değişen dosyaları ve satırları kendisi açıp okur. Denetim bitmeden birleştirmez.</p></li>
     <li><b>Birleşince testleri yeniden koş.</b><p>Ayrı ayrı geçen iki iş birleşince kırılabilir. Şef birleşik dalda testleri yeniden koşar, sonra ilerler.</p></li>
+    <li><b>Bitti tanımı.</b><p>Ajan işi kapatmadan her maddeyi tek satırla yanıtlar: evet, hayır ya da doğrulanamadı. Görünür değişiklik gerçek tarayıcıda açıldı mı, dokunulan akışın testi geçti mi, geri-al kontrolü yapıldı mı, denetçi ONAY verdi mi, iş uzak bir dalda duruyor mu. Bakılmayan şey "doğrulanamadı" yazılır, bakılmış gibi görünmez.</p></li>
+    <li><b>Kritik iddiada ham veriye bak.</b><p>Rakam ya da canlı değişiklik gibi kritik bir iddiada şef ajanın özetine güvenmez. Ham dosyayı açar ya da denetçiye baktırır.</p></li>
+    <li><b>Yeni rol için 10 örnek.</b><p>Yeni bir ajan rolü açmadan önce aynı 10 işi rolsüz ve rollü yaptırıp önce/sonra karşılaştırırsın. Fark yoksa rol açılmaz.</p></li>
   </ul>
   <p class="not" style="margin-top:16px">Gerçek örnek: bir ajan raporunda bir satırı eklediğini yazdı. Şef diff'e bakınca satırın dosyada olmadığını gördü. Yalnız rapora bakılsaydı eksik iş birleşecekti.</p>
 </section>
@@ -1305,6 +1308,7 @@ RAPOR: {"dosyalar": [], "ozet": "", "testler": "",
     <article class="ders" id="ders-6"><div class="ders-bas"><span class="no">DERS 06</span><h3>Kod güncellendi ama yayına çıkmadı</h3></div><div class="ders-govde"><div><span class="etiket">Ne oldu</span><p>Veri ve kod aynı anda değişince sunucu yalnızca veriyi yeniledi; yeni kod eski süreçte kaldı.</p></div><div class="kural"><span class="etiket">Kural oldu</span><p>Yayından sonra çalışan sürüm ile son kayıt karşılaştırılır; farklıysa servis yeniden başlatılır.</p></div></div></article>    <article class="ders" id="ders-7"><div class="ders-bas"><span class="no">DERS 07</span><h3>Ajan "ekledim" dedi, satır yoktu</h3></div><div class="ders-govde"><div><span class="etiket">Ne oldu</span><p>Bir ajan raporunda bir satırı eklediğini yazdı. Şef diff'e bakınca satırın dosyada olmadığını gördü ve yakaladı.</p></div><div class="kural"><span class="etiket">Kural oldu</span><p>Şef ajanın raporuna güvenmez. Diff'e ve koda kendisi bakar.</p></div></div></article>
     <article class="ders" id="ders-8"><div class="ders-bas"><span class="no">DERS 08</span><h3>Denetim bitmeden dal birleşti</h3></div><div class="ders-govde"><div><span class="etiket">Ne oldu</span><p>Düzeltme turları ve güvenlik denetimi bitmeden bir iş oturum dalına birleştirildi. Ajan raporu gelince hemen birleştirme alışkanlığı yanlış çıktı.</p></div><div class="kural"><span class="etiket">Kural oldu</span><p>Denetimli işte birleştirme ONAY'dan sonra olur. Onay bekleyen parçalar ayrı bekletilir.</p></div></div></article>
     <article class="ders" id="ders-9"><div class="ders-bas"><span class="no">DERS 09</span><h3>Ayrı ayrı geçen işler birleşince kırılır</h3></div><div class="ders-govde"><div><span class="etiket">Ne oldu</span><p>Her iş kendi dalında yeşildi. İki iş aynı dosyaya ya da aynı veriye dokununca birleşik dalda test kırılabilir.</p></div><div class="kural"><span class="etiket">Kural oldu</span><p>Birleştirdikten sonra şef testleri birleşik dalda yeniden koşar.</p></div></div></article>
+    <article class="ders" id="ders-10"><div class="ders-bas"><span class="no">DERS 10</span><h3>Test yerelde geçti, otomatik kontrolde düştü</h3></div><div class="ders-govde"><div><span class="etiket">Ne oldu</span><p>Bazı testler git geçmişine bakıyordu (son değişiklik tarihi, kayıt denetimi). Otomatik kontrol depoyu yalnız son kayıtla indirince bu testler yerelde yeşil, orada kırmızıydı.</p></div><div class="kural"><span class="etiket">Kural oldu</span><p>Geçmişe bakan testi olan depoda otomatik kontrol tam geçmişi indirir (<code>fetch-depth: 0</code>).</p></div></div></article>
   </div>
 </section>
 
@@ -1585,6 +1589,15 @@ Nasıl çalışırsın:
 - Ajanın raporuna güvenme: diff'e ve koda bak.
 - Yeşil test tek başına kanıt sayılmaz. Düzeltme
   geri alınınca test kırılmalı.
+- Bitti tanımı: ajan işi kapatmadan her maddeye
+  evet, hayır ya da doğrulanamadı yazar (görünür
+  değişiklik tarayıcıda açıldı, testler geçti,
+  geri-al kontrolü, denetçi ONAY, iş uzak dalda).
+  Bakılmayan şey doğrulanamadı yazılır.
+- Kritik iddiada (rakam, canlı değişiklik) ajan
+  özetine güvenme, ham dosyaya ya da denetçiye bak.
+- Yeni ajan rolü açmadan önce 10 örnekli
+  önce/sonra denemesi yap.
 - Ücretsiz katmanlı kaynakta limitin en çok %99'u,
   kodla zorlanır (sayaç + ret), yalnız uyarı yetmez.
 - Aynı komut ya da hata 3 kez tekrarlarsa yaklaşımı
@@ -1788,7 +1801,7 @@ kullandığım araca uyarla.
 
 <footer>
   <p class="imza"><span class="avatar" aria-hidden="true"></span>Rues Community</p>
-  <p>Yapay Zekâ Notları #1 · Ekim 2026 · Son güncelleme: 26 Ekim 2026</p>
+  <p>Yapay Zekâ Notları #1 · Ekim 2026 · Son güncelleme: 30 Ekim 2026</p>
   <p><a href="https://t.me/RuesAnnouncement">Telegram duyuru</a> · <a href="https://t.me/ruesandora">Telegram</a> · <a href="https://x.com/Ruesandora0">X @Ruesandora0</a> · <a href="https://github.com/ruesandora/RuesCommunity">GitHub</a></p>
   <p>Gerçek bir projede her gün kullanılan düzenden derlendi. Claude Code'un alt ajan (subagent) ve çalışma kopyası (worktree) özellikleriyle kurulabilir.</p>
 </footer>
