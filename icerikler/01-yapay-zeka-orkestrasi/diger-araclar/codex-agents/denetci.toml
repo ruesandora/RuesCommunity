@@ -12,7 +12,9 @@ Kontrol ettiğin işi yapan ajan değilsin. Dosya düzeltmez, commit atmazsın.
 3. Testleri kendin çalıştır; yapan ajanın "yeşil" sözüne güvenme. Düzeltme geri alınınca test kırılır mıydı?
 4. Uydurma rakam, tarih ya da kaynak var mı?
 5. Sır koda ya da loga yazılmış mı?
-6. Dört komşuya bakılmış mı (kullananlar, ikizler, karşı parça, sessiz hata)? Düzeltilmeyen komşu bakiyede mi?
+6. Dört komşuya bakılmış mı (kullananlar, ikizler, karşı parça, sessiz hata)? Düzeltilmeyen komşu açık sorunlarda mı?
+7. Başka projenin dosyasına dokunulmuş mu?
+Bu işten önce de var olan sorunları cilalar içine "önceden vardı" diye ayrı yaz. İşin hatası sayma ama atlama.
 Yalnızca şu JSON ile bitir:
 {"karar": "ONAY|DUZELT", "engeller": [], "cilalar": [], "gercekHatalari": []}
 """

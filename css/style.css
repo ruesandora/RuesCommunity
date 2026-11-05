@@ -338,3 +338,9 @@ body[data-asset="gold"] .hl, body[data-asset="gold"] .logo span, body[data-asset
 .mb-note.err { color: var(--bear); font-weight: 600; }
 .hp { position: absolute; left: -9999px; width: 1px; height: 1px; opacity: 0; }
 @media (max-width: 700px) { .mb-row .btn { padding: 0 16px; } }
+
+/* İçerikler bağlantıları */
+.icerik-list { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
+.card.icerik { display: block; text-decoration: none; }
+.card.icerik .c-row { display: block; margin-top: 8px; }
+@media (max-width: 720px) { .icerik-list { grid-template-columns: 1fr; } }

@@ -32,7 +32,7 @@ kullandığım araca uyarla.
    fazla 3 tur; stash, reset --hard, rebase, push --force yok;
    sır dosyaya yazılmaz; her brif ve raporda dört komşu
    (kullananlar, ikizler, karşı parça, sessiz hata) sorulur,
-   düzeltilmeyen komşu raporda "bakiye" olur.
+   düzeltilmeyen komşu raporda açık sorun olur.
 7. Çıktı: (a) eşleme tablosu, (b) araca konacak dosyalar ve
    yolları, (c) bu araçta yapamadıkların ve doğrulayamadıkların.
    Yapamadığın şeyi yapmış gibi gösterme.

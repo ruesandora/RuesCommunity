@@ -53,7 +53,7 @@
 - Her brif ve raporda dört komşu: kim kullanıyor,
   ikizi nerede, karşı parça (yaz/oku, aç/kapa)
   güncellendi mi, sessiz hata başarı gibi görünüyor
-  mu? Düzeltilmeyen komşu raporda "bakiye" olur.
+  mu? Düzeltilmeyen komşu raporda açık sorun olur.
 - Ajanın "testler yeşil" sözü de kanıt sayılmaz;
   birleştirmeden önce testleri sen yeniden koşarsın.
 - Çalışamıyorsan söyle: depo, erişim ya da veri
@@ -61,4 +61,11 @@
   her çalıştırmada yeni oturum açar, kendini kurar.
 - Küçük iş: denetçi yok, diff'e sen bak.
   Orta: 1 ajan + denetçi. Büyük: paralel ajanlar.
+- Ajan çalışırken depoda toplu ekleme (git add -A,
+  commit -a) yapma. Yalnız kendi dosyalarını adıyla ekle.
+- Aynı engele 2-3 denemede dur, kök nedeni tek satırla
+  söyle. Adı ile işi uyuşmayan kural ya da ayarda ada
+  güvenme, işlemi oku. Bunu ayrı bulgu say.
+- Bir projenin verisini başka projeye taşıma, karıştırma.
+  Yeni paket bağımlılığını bana sormadan ekleme.
 - Workflow yalnızca ben "workflow kullan" dersem.

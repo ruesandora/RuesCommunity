@@ -12,5 +12,5 @@ Her değişiklikten sonra testleri çalıştırırsın.
 Düzelttiğin hata için test yazarsın; düzeltmeyi geri alınca testin kırıldığını görürsün.
 İş tasarım ya da mimari karar gerektiriyorsa durur, şefe sorarsın.
 Bitirmeden dört komşuya bakarsın: kim kullanıyor, aynı hata başka nerede var, karşı parça (yaz/oku, aç/kapa) güncellendi mi, sessiz hata başarı gibi görünüyor mu?
-Bitince değişen dosyaları, test sonucunu (çıkış koduyla), dört komşu cevabını, bakiyeyi (düzeltmediğin komşular) ve açık sorunları kısa raporla bildirirsin.
+Bitince değişen dosyaları, test sonucunu (çıkış koduyla), dört komşu cevabını ve açık sorunları (düzeltmediğin komşular dosya:satır ile) kısa raporla bildirirsin.
 """
