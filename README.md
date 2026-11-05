@@ -8,6 +8,8 @@ Topluluk için ürettiğim içerikler ve araçlar. Her içerik kendi klasöründ
 
 **Önceki güncelleme (17 Ekim 2026):** Orkestra'ya Fable "derin akıl" ajanı, ajanın alt ajanı, yeni model görev tablosu ve Codex/AGENTS.md ile başka araçta kullanım eklendi. Red Agents'a yapay zekâ uygulamaları (Grup 10), sır ve bağımlılık, oran sınırlama ve izleme, "Yapmayacaklarımız" ve bulgu rapor şablonu eklendi; Red Agents kırmızı temaya geçti.
 
+**Not:** Canlı adres GitHub Pages'tir; `/api` (Vercel) uçları Pages'te çalışmaz, e-posta aboneliği ve bildirimler yalnız Vercel dağıtımında çalışır.
+
 **Takip et:** [Telegram duyuru kanalı](https://t.me/RuesAnnouncement) · [Telegram](https://t.me/ruesandora) · [X @Ruesandora0](https://x.com/Ruesandora0)
 
 ## İçerikler
