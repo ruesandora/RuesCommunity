@@ -4,7 +4,9 @@ Topluluk için ürettiğim içerikler ve araçlar. Her içerik kendi klasöründ
 
 **Canlı sayfalar:** [Yapay Zekâ Orkestrası](https://ruesandora.github.io/RuesCommunity/icerikler/01-yapay-zeka-orkestrasi/) · [Red Agents](https://ruesandora.github.io/RuesCommunity/icerikler/02-red-agents/)
 
-**Son güncelleme (26 Ekim 2026):** Orkestra'ya brif ve rapora "dört komşu" ve bakiye listesi, sekiz değişmez kural, sekiz yeni saha dersi (sessiz başarılı zamanlanmış görev, ajanın "testler yeşil" sözü, yazılı kural yerine teknik kilit, denetçinin yakaladığı salt okuma açığı, tek tanımlı ölçü, kesintisiz yayın, kısa sahip raporu) ve kopyalanabilir yasak listesi eklendi.
+**Son güncelleme (19 Kasım 2026):** Orkestra'ya risk kademeli doğrulama (ortam × risk tablosu), "aynı test aynı kodda iki kez koşulmaz" kuralı, kısmi ikinci denetim turu, yalnız danışman olan en güçlü model (ne zaman sorulur, soru biçimi, üst sınır), iş boyutu tablosuna ortam ekseni, iki yeni saha dersi (çifter test; karar yazıya geçmezse ajan eski yazıya uyar) ve kısa bir "Maliyet" bölümü eklendi. Ajan dosyaları ve başka araçlardaki örnekler buna göre güncellendi.
+
+**Önceki güncelleme (26 Ekim 2026):** Orkestra'ya brif ve rapora "dört komşu" ve bakiye listesi, sekiz değişmez kural, sekiz yeni saha dersi, kopyalanabilir yasak listesi ve başka eklemeler geldi.
 
 **Önceki güncelleme (17 Ekim 2026):** Orkestra'ya Fable "derin akıl" ajanı, ajanın alt ajanı, yeni model görev tablosu ve Codex/AGENTS.md ile başka araçta kullanım eklendi. Red Agents'a yapay zekâ uygulamaları (Grup 10), sır ve bağımlılık, oran sınırlama ve izleme, "Yapmayacaklarımız" ve bulgu rapor şablonu eklendi; Red Agents kırmızı temaya geçti.
 
@@ -14,7 +16,7 @@ Topluluk için ürettiğim içerikler ve araçlar. Her içerik kendi klasöründ
 
 | # | İçerik | Konu |
 |---|---|---|
-| 01 | [Yapay Zekâ Orkestrası](icerikler/01-yapay-zeka-orkestrasi) | Yapay zekâ ajanlarıyla şef, uzman ajanlar ve bağımsız denetçiden oluşan bir ekip kurmak; model görev tablosu, ajanın alt ajanı ve başka araçta (Codex vb.) kullanım ([sayfa](icerikler/01-yapay-zeka-orkestrasi/index.html)) |
+| 01 | [Yapay Zekâ Orkestrası](icerikler/01-yapay-zeka-orkestrasi) | Yapay zekâ ajanlarıyla şef, uzman ajanlar ve bağımsız denetçiden oluşan bir ekip kurmak; model görev tablosu, yalnız danışman olan en güçlü model, risk kademeli doğrulama, ajanın alt ajanı, maliyet ve başka araçta (Codex vb.) kullanım ([sayfa](icerikler/01-yapay-zeka-orkestrasi/index.html)) |
 | 02 | [Red Agents](icerikler/02-red-agents) | Kendi projende açığı başkasından önce bul: kırmızı takım ajanları, 10 grup / 45 zayıflık sınıfı (yapay zekâ uygulamaları dahil), güvenli tatbikat kuralları, bulgu rapor şablonu ([sayfa](icerikler/02-red-agents/index.html)) |
 
 ## Araçlar
