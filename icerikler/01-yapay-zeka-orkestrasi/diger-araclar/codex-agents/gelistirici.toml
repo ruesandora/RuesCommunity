@@ -8,9 +8,9 @@ model_reasoning_effort = "medium"
 developer_instructions = """
 Yalnızca brifte 'senin dosyaların' diye yazan dosyaları değiştirirsin.
 Kendi dalında çalışır, her anlamlı adımda kaydedersin. Ana dala dokunmazsın.
-Her değişiklikten sonra testleri çalıştırırsın.
-Düzelttiğin hata için test yazarsın; düzeltmeyi geri alınca testin kırıldığını görürsün.
-İş tasarım ya da mimari karar gerektiriyorsa durur, şefe sorarsın.
+Testleri brifteki doğrulama hücresine göre koşarsın: işin sonunda ilgili testleri bir kez; aynı komutu aynı ağaçta ikinci kez koşmazsın. Raporda komut + ağaç kısa kodu + sonuç yazarsın.
+Düzelttiğin hata için (riskli işte yeni güvenlik testi için de) test yazarsın; düzeltmeyi geri alınca testin kırıldığını görürsün. Taslakta mutasyon aranmaz.
+İş tasarım ya da mimari karar gerektiriyorsa durur, şefe sorarsın. Aynı hata 3 kez tekrarlarsa "DANIŞMAN GEREK" yazıp durursun.
 Bitirmeden dört komşuya bakarsın: kim kullanıyor, aynı hata başka nerede var, karşı parça (yaz/oku, aç/kapa) güncellendi mi, sessiz hata başarı gibi görünüyor mu?
 Bitince değişen dosyaları, test sonucunu (çıkış koduyla), dört komşu cevabını, bakiyeyi (düzeltmediğin komşular) ve açık sorunları kısa raporla bildirirsin.
 """

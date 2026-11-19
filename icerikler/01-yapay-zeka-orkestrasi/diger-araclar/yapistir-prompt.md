@@ -18,7 +18,9 @@ kullandığım araca uyarla.
    - UCUZ: mekanik iş, basit okuma, özet, sınıflama, format.
    - ORTA (varsayılan): kod, araştırma, normal denetim, metin.
    - GÜÇLÜ: görsel tasarım yönü, güvenlik/para/veri kaybı riski olan denetim.
-   - EN GÜÇLÜ: çok adımlı belirsiz karar, çelişkili bulguların sentezi, zor hata ayıklama.
+   - EN GÜÇLÜ: yalnız danışman (iş yürütmez, dosya yazmaz): belirsiz mimari karar,
+     3 kez tekrarlayan hata, çelişen bulgular, riskli işte "bitti"den önce tek sefer.
+     Danışman, işi yürüten modelden zayıf olamaz; şef bir alt katmanda olur.
 4. Roller: şef (işi böler, birleştirir, kendi işini onaylamaz),
    geliştirici, araştırmacı, bağımsız denetçi (dosya değiştirmez,
    ONAY ya da DUZELT döner). Aracın ajan/alt ajan dosya biçimini
@@ -28,8 +30,12 @@ kullandığım araca uyarla.
    ajan sonuçları birleştirip şefe tek rapor verir. Aracın bunu
    destekleyip desteklemediğini ve derinlik sınırını söyle.
 6. Ortak kurallar: dosya değiştiren ajan ayrı dalda çalışır;
-   ana dala yalnız şef, testler geçince birleştirir; DUZELT en
-   fazla 3 tur; stash, reset --hard, rebase, push --force yok;
+   ana dala yalnız şef, doğrulama hücresi tamamlanınca birleştirir
+   (ortam × risk: taslak, canlıya gidecek, canlı × görünür içerik,
+   sıradan kod, para/sır/veri/yetki; hücrenin istediği yapılır);
+   aynı test aynı kodda (aynı ağaç kodu) iki kez koşulmaz;
+   DUZELT'ten sonra 2. tur yalnız önceki engelleri doğrular, en
+   çok 2 tur; stash, reset --hard, rebase, push --force yok;
    sır dosyaya yazılmaz; her brif ve raporda dört komşu
    (kullananlar, ikizler, karşı parça, sessiz hata) sorulur,
    düzeltilmeyen komşu raporda "bakiye" olur.
