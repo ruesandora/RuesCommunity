@@ -671,7 +671,7 @@ footer{border-top:2px solid var(--murekkep);padding-block:28px 60px;display:grid
         <div class="rol-ad"><span class="etiket">Yöneten · baton</span><h3 id="r-sef">Şef</h3></div>
         <div class="rol-rozet"><span class="model opus">Ana oturumun modeli</span><span class="maliyet">genelde Opus ya da Sonnet</span></div>
       </header>
-      <div class="rol-neden"><span class="etiket">Hangi model?</span><p>Şef, senin seçtiğin ana oturumun modelidir; genelde Opus ya da Sonnet. En güçlü model danışmandır ve işi yürüten modelden zayıf olamaz; bu yüzden şef en güçlü modelde değil, bir alt modelde çalışır. İşi doğru bölmek, doğru ajanı seçmek ve parçaları birleştirmek her adımda yargı ister. Bölme ve birleştirme yargı işi olduğu için güçlü bir model seçmek mantıklıdır.</p></div>
+      <div class="rol-neden"><span class="etiket">Hangi model?</span><p>Şef, ana oturumun modelidir ve kurulumda sana sorulur (aşağıda Adım 0). Önerilen: orta ya da güçlü model şef olur, en güçlü model danışman kalır; danışman işi yürüten modelden zayıf olamaz. İstersen en güçlü modeli şef yaparsın, o zaman danışman kullanılmaz. İşi doğru bölmek, doğru ajanı seçmek ve parçaları birleştirmek her adımda yargı ister. Bölme ve birleştirme yargı işi olduğu için güçlü bir model seçmek mantıklıdır.</p></div>
       <div class="rol-govde">
         <div class="rol-sol">
           <div><span class="etiket">Ne yapar</span><p>Ana oturum. İşi böler, her parçaya brif yazar, ajanı ve modeli seçer, işi denetçiye kontrol ettirir, birleştirir ve sana sade bir dille raporlar.</p></div>
@@ -890,7 +890,7 @@ footer{border-top:2px solid var(--murekkep);padding-block:28px 60px;display:grid
       <div class="cikti"><div class="cikti-ust"><b>Sonnet 5.5</b><span class="maliyet"><span class="metre" aria-hidden="true"><i class="d"></i><i class="d"></i><i></i></span>orta</span></div><p class="kim">Kadroda: Araştırmacı, Geliştirici, Denetçi, Genel amaçlı ajan</p><p>Hızlı ve yetenekli orta model, varsayılan. Kod (büyük de), araştırma, normal denetim, metin.</p></div>
     </div>
   </div>
-  <div class="prem-not"><div class="cikti"><div class="cikti-ust"><b>En güçlü model</b><span class="model fable">Yalnız danışman</span><span class="maliyet"><span class="metre" aria-hidden="true"><i class="d"></i><i class="d"></i><i class="d"></i><i class="d"></i></span>en pahalı</span></div><p class="kim">İş yürütmez, dosya yazmaz</p><p>Kadronun en pahalı basamağı iş yapmaz; karar noktasında kısa bir rehber verir. <code>derin-akil.md</code> ajanı bu rolü oynar. Tasarım, kod, denetim ve metin işinde kullanılmaz. Koşul: <a class="terim" href="#t-danisman">danışman</a> işi yürüten modelden zayıf olamaz. Şefi en güçlü modelde çalıştırırsan ona danışacak kimse kalmaz; bu yüzden şefi bir alt modelde (Sonnet ya da Opus) tut, en güçlü modeli danışman yap. Bazı araçlarda hazır bir danışman özelliği bulunur; varsa kullan, koşullarını aracın belgesinden doğrula. Yoksa aynı işi bu ajan görür.</p></div></div>
+  <div class="prem-not"><div class="cikti"><div class="cikti-ust"><b>En güçlü model</b><span class="model fable">Yalnız danışman</span><span class="maliyet"><span class="metre" aria-hidden="true"><i class="d"></i><i class="d"></i><i class="d"></i><i class="d"></i></span>en pahalı</span></div><p class="kim">İş yürütmez, dosya yazmaz</p><p>Kadronun en pahalı basamağı iş yapmaz; karar noktasında kısa bir rehber verir. <code>derin-akil.md</code> ajanı bu rolü oynar. Tasarım, kod, denetim ve metin işinde kullanılmaz. Koşul: <a class="terim" href="#t-danisman">danışman</a> işi yürüten modelden zayıf olamaz. Şefi en güçlü modelde çalıştırırsan ona danışacak kimse kalmaz; bu yüzden önerilen düzen şefi bir alt modelde (Sonnet ya da Opus) tutmak, en güçlü modeli danışman yapmaktır. Şefin modeli kurulumda sorulur; kararı sen verirsin. Bazı araçlarda hazır bir danışman özelliği bulunur; varsa kullan, koşullarını aracın belgesinden doğrula. Yoksa aynı işi bu ajan görür.</p></div></div>
   <ul class="kurallar-3">
     <li><b>Ne zaman sorulur</b><p>En az biri varsa: belirsiz mimari ya da strateji kararı, yaklaşım kilitlenmeden önce (iş büyük ya da riskliyse). Aynı hata ya da komut 3 kez tekrarlandı (4. denemeden önce). Ajan bulguları çelişiyor. Riskli işte "bitti" demeden önce, tek sefer.</p></li>
     <li><b>Ne zaman sorulmaz</b><p>Küçük ve orta rutin iş, taslak arayüz, mekanik iş, denetçinin işi, "emin olmak için". Denetçi ya da bir test cevabı verebiliyorsa danışmaya gerek yok.</p></li>
@@ -1376,6 +1376,22 @@ sudo -u ajanokur cat /srv/uygulama/.env</pre></div>
   </header>
 
   <div class="kur-adim">
+    <div class="kur-ikili">
+      <div class="kur-metin"><span class="etiket">Adım 0</span><h3>Önce iki soru</h3><p>Kurulumu yapan yapay zekâ işe başlamadan sana bu iki soruyu sorar; şefin modelini biz seçmeyiz. Cevaba göre kural dosyasını yazar. İkinci cevap, doğrulama tablosunda hangi hücreden başlayacağını belirler.</p></div>
+      <div class="kod"><div class="kod-bas"><span>kurulum soruları</span><button type="button" class="kopya" data-kopya="k-soru">Kopyala</button></div>
+<pre id="k-soru">1. Şef hangi modelde çalışsın?
+   A: orta ya da güçlü model şef olur, en güçlü model yalnız
+      danışman olur (daha ucuz; önerilen).
+   B: en güçlü model şef olur, danışman kullanılmaz (daha
+      pahalı; danışacak daha güçlü model kalmaz).
+   Planında en güçlü model ek ücretliyse bunu önce
+   kontrol et.
+
+2. Projen canlıda mı, taslakta mı?</pre></div>
+    </div>
+  </div>
+
+  <div class="kur-adim">
     <div class="kur-metin"><span class="etiket">Adım 1</span><h3>Kadroyu tanımla, denetçiyle başla</h3><p>İlk kurulacak ajan denetçi olsun. En çok hatayı o yakalar. Araç listesinde dosya yazma yok; yalnızca okur ve test koşar. Sonra diğerlerini ekle. <code>derin-akil.md</code> danışmandır ve en pahalı ajandır; ancak gerçekten gerekirse kur.</p></div>
     <div class="sekmeler">
       <div class="sekme-liste" role="tablist" aria-label="Ajan dosyaları">
@@ -1667,7 +1683,10 @@ soru ilkine aykırı yeni bir bulguyla gelir.</pre></div>
 - Danışman: en güçlü model yalnız danışır, dosya
   yazmaz. Danışman, işi yürüten modelden zayıf olamaz;
   şefi en güçlü modelde çalıştırırsan danışacak kimse
-  kalmaz, o yüzden şef bir alt modelde olur. En az
+  kalmaz. Şefin modeli kurulumda sorulur: A ise şef orta
+  ya da güçlü modelde, en güçlü model yalnız danışman;
+  B ise en güçlü model şef olur ve danışman kullanılmaz.
+  Cevap bu kuralın yazıldığı yere işlenir. En az
   biri varsa sorulur: belirsiz mimari ya da strateji
   kararı kilitlenmeden önce (iş büyük ya da riskliyse);
   aynı hata ya da komut 3 kez tekrarlandı; ajan
@@ -1789,8 +1808,10 @@ boyut sınırı için aracın kendi belgesine bak (Codex: 32 KiB).
   - GÜÇLÜ: görsel tasarım yönü; güvenlik, para, veri kaybı
     riski olan denetim.
   - EN GÜÇLÜ: yalnız danışman; iş yürütmez, dosya yazmaz.
-    Danışman, işi yürüten modelden zayıf olamaz; şef bir
-    alt katmanda olur. Şu durumlarda sorulur (en az biri):
+    Danışman, işi yürüten modelden zayıf olamaz. Şefin modeli
+    kurulumda sorulur: A ise şef alt katmanda, en güçlü model
+    danışman; B ise en güçlü model şef olur, danışman yok.
+    Şu durumlarda sorulur (en az biri):
     belirsiz mimari ya da strateji kararı, aynı hata 3 kez
     tekrarladı, ajan bulguları çelişiyor, riskli işte
     "bitti" demeden önce (tek sefer). Soru en çok 8 satır
@@ -1876,6 +1897,16 @@ Bitince değişen dosyaları, test sonucunu (çıkış koduyla), dört komşu ce
 <pre id="k-prompt">Sana bir "yapay zekâ orkestrası" düzeni vereceğim. Bunu benim
 kullandığım araca uyarla.
 
+0. İşe başlamadan bana şu iki soruyu sor ve cevabı bekle; kural
+   dosyasını cevaba göre yaz:
+   a) "Şef hangi modelde çalışsın? A: orta ya da güçlü model şef
+      olur, en güçlü model yalnız danışman olur (daha ucuz; önerilen).
+      B: en güçlü model şef olur, danışman kullanılmaz (daha pahalı;
+      danışacak daha güçlü model kalmaz)."
+      Altına tek satır ekle: planında en güçlü model ek ücretliyse
+      bunu önce kontrol et.
+   b) "Projen canlıda mı, taslakta mı?" (doğrulama tablosunda
+      başlangıç hücresini belirler.)
 1. Kullandığın araç ve sürümün nedir? Hangi modellere erişimin
    var? Model adlarını yalnızca bildiğin ya da araçtan okuyabildiğin
    gibi yaz; bilmediğin adı uydurma, "bilmiyorum" de.
@@ -1888,7 +1919,9 @@ kullandığım araca uyarla.
    - GÜÇLÜ: görsel tasarım yönü, güvenlik/para/veri kaybı riski olan denetim.
    - EN GÜÇLÜ: yalnız danışman (iş yürütmez, dosya yazmaz): belirsiz mimari karar,
      3 kez tekrarlayan hata, çelişen bulgular, riskli işte "bitti"den önce tek sefer.
-     Danışman, işi yürüten modelden zayıf olamaz; şef bir alt katmanda olur.
+     Danışman, işi yürüten modelden zayıf olamaz. Şef modeli 0a'daki
+     cevabıma göre belirlenir (A: şef alt katmanda; B: şef en güçlü
+     model, danışman yok).
 4. Roller: şef (işi böler, birleştirir, kendi işini onaylamaz),
    geliştirici, araştırmacı, bağımsız denetçi (dosya değiştirmez,
    ONAY ya da DUZELT döner). Aracın ajan/alt ajan dosya biçimini

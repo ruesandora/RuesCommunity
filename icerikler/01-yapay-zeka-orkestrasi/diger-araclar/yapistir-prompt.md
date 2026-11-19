@@ -8,6 +8,16 @@ modunda) yapıştır. Araç kendi modellerine göre eşleme
 Sana bir "yapay zekâ orkestrası" düzeni vereceğim. Bunu benim
 kullandığım araca uyarla.
 
+0. İşe başlamadan bana şu iki soruyu sor ve cevabı bekle; kural
+   dosyasını cevaba göre yaz:
+   a) "Şef hangi modelde çalışsın? A: orta ya da güçlü model şef
+      olur, en güçlü model yalnız danışman olur (daha ucuz; önerilen).
+      B: en güçlü model şef olur, danışman kullanılmaz (daha pahalı;
+      danışacak daha güçlü model kalmaz)."
+      Altına tek satır ekle: planında en güçlü model ek ücretliyse
+      bunu önce kontrol et.
+   b) "Projen canlıda mı, taslakta mı?" (doğrulama tablosunda
+      başlangıç hücresini belirler.)
 1. Kullandığın araç ve sürümün nedir? Hangi modellere erişimin
    var? Model adlarını yalnızca bildiğin ya da araçtan okuyabildiğin
    gibi yaz; bilmediğin adı uydurma, "bilmiyorum" de.
@@ -20,7 +30,9 @@ kullandığım araca uyarla.
    - GÜÇLÜ: görsel tasarım yönü, güvenlik/para/veri kaybı riski olan denetim.
    - EN GÜÇLÜ: yalnız danışman (iş yürütmez, dosya yazmaz): belirsiz mimari karar,
      3 kez tekrarlayan hata, çelişen bulgular, riskli işte "bitti"den önce tek sefer.
-     Danışman, işi yürüten modelden zayıf olamaz; şef bir alt katmanda olur.
+     Danışman, işi yürüten modelden zayıf olamaz. Şef modeli 0a'daki
+     cevabıma göre belirlenir (A: şef alt katmanda; B: şef en güçlü
+     model, danışman yok).
 4. Roller: şef (işi böler, birleştirir, kendi işini onaylamaz),
    geliştirici, araştırmacı, bağımsız denetçi (dosya değiştirmez,
    ONAY ya da DUZELT döner). Aracın ajan/alt ajan dosya biçimini

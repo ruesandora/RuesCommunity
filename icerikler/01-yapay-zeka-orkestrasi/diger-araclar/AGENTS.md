@@ -19,8 +19,10 @@ boyut sınırı için aracın kendi belgesine bak (Codex: 32 KiB).
   - GÜÇLÜ: görsel tasarım yönü; güvenlik, para, veri kaybı
     riski olan denetim.
   - EN GÜÇLÜ: yalnız danışman; iş yürütmez, dosya yazmaz.
-    Danışman, işi yürüten modelden zayıf olamaz; şef bir
-    alt katmanda olur. Şu durumlarda sorulur (en az biri):
+    Danışman, işi yürüten modelden zayıf olamaz. Şefin modeli
+    kurulumda sorulur: A ise şef alt katmanda, en güçlü model
+    danışman; B ise en güçlü model şef olur, danışman yok.
+    Şu durumlarda sorulur (en az biri):
     belirsiz mimari ya da strateji kararı, aynı hata 3 kez
     tekrarladı, ajan bulguları çelişiyor, riskli işte
     "bitti" demeden önce (tek sefer). Soru en çok 8 satır

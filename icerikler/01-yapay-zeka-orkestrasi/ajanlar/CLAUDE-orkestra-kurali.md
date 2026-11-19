@@ -26,7 +26,10 @@
 - Danışman: en güçlü model yalnız danışır, dosya
   yazmaz. Danışman, işi yürüten modelden zayıf olamaz;
   şefi en güçlü modelde çalıştırırsan danışacak kimse
-  kalmaz, o yüzden şef bir alt modelde olur. En az
+  kalmaz. Şefin modeli kurulumda sorulur: A ise şef orta
+  ya da güçlü modelde, en güçlü model yalnız danışman;
+  B ise en güçlü model şef olur ve danışman kullanılmaz.
+  Cevap bu kuralın yazıldığı yere işlenir. En az
   biri varsa sorulur: belirsiz mimari ya da strateji
   kararı kilitlenmeden önce (iş büyük ya da riskliyse);
   aynı hata ya da komut 3 kez tekrarlandı; ajan
